@@ -17,7 +17,7 @@ class Filters extends BaseConfig
      */
     public array $aliases = [
         'csrf'          => CSRF::class,
-        'toolbar'       => DebugToolbar::class,
+        // 'toolbar'       => DebugToolbar::class,
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
