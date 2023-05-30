@@ -5,6 +5,12 @@ namespace Config;
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
+// Load the system's routing file first, so that the app and ENVIRONMENT
+// can override as needed.
+if (is_file(SYSTEMPATH . 'Config/Routes.php')) {
+    require SYSTEMPATH . 'Config/Routes.php';
+}
+
 /*
  * --------------------------------------------------------------------
  * Router Setup
@@ -19,7 +25,7 @@ $routes->set404Override();
 // where controller filters or CSRF protection are bypassed.
 // If you don't want to define all routes, please use the Auto Routing (Improved).
 // Set `$autoRoutesImproved` to true in `app/Config/Feature.php` and set the following to true.
-// $routes->setAutoRoute(false);
+//$routes->setAutoRoute(false);
 
 /*
  * --------------------------------------------------------------------
@@ -27,9 +33,37 @@ $routes->set404Override();
  * --------------------------------------------------------------------
  */
 
-// We get a performance increase by specifying the default
-// route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+
+
+$routes->get('/','LandingPageController::index');
+
+
+
+// App Scanneer controller ✅
+$routes->group('app', function ($routes) {
+    $routes->get('/', 'Home::index');
+});
+
+
+// API
+$routes->group('api', function($routes){
+
+    // Authentication ✅
+    $routes->group('auth', function($routes){
+        /*✅*/ $routes->post('create', 'Api\AuthAPIController::create');
+        /*✅*/ $routes->get('verify_account/(:any)', 'Api\AuthAPIController::verify_account/$1');
+        /*✅*/ $routes->post('account-verify', 'Api\AuthAPIController::email_verify_account');
+        /*✅*/ $routes->get('get_state', 'Api\AuthAPIController::get_auth_state');
+        /*✅*/ $routes->post('login', 'Api\AuthAPIController::login');
+        /*✅*/ $routes->post('logout', 'Api\AuthAPIController::logout');
+        /*✅*/ $routes->get('reset', 'Api\AuthAPIController::reset');
+        /*✅*/ $routes->post('reset', 'Api\AuthAPIController::reset');
+        /*✅*/ $routes->post('forgot-password', 'Api\AuthAPIController::forgot_password');
+    });
+    
+});
+
+
 
 /*
  * --------------------------------------------------------------------
