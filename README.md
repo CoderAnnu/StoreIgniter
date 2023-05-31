@@ -1,62 +1,96 @@
-# CodeIgniter 4 Application Starter
+# StoreIgniter
 
-## What is CodeIgniter?
+![StoreIgniter Logo](logo.png)
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+StoreIgniter is a powerful e-commerce platform built with CodeIgniter and AngularJS. It provides a complete solution for creating and managing online stores with ease. Whether you're a small business owner or an experienced developer, StoreIgniter empowers you to build robust and scalable e-commerce applications.
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## Features
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+- **User-friendly Admin Dashboard**: Manage your store's products, orders, and customers effortlessly through a clean and intuitive interface.
+- **Product Management**: Easily add, edit, and categorize products, set prices, manage inventory, and update product descriptions and images.
+- **Order Management**: Track orders, process payments, handle shipping, and generate invoices for seamless order fulfillment.
+- **Customer Management**: Maintain a customer database, view customer details, track order history, and provide personalized support.
+- **Payment Gateways Integration**: StoreIgniter supports popular payment gateways like PayPal, Stripe, and Authorize.net, enabling secure and smooth transactions.
+- **Responsive Design**: Your online store will look great and function flawlessly across devices of all sizes, providing an excellent user experience.
+- **Search Engine Optimization**: Optimize your store for search engines with built-in SEO features, including customizable meta tags and URLs.
+- **Multi-language Support**: Reach a global audience by translating your store into multiple languages and providing localized experiences.
+- **Analytics and Reporting**: Gain valuable insights into your store's performance through comprehensive reports and analytics tools.
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+## Getting Started
 
-## Installation & updates
+### Prerequisites
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+Before setting up StoreIgniter, make sure you have the following dependencies installed:
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+- PHP 7.2 or higher
+- MySQL or any other compatible database system
+- Composer
+- Node.js and npm
 
-## Setup
+### Installation
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+1. Clone the StoreIgniter repository to your local machine:
 
-## Important Change with index.php
+   ```shell
+   git clone https://github.com/your-username/storeigniter.git
+   ```
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+2. Navigate to the project directory:
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+   ```shell
+   cd storeigniter
+   ```
 
-**Please** read the user guide for a better explanation of how CI4 works!
+3. Install PHP dependencies using Composer:
 
-## Repository Management
+   ```shell
+   composer install
+   ```
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+4. Install JavaScript dependencies using npm:
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+   ```shell
+   npm install
+   ```
 
-## Server Requirements
+5. Configure your database settings by copying the `.env.example` file to `.env` and updating the necessary information:
 
-PHP version 7.4 or higher is required, with the following extensions installed:
+   ```shell
+   cp .env.example .env
+   ```
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+6. Run database migrations to set up the required tables:
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+   ```shell
+   php spark migrate
+   ```
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+7. Start the development server:
+
+   ```shell
+   php spark serve
+   ```
+
+   StoreIgniter is now up and running! You can access the admin dashboard by visiting `http://localhost:8080/#!/admin` and the storefront at `http://localhost:8080`.
+
+## Contributing
+
+Contributions are welcome and appreciated! If you'd like to contribute to StoreIgniter, please follow the guidelines outlined in [CoderAnnu].
+
+## License
+
+StoreIgniter is open-source software licensed under the [CoderAnnu].
+
+## Support
+
+For any questions or issues, please contact our support team at support@storeigniter.com. We're here to help!
+
+## Acknowledgements
+
+We would like to thank the following open-source projects for their contributions to StoreIgniter:
+
+- [CodeIgniter](https://codeigniter.com)
+- [AngularJS](https://angularjs.org)
+
+## Stay Connected
+<p class="text-center text-md-end">Created with ❤️ by <a href="https://github.com/CoderAnnu/" class="text-black" target="_blank">Coderannu 😎 </a></p>
