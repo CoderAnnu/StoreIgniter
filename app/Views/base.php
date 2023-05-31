@@ -60,9 +60,6 @@
 
 
 
-
-
-    <!-- custom scripts -->
     <!-- custom scripts -->
     <script>
         function isInt(value) {
