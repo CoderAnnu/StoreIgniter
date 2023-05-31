@@ -83,7 +83,7 @@ StoreIgniter is open-source software licensed under the [CoderAnnu].
 
 ## Support
 
-For any questions or issues, please contact our support team at support@storeigniter.com. We're here to help!
+For any questions or issues, please contact our support team at akrajput01206@gmail.com. We're here to help!
 
 ## Acknowledgements
 
