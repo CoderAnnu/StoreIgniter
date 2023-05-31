@@ -34,18 +34,26 @@ $routes->set404Override();
  */
 
 
-
+// This is our landing page ✅
 // $routes->get('/','LandingPageController::index');
 
 
 
+<<<<<<< HEAD
 // App Starting controller ✅
+=======
+// App Starting controller point✅
+>>>>>>> 906473813199f3504571c5a6e87ec89720168c31
 $routes->group('app', function ($routes) {
     $routes->get('/', 'Home::index');
 });
 
 
+<<<<<<< HEAD
 // API our custom APP Api ✅
+=======
+// API our custom app api ✅
+>>>>>>> 906473813199f3504571c5a6e87ec89720168c31
 $routes->group('api', function($routes){
 
     // Authentication ✅
