@@ -39,13 +39,13 @@ $routes->set404Override();
 
 
 
-// App Scanneer controller ✅
+// App Starting controller ✅
 $routes->group('app', function ($routes) {
     $routes->get('/', 'Home::index');
 });
 
 
-// API
+// API our custom APP Api ✅
 $routes->group('api', function($routes){
 
     // Authentication ✅
