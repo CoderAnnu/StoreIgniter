@@ -4,34 +4,41 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
+    /**
+     * index
+     *
+     * @return void
+     */
     public function index()
     {
 
+
         $view = \Config\Services::renderer();
 
+
         $routes = [
+            // Dashboard Actions ✅
+
             [
                 "path" => "/",
                 "title" => "Dashboard",
-                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth'],
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
                 "template" => $view->render('Admin/Dashboard/Dashboard'),
                 "controller" => $view->render('Admin/Dashboard/JsController/DashboardCtrl'),
             ],
-            
+
         ];
 
+       
 
+        // End Admin Section 
+
+        // Start main Components likes Routes Components and error. ✅
         return view('home', [
             'data' => [
                 "otherwise" => $view->render('error'),
                 "routes" => $routes,
                 "components" => [
-                    [
-                        "tagName" => "sideBar",
-                        "injectors" => ['$http', '$interval', '$scope', '$location', '$window', 'Auth'],
-                        "template" => $view->render('Components/SideBar/SideBar'),
-                        "controller" => $view->render('Components/SideBar/JsController/SideBarCtrl')
-                    ],
                     [
                         "tagName" => "topBar",
                         "injectors" => ['$http', '$interval', '$window', '$scope', '$location', 'Auth', '$element'],
@@ -39,11 +46,24 @@ class Home extends BaseController
                             "title" => "="
                         ],
                         "template" => $view->render('Components/TopBar/TopBar'),
-                        "controller" => $view->render('Components//TopBar/JsController/TopBarCtrl')
+                        "controller" => $view->render('Components/TopBar/JsController/TopBarCtrl')
+                    ],
+
+                    [
+                        "tagName" => "sideBar",
+                        "injectors" => ['$http', '$interval', '$window', '$scope', '$location', 'Auth', '$element'],
+                        "bindings" => [
+                            "title" => "="
+                        ],
+                        "template" => $view->render('Components/SideBar/SideBar'),
+                        "controller" => $view->render('Components/SideBar/JsController/SideBarCtrl')
                     ],
                     [
                         "tagName" => "footerBar",
-                        "injectors" => ['$http', '$interval', '$window', '$scope', '$location', 'Auth'],
+                        "injectors" => ['$http', '$interval', '$window', '$scope', '$location', 'Auth', '$element'],
+                        "bindings" => [
+                            "title" => "="
+                        ],
                         "template" => $view->render('Components/FooterBar/FooterBar'),
                         "controller" => $view->render('Components/FooterBar/JsController/FooterBarCtrl')
                     ],

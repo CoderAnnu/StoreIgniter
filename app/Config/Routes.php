@@ -35,7 +35,7 @@ $routes->set404Override();
 
 
 
-$routes->get('/','LandingPageController::index');
+// $routes->get('/','LandingPageController::index');
 
 
 

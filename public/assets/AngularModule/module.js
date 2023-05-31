@@ -1,5 +1,8 @@
 
-app.controller("globalCtrl", async function (showCallingAlert, $window, $scope, $rootScope, $interval, $location, $http, $compile) {
+
+const app = angular.module('myApp', ['ngRoute']);
+
+app.controller("globalCtrl", function ($window, $scope, $rootScope, $interval, $location, $http, $compile) {
     // Here we can add Global Functions 
     $scope.activateView = function (ele, controller) {
         controller($scope, $http);
@@ -85,7 +88,7 @@ app.directive('fileModel', ['$parse', function ($parse) {
 
 
 
-app.service('Auth', ["showCallingAlert", "$http", "$window", "$interval", "$location", "$rootScope", function (showCallingAlert, $http, $window, $interval, $location, $rootScope) {
+app.service('Auth', ["$http", "$window", "$interval", "$location", "$rootScope", function ($http, $window, $interval, $location, $rootScope) {
 
     let ctx = this;
 
