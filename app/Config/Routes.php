@@ -46,21 +46,12 @@ $routes->group('app', function ($routes) {
 
 
 // API our custom app api ✅
-$routes->group('api', function($routes){
+$routes->group('api', function ($routes) {
 
     // Authentication ✅
-    $routes->group('auth', function($routes){
-        /*✅*/ $routes->post('create', 'Api\AuthAPIController::create');
-        /*✅*/ $routes->get('verify_account/(:any)', 'Api\AuthAPIController::verify_account/$1');
-        /*✅*/ $routes->post('account-verify', 'Api\AuthAPIController::email_verify_account');
-        /*✅*/ $routes->get('get_state', 'Api\AuthAPIController::get_auth_state');
-        /*✅*/ $routes->post('login', 'Api\AuthAPIController::login');
-        /*✅*/ $routes->post('logout', 'Api\AuthAPIController::logout');
-        /*✅*/ $routes->get('reset', 'Api\AuthAPIController::reset');
-        /*✅*/ $routes->post('reset', 'Api\AuthAPIController::reset');
-        /*✅*/ $routes->post('forgot-password', 'Api\AuthAPIController::forgot_password');
+    $routes->group('auth', function ($routes) {
+        $routes->get('create', 'Api\AuthAPIController::create');
     });
-    
 });
 
 

@@ -27,6 +27,12 @@ class Home extends BaseController
                 "controller" => $view->render('Admin/Dashboard/JsController/DashboardCtrl'),
             ],
 
+
+            [
+                "path" => "signin",
+                "title" => "Signin"
+            ],
+
         ];
 
        
