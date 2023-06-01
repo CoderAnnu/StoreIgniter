@@ -11,8 +11,7 @@ class Home extends BaseController
      */
     public function index()
     {
-
-
+        // enable Codeigniter content render service✅
         $view = \Config\Services::renderer();
 
 
@@ -37,10 +36,8 @@ class Home extends BaseController
             ],
 
         ];
-
-
-
         // End Admin Section 
+
 
         // Start main Components likes Routes Components and error. ✅
         return view('home', [
