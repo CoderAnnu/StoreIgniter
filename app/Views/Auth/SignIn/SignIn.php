@@ -6,7 +6,7 @@
                 <div class="col-12 d-flex align-items-center justify-content-center">
                     <div ng-if="loading" class="d-flex align-items-center justify-content-center">
                         <p class="mb-0 me-3">Redirecting to the dashboard......</p>
-                        <span class="loader"></span>       
+                        <span class="loader"></span>
                     </div>
 
                     <div ng-if="!loading" class="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
@@ -52,12 +52,12 @@
                                 </div>
                                 <!-- End of Form -->
                                 <div class="d-flex justify-content-between align-items-top mb-4">
-                                    <!-- <div class="form-check">
-                                         <input class="form-check-input" type="checkbox" value="" id="remember" >
-                                         <label class="form-check-label mb-0" for="remember">
-                                             Remember me
-                                         </label>
-                                     </div> -->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="remember">
+                                        <label class="form-check-label mb-0" for="remember">
+                                            Remember me
+                                        </label>
+                                    </div>
                                     <div class="email-verify">
                                         <a href="#!/account-verify" class="small text-right">Account Verify</a>
                                     </div>
