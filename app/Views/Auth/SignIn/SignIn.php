@@ -52,12 +52,12 @@
                                 </div>
                                 <!-- End of Form -->
                                 <div class="d-flex justify-content-between align-items-top mb-4">
-                                    <div class="form-check">
+                                    <!-- <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="remember">
                                         <label class="form-check-label mb-0" for="remember">
                                             Remember me
                                         </label>
-                                    </div>
+                                    </div> -->
                                     <div class="email-verify">
                                         <a href="#!/account-verify" class="small text-right">Account Verify</a>
                                     </div>

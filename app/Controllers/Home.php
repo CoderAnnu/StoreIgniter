@@ -26,13 +26,19 @@ class Home extends BaseController
                 "controller" => $view->render('Admin/Dashboard/JsController/DashboardCtrl'),
             ],
 
-
             [
                 "path" => "/signin",
                 "title" => "Signin",
                 "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
                 "template" => $view->render('Auth/SignIn/SignIn'),
                 "controller" => $view->render('Auth/SignIn/JsController/SignInCtrl')
+            ],
+            [
+                "path" => "/signup",
+                "title" => "Signin",
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
+                "template" => $view->render('Auth/SignUp/SignUp'),
+                "controller" => $view->render('Auth/SignUp/JsController/SignUpCtrl')
             ],
 
         ];
