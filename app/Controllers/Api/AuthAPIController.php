@@ -26,7 +26,8 @@ class AuthAPIController extends BaseController
         //
     }
 
-public function create
-
-
+    public function create()
+    {
+        // print_r(current_user());
+    }
 }
