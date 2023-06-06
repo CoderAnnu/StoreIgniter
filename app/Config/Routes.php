@@ -51,6 +51,7 @@ $routes->group('api', function ($routes) {
     // Authentication ✅
     $routes->group('auth', function ($routes) {
         $routes->get('create', 'Api\AuthAPIController::create');
+        $routes->get('get_state', 'Api\AuthAPIController::get_state');
     });
 });
 
