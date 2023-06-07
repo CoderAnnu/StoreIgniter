@@ -21,3 +21,13 @@ if (!function_exists('get_user_status')) {
         return ["active", "inactive", "banned"];
     }
 }
+
+
+if (!function_exists('show_404')) {
+    function show_404($message = "404 page not found")
+    {
+        return view('errors/html/error_404', [
+            "message" => $message
+        ]);
+    }
+}
