@@ -50,8 +50,9 @@ $routes->group('api', function ($routes) {
 
     // Authentication ✅
     $routes->group('auth', function ($routes) {
-        $routes->get('create', 'Api\AuthAPIController::create');
-        $routes->get('get_state', 'Api\AuthAPIController::get_state');
+        $routes->post('create', 'Api\AuthAPIController::create');
+        $routes->get('verify_account(:any)', 'Api\AuthAPIController::verify_account/$1');
+        $routes->post('acccount-verify', 'Api\AuthAPIController::email_verify');
     });
 });
 
