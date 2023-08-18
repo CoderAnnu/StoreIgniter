@@ -1,0 +1,189 @@
+body {
+    background-color: #eef3f3;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-floating>label {
+    color: grey !important;
+    font-size: 14px;
+}
+
+.stg-editor {
+    width: 100%;
+    height: calc(100vh - 60px);
+    /* background: linear-gradient(90deg, #f2f4f6 20px, transparent 1%) center, linear-gradient(#f2f4f6 20px, transparent 1%) center, lightgrey; */
+    background-size: 22px 22px;
+}
+
+.drawflow_content_node .card-header {
+    text-align: center;
+    border: 0;
+    margin-bottom: 1rem;
+}
+
+.drawflow .connection .main-path {
+    stroke: #1f293738;
+}
+
+.drawflow .drawflow-node {
+    background: white;
+    border-radius: 1rem;
+    border: 3px solid transparent !important;
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: 0px 0px 4px 0px #ccc;
+
+    animation: fac-animation 0.4s ease-out forwards 0.1s;
+}
+
+.drawflow .drawflow-node.selected {
+    z-index: 99;
+    border: 3px solid #397dff !important;
+    /* background-color: white !important; */
+    /* box-shadow: 0px 0px 20px 8px #ccc; */
+}
+
+@keyframes fac-animation {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    33% {
+        transform: scale(0.95, 1.05);
+    }
+
+    66% {
+        transform: scale(1.05, 0.95);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.text-flow {
+    width: 100px !important;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #2b2f32 !important;
+    padding: 0 !important;
+}
+
+.text-flow code {
+    color: white;
+}
+
+.drawflow-delete {
+    line-height: inherit;
+    background-color: var(--bs-danger);
+    border: 2px solid #000000;
+}
+
+.drawflow .drawflow-node .input,
+.drawflow .drawflow-node .output {
+    border: 1px solid #000;
+}
+
+.floating-action {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 999999;
+}
+
+.httpRequest .outputs .output_1 {
+    background-color: var(--bs-success);
+}
+
+.httpRequest .outputs .output_2 {
+    background-color: var(--bs-danger);
+}
+
+.loader {
+    transform: rotateZ(45deg);
+    perspective: 1000px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    color: #000;
+}
+
+.loader:before,
+.loader:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    transform: rotateX(70deg);
+    animation: 1s spin linear infinite;
+}
+
+.loader:after {
+    color: #FF3D00;
+    transform: rotateY(70deg);
+    animation-delay: .4s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+}
+
+@keyframes rotateccw {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+
+@keyframes spin {
+
+    0%,
+    100% {
+        box-shadow: .2em 0px 0 0px currentcolor;
+    }
+
+    12% {
+        box-shadow: .2em .2em 0 0 currentcolor;
+    }
+
+    25% {
+        box-shadow: 0 .2em 0 0px currentcolor;
+    }
+
+    37% {
+        box-shadow: -.2em .2em 0 0 currentcolor;
+    }
+
+    50% {
+        box-shadow: -.2em 0 0 0 currentcolor;
+    }
+
+    62% {
+        box-shadow: -.2em -.2em 0 0 currentcolor;
+    }
+
+    75% {
+        box-shadow: 0px -.2em 0 0 currentcolor;
+    }
+
+    87% {
+        box-shadow: .2em -.2em 0 0 currentcolor;
+    }
+}
+
+.badge {
+    line-height: initial !important;
+    border-radius: 0.4rem !important;
+}
