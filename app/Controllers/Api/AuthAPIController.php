@@ -23,7 +23,7 @@ class AuthAPIController extends BaseController
 
     public function index()
     {
-        //add some test code 
+        //add some test code updated 
     }
 
     public function create()
