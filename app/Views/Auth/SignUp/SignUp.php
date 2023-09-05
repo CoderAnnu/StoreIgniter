@@ -12,11 +12,25 @@
         <div class="row justify-content-center form-bg-image" data-background-lg="../../assets/img/illustrations/signin.svg" style="background: url(&quot;../../assets/img/illustrations/signin.svg&quot;);">
             <div class="col-12 d-flex align-items-center justify-content-center">
                 <div class="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                    <!-- Logo -->
+                    <div class="card-header text-center">
+                        <div class="auth-brand ">
+                            <a href="index.html" class="logo-dark">
+                                <span><img src="Project-Template/assets/images/logo-dark.png" alt="dark logo" height="28"></span>
+                            </a>
+                            <a href="index.html" class="logo-light">
+                                <span><img src="assets/images/logo.png" alt="logo" height="28"></span>
+                            </a>
+                        </div>
+                    </div>
                     <div class="text-center text-md-center mb-4 mt-md-0">
-                        <h1 class="mb-0 h3">Create Account</h1>
+                        <div class="text-center w-75 m-auto">
+                            <h4 class="text-dark-50 text-center mt-0">Free Sign Up</h4>
+                            <p class="text-muted mb-4">Don't have an account? Create your account, it takes less than a minute </p>
+                        </div>
                     </div>
                     <form ng-submit="add_user(user);" class="mt-4">
-                    <div class="form-group mb-4">
+                        <div class="form-group mb-4">
                             <label for="name">Your Name</label>
                             <div class="input-group">
                                 <span class="input-group-text" id="basic-addon1">
@@ -25,7 +39,7 @@
                                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                                     </svg>
                                 </span>
-                                <input type="text" ng-model="user.name" class="form-control" placeholder="enter your name" id="email" autofocus="" required="">
+                                <input type="text" ng-model="user.name" class="form-control" placeholder="enter your name" id="name" autofocus="" required="">
                             </div>
                         </div>
                         <div class="form-group mb-4">
@@ -49,7 +63,7 @@
                                             <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
                                         </svg>
                                     </span>
-                                     <input type="password" ng-model="user.password" placeholder="Password" class="form-control" id="password" required="">
+                                    <input type="password" ng-model="user.password" placeholder="Password" class="form-control" id="password" required="">
                                 </div>
                             </div>
 
@@ -88,5 +102,121 @@
             </div>
         </div>
     </div>
+
+    <!--  -->
 </section> <!-- End Main Section  -->
 <!-- End Register Section  -->
+<!--  -->
+<div class="authentication-bg">
+
+    <!-- <div class="position-absolute start-0 end-0 start-0 bottom-0 w-100 h-100"> -->
+    <div class="position-absolute start-0 end-0 start-0 ">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1920 1024">
+            <g mask="url(&quot;#SvgjsMask1046&quot;)" fill="none">
+                <rect width="1920" height="1024" x="0" y="0" fill="url(#SvgjsLinearGradient1047)"></rect>
+                <path d="M1920 0L1864.16 0L1920 132.5z" fill="rgba(255, 255, 255, .1)"></path>
+                <path d="M1864.16 0L1920 132.5L1920 298.4L1038.6100000000001 0z" fill="rgba(255, 255, 255, .075)"></path>
+                <path d="M1038.6100000000001 0L1920 298.4L1920 379.53999999999996L857.7000000000002 0z" fill="rgba(255, 255, 255, .05)"></path>
+                <path d="M857.7 0L1920 379.53999999999996L1920 678.01L514.57 0z" fill="rgba(255, 255, 255, .025)"></path>
+                <path d="M0 1024L939.18 1024L0 780.91z" fill="rgba(0, 0, 0, .1)"></path>
+                <path d="M0 780.91L939.18 1024L1259.96 1024L0 585.71z" fill="rgba(0, 0, 0, .075)"></path>
+                <path d="M0 585.71L1259.96 1024L1426.79 1024L0 408.19000000000005z" fill="rgba(0, 0, 0, .05)"></path>
+                <path d="M0 408.19000000000005L1426.79 1024L1519.6599999999999 1024L0 404.09000000000003z" fill="rgba(0, 0, 0, .025)"></path>
+            </g>
+            <defs>
+                <mask id="SvgjsMask1046">
+                    <rect width="1920" height="1024" fill="#ffffff"></rect>
+                </mask>
+                <linearGradient x1="11.67%" y1="-21.87%" x2="88.33%" y2="121.88%" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient1047">
+                    <stop stop-color="#0e2a47" offset="0"></stop>
+                    <stop stop-color="#00459e" offset="1"></stop>
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+
+    <div class="account-pages pt-2 pt-sm-5 pb-4 pb-sm-5 position-relative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-4 col-lg-5">
+                    <div class="card">
+
+                        <!-- Logo -->
+                        <div class="card-header pt-4 text-center">
+                            <div class="auth-brand mb-0">
+                                <a href="index.html" class="logo-dark">
+                                    <span><img src="assets/images/logo-dark.png" alt="dark logo" height="28"></span>
+                                </a>
+                                <a href="index.html" class="logo-light">
+                                    <span><img src="assets/images/logo.png" alt="logo" height="28"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-body p-4">
+
+                            <div class="text-center w-75 m-auto">
+                                <h4 class="text-dark-50 text-center mt-0">Free Sign Up</h4>
+                                <p class="text-muted mb-4">Don't have an account? Create your account, it takes less than a minute </p>
+                            </div>
+
+                            <form action="#">
+
+                                <div class="mb-3">
+                                    <label for="fullname" class="form-label">Full Name</label>
+                                    <input class="form-control" type="text" id="fullname" placeholder="Enter your name" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="emailaddress" class="form-label">Email address</label>
+                                    <input class="form-control" type="email" id="emailaddress" required placeholder="Enter your email">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <div class="input-group input-group-merge">
+                                        <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                                        <div class="input-group-text" data-password="false">
+                                            <span class="password-eye"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="checkbox-signup">
+                                        <label class="form-check-label" for="checkbox-signup">I accept <a href="#" class="text-muted">Terms and Conditions</a></label>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 text-center">
+                                    <button class="btn btn-primary" type="submit"> Sign Up </button>
+                                </div>
+
+                            </form>
+                        </div> <!-- end card-body -->
+                    </div>
+                    <!-- end card -->
+
+                    <div class="row mt-3">
+                        <div class="col-12 text-center">
+                            <p class="text-white-50">Already have account? <a href="auth-login.html" class="text-white ms-1 link-offset-3 text-decoration-underline"><b>Log In</b></a></p>
+                        </div> <!-- end col-->
+                    </div>
+                    <!-- end row -->
+
+                </div> <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+</div>
+<!-- end page -->
+
+<footer class="footer footer-alt">
+    <span class="text-white-50">© Jidox - Coderthemes.com</span>
+</footer>
+
+
+<!--  -->

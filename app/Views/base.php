@@ -31,6 +31,19 @@
 
     <!-- <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/css/app.css'); ?>" /> -->
     <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/css/app.min.css'); ?>" />
+    <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/images/favicon.ico'); ?>" />
+    <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/css/icons.min.css'); ?>" />
+
+    
+<!--  -->
+<link rel="stylesheet" href="<?= base_url('/Project-Template/assets/js/vendor.min.js'); ?>" />
+    <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/js/app.min.js'); ?>" />
+    <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/js/config.js'); ?>" />
+    
+
+
+<!--  -->
+   
     <!-- End Project Template  -->
 
     <script>
@@ -62,8 +75,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="<?= base_url('/assets/AngularModule/module.js') ?>?time=<?= filemtime(FCPATH . '/assets/AngularModule/module.js'); ?>"></script>
-
-
 
     <!-- custom scripts -->
     <script>
