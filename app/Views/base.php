@@ -11,9 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="manifest" href="<?= base_url('assets/img/favicon/site.webmanifest') ?>">
     <link rel="mask-icon" href="../../assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
-    <link rel="apple-touch-icon" sizes="120x120" href="<?= base_url('assets/img/favicon/apple-touch-icon.png') ?>">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('assets/img/favicon/favicon-32x32.png') ?>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/img/favicon/favicon-16x16.png') ?>">
+    <link rel="apple-touch-icon" sizes="120x120" href="<?= base_url('/Project-Template/assets/images/favicon.ico') ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('/Project-Template/assets/images/favicon.ico') ?>">
     <link rel="manifest" href="<?= base_url('assets/img/favicon/site.webmanifest') ?>">
     <link rel="mask-icon" href="<?= base_url('assets/img/favicon/safari-pinned-tab.svg') ?>" color="#ffffff">
     <link type="text/css" href="<?= base_url('assets/vendor/sweetalert2/dist/sweetalert2.min.css') ?>" rel="stylesheet">
@@ -29,7 +28,6 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
 
     <!-- Latest Project Template Latest -->
-
 
     <!-- <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/css/app.css'); ?>" /> -->
     <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/css/app.min.css'); ?>" />
