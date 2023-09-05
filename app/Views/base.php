@@ -28,6 +28,13 @@
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
 
+    <!-- Latest Project Template Latest -->
+
+
+    <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/css/app.css'); ?>" />
+
+    <!-- End Project Template  -->
+
     <script>
         window.BASE_URL = "<?= base_url(); ?>";
     </script>
