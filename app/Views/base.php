@@ -31,8 +31,8 @@
     <!-- Latest Project Template Latest -->
 
 
-    <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/css/app.css'); ?>" />
-
+    <!-- <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/css/app.css'); ?>" /> -->
+    <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/css/app.min.css'); ?>" />
     <!-- End Project Template  -->
 
     <script>
