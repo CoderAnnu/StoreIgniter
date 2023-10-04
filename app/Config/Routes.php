@@ -44,16 +44,21 @@ $routes->group('app', function ($routes) {
     $routes->get('/', 'Home::index');
 });
 
+    // if we need to check data on the page => http://localhost:8080/api/auth/test
 
-// API our custom app api ✅
+    // API our custom app api ✅
 $routes->group('api', function ($routes) {
-
+    
     // Authentication ✅
     $routes->group('auth', function ($routes) {
+        /*✅*/ $routes->get('test',                 'Api\AuthAPIController::index');
         /*✅*/ $routes->post('create',                 'Api\AuthAPIController::create');
         /*✅*/ $routes->get('verify_account/(:any)',   'Api\AuthAPIController::verify_account/$1');
         /*✅*/ $routes->post('acccount-verify',        'Api\AuthAPIController::email_verify');
         /*✅*/ $routes->post('get_state',        'Api\AuthAPIController::get_auth_state');
+        /*✅*/ $routes->post('login',        'Api\AuthAPIController::login');
+        /*✅*/ $routes->post('logout',        'Api\AuthAPIController::logout');
+        
     });
 });
 
