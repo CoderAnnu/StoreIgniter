@@ -96,4 +96,7 @@ if (!function_exists('get_user')) {
         $DB = new UsersModel();
         return $DB->find($id);
     }
+
 }
+
+
