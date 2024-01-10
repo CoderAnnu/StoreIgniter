@@ -1,7 +1,6 @@
 #-------------------------
 # Operating Specific Junk Files
 #-------------------------
-app/
 
 # OS X
 .DS_Store
