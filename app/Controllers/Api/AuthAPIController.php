@@ -26,7 +26,7 @@ class AuthAPIController extends BaseController
 
     public function index()
     {
-        add some test code updated code updated
+        // add some test code updated code updated
         print_r('test');
     }
 
