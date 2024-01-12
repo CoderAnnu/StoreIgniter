@@ -30183,21 +30183,23 @@ article .h6 {
 }
 
 
-.password-eye {
+.password-eyes {
     position: absolute;
 }
 
 
-.password-eye .set-eye {
+.password-eyes .set-eye {
     cursor: pointer;
     position: relative;
-    left: 23.5rem;
+    /* left: 23.5rem; */
+    left: 38vh;
+
     top: 6px;
     z-index: 5;
 }
 
 @media (max-width:768px) {
-    .password-eye .set-eye {
+    .password-eyes .set-eye {
 
         left: 17.2rem;
     }
