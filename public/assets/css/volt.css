@@ -30191,9 +30191,8 @@ article .h6 {
 .password-eyes .set-eye {
     cursor: pointer;
     position: relative;
-    /* left: 23.5rem; */
-    left: 38vh;
-
+    left: 22.5rem;
+    /* left: 38vh; */
     top: 6px;
     z-index: 5;
 }

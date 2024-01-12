@@ -16,8 +16,8 @@
 
                      <div ng-if="!loading" class="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
                          <div class="mb-3 text-center">
-                             <a class="navbar-brand" href="/">
-                                 <img src="<?= base_url('homepage/assets/img/logo/logo1.png'); ?>" class="logo" alt="Logo">
+                             <a class="navbar-brand " href="/">
+                                 <img src="<?= base_url('/assets/img/logo/logo.png'); ?>"  class="logo img-fluid " alt="Logo">
                              </a>
                          </div>
                          <div class="text-center text-md-center mb-3 mt-md-0">
