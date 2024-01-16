@@ -95,7 +95,7 @@
                             </li>
                         </ul>
                     </div>
-                    <!--  -->
+                    <!-- redirect to signin page  -->
                     <div class="d-flex justify-content-center align-items-center mt-4">
                         <span class="fw-normal">Already have an account? <a href="#!/signin" class="fw-bold">Login here</a></span>
                     </div>
