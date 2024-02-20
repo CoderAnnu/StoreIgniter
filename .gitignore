@@ -1,7 +1,8 @@
 #-------------------------
 # Operating Specific Junk Files
 #-------------------------
-/app/Controllers/Api/*
+/app/Controllers/Api/*.php
+
 
 # OS X
 .DS_Store
