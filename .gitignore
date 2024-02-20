@@ -2,7 +2,7 @@
 # Operating Specific Junk Files
 #-------------------------
 # /app/Controllers/Api/*.php
-/app/Controllers/*.php
+/app
 
 
 # OS X
