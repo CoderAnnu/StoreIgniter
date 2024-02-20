@@ -54,8 +54,8 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                               <!-- Form -->
-                               <div class="form-group mb-4">
+                                <!-- Form -->
+                                <div class="form-group mb-4">
                                     <label for="signInPassword">Your Password</label>
                                     <div class="input-group">
                                         <span class="input-group-text" id="basic-addon2">
@@ -68,6 +68,7 @@
                                             <span class="fa-regular set-eye fa-eye" ng-click="showPassword('signInPassword', $event)"></span>
                                         </span>
                                     </div>
+                                    <div id="emailHelp" class="form-text">Password must be minimum 8 characters length* </div>
                                 </div>
                                 <!-- End of Form -->
 
