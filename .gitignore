@@ -6,7 +6,7 @@
 .DS_Store
 .AppleDouble
 .LSOverride
-
+.app/Controllers/Api
 # OS X Thumbnails
 ._*
 
