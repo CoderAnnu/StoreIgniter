@@ -1,12 +1,12 @@
 #-------------------------
 # Operating Specific Junk Files
 #-------------------------
+/app/Controllers/Api/*
 
 # OS X
 .DS_Store
 .AppleDouble
 .LSOverride
-app/Controllers/Api/*
 # OS X Thumbnails
 ._*
 
