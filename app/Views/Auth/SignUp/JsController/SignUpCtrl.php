@@ -1,9 +1,9 @@
 <script>
-    Auth.onlyFor('loggout-out', '/');
+    Auth.onlyFor('logged-out', '/');
 
     $scope.addUser = (user) => {
 
-        $http.post('../../../api/auth/create', user).then(
+        $http.post('../../api/auth/create', user).then(
             // success message Response
             resp => {
                 let notyf = new Notyf({
