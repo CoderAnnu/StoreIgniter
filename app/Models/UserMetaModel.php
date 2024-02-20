@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class UserMetaModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'usermetas';
+    protected $table            = 'user_meta';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
