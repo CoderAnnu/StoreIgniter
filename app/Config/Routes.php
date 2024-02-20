@@ -58,8 +58,8 @@ $routes->group('api', function ($routes) {
         /*✅*/ $routes->post('get_state',        'Api\AuthAPIController::get_auth_state');
         /*✅*/ $routes->post('login',        'Api\AuthAPIController::login');
         /*✅*/ $routes->post('logout',        'Api\AuthAPIController::logout');
-        
     });
+
 });
 
 
