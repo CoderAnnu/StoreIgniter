@@ -5,7 +5,7 @@ namespace App\Libraries;
 
 class Hash
 {
-    public function make($password)
+    public static function Make($password)
     {
         return password_hash($password, PASSWORD_BCRYPT);
     }
