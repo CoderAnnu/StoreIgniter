@@ -1,5 +1,10 @@
 <?php
 
+use App\Entities\Options;
+use App\Models\NotificationsModel;
+use App\Models\OptionsModel;
+use App\Models\UserMetaModel;
+use App\Models\UsersModel;
 /**************************
  *  General Helper
  * 
@@ -20,6 +25,7 @@ if (!function_exists('get_user_status')) {
         return ["active", "inactive", "banned"];
     }
 }
+
 
 // Show Error page if page doesn't exist then it will show 404 page error  
 if (!function_exists('show_404')) {
