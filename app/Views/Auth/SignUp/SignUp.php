@@ -16,12 +16,9 @@
                     <div class="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
                         <!-- Logo -->
                         <div class="card-header text-center">
-                            <div class="auth-brand ">
-                                <a href="index.html" class="logo-dark">
-                                    <span><img src="Project-Template/assets/images/logo-dark.png" alt="dark logo" height="28"></span>
-                                </a>
-                                <a href="index.html" class="logo-light">
-                                    <span><img src="assets/images/logo.png" alt="logo" height="28"></span>
+                            <div class="mb-3 text-center">
+                                <a class="navbar-brand d-flex justify-content-center" href="/">
+                                    <img src="<?= base_url('/assets/img/logo/logo.png'); ?>" class="logo img-fluid w-50 " alt="Logo">
                                 </a>
                             </div>
                         </div>
