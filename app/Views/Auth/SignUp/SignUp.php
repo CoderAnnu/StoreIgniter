@@ -2,18 +2,18 @@
 <!-- Start Main Section  -->
 <main>
 
-    <section class="vh-lg-100 my-5 mt-lg-0 bg-soft d-flex align-items-center">
+    <section class="vh-lg-100 mt-5 mt-lg-0 bg-soft d-flex align-items-center">
         <div class="container">
-            <p class="text-center">
+            <!-- <p class="text-center">
                 <a href="#!/" class="d-flex align-items-center justify-content-center">
                     <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path>
                     </svg> Back to homepage
                 </a>
-            </p>
+            </p> -->
             <div class="row justify-content-center form-bg-image" data-background-lg="../../assets/img/illustrations/signin.svg" style="background: url(&quot;../../assets/img/illustrations/signin.svg&quot;);">
                 <div class="col-12 d-flex align-items-center justify-content-center">
-                    <div class="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                    <div class="bg-white shadow border-0 rounded border-light p-3 p-md-4 w-100 fmxw-500">
                         <!-- Logo -->
                         <div class="card-header text-center">
                             <div class="mb-3 text-center">
@@ -22,14 +22,14 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="text-center text-md-center mb-4 mt-md-0">
+                        <div class="text-center text-md-center">
                             <div class="text-center w-75 m-auto">
                                 <h4 class="text-dark-50 text-center mt-0">Free Sign Up</h4>
-                                <p class="text-muted mb-4">Don't have an account? Create your account, it takes less than a minute </p>
+                                <p class="text-muted ">Don't have an account? Create your account, it takes less than a minute </p>
                             </div>
                         </div>
                         <form ng-submit="addUser(user);" class="mt-4" id="myForm">
-                            <div class="form-group mb-4">
+                            <div class="form-group mb-3">
                                 <label for="signUpUsername">Your Name</label>
                                 <div class="input-group">
                                     <span class="input-group-text" id="basic-addon1">
@@ -38,7 +38,7 @@
                                     <input type="text" ng-model="user.full_name" class="form-control" placeholder="enter your name" id="signUpUsername" autofocus="">
                                 </div>
                             </div>
-                            <div class="form-group mb-4">
+                            <div class="form-group mb-3">
                                 <label for="email">Your Email</label>
                                 <div class="input-group">
                                     <span class="input-group-text" id="basic-addon1">
@@ -52,7 +52,7 @@
                             </div>
                             <div class="form-group">
                                 <!-- Form -->
-                                <div class="form-group mb-4">
+                                <div class="form-group mb-3">
                                     <label for="signInPassword">Your Password</label>
                                     <div class="input-group">
                                         <span class="input-group-text" id="basic-addon2">
@@ -69,7 +69,7 @@
                                 </div>
                                 <!-- End of Form -->
 
-                                <div class="mb-4">
+                                <div class="my-2">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="remember">
                                         <label class="form-check-label fw-normal mb-0" for="remember">I agree to the
@@ -78,14 +78,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-grid">
+                            <div class="d-grid border border-light border border-2">
                                 <button type="submit" class="btn btn-gray-800">Sign up</button>
                             </div>
                         </form>
                         <!--  -->
-                        <div class="text-center mt-4">
+                        <div class="text-center mt-2">
                             <p class="text-muted fs-16">Create account using</p>
-                            <ul class="social-list list-inline mt-3">
+                            <ul class="social-list list-inline">
                                 <li class="list-inline-item">
                                     <a href="javascript: void(0);" class="social-list-item border-primary text-primary"><i class="ri-facebook-circle-fill"></i></a>
                                 </li>
@@ -101,7 +101,7 @@
                             </ul>
                         </div>
                         <!-- redirect to signin page  -->
-                        <div class="d-flex justify-content-center align-items-center mt-4">
+                        <div class="d-flex justify-content-center align-items-center">
                             <span class="fw-normal">Already have an account? <a href="#!/signin" class="fw-bold">Login here</a></span>
                         </div>
                     </div>
