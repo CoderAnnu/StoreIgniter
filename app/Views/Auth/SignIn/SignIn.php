@@ -1,6 +1,6 @@
 <main>
     <!-- Section -->
-    <section class="mt-5 mt-lg-0 d-flex align-items-center">
+    <section class="vh-lg-100 mt-lg-0 bg-soft d-flex align-items-center">
         <div class="container">
             <div class="row justify-content-center form-bg-image" data-background-lg="<?= base_url('new/assets/img/illustrations/signin.svg') ?>">
                 <div class="col-12 d-flex align-items-center justify-content-center">
@@ -73,10 +73,10 @@
                                 <button ng-if="!loading" type="submit" ng-disabled="loading || !user.email || !user.password" class="btn btn-gray-800">Sign in</button>
                             </div>
                         </form>
-                        <div class="mt-3 mb-4 text-center">
+                        <div class="mt-2 text-center">
                             <span class="fw-normal">or login with</span>
                         </div>
-                        <div class="d-flex justify-content-center my-4">
+                        <!-- <div class="d-flex justify-content-center my-4">
                             <a href="#" class="btn btn-icon-only btn-pill btn-outline-gray-500 me-2" aria-label="facebook button" title="facebook button">
                                 <svg class="icon icon-xxs" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
@@ -95,8 +95,26 @@
                                     </path>
                                 </svg>
                             </a>
+                        </div> -->
+                        <!-- new login with accounts -->
+                        <div class="text-center">
+                            <p class="text-muted fs-16">Create account using</p>
+                            <ul class="social-list list-inline">
+                                <li class="list-inline-item">
+                                    <a href="javascript: void(0);" class="social-list-item border-primary text-primary"><i class="ri-facebook-circle-fill"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="javascript: void(0);" class="social-list-item border-danger text-danger"><i class="ri-google-fill"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="ri-twitter-fill"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="javascript: void(0);" class="social-list-item border-secondary text-secondary"><i class="ri-github-fill"></i></a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center mt-4">
+                        <div class="d-flex justify-content-center align-items-center">
                             <span class="fw-normal">
                                 Not registered?
                                 <a href="#!/signup" class="fw-bold">Create an account</a>
