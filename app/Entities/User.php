@@ -29,9 +29,8 @@ class User extends Entity
     
     function update_status($status)
     {
-
         $available_status = get_user_status();
-        if (in_array($status, $available_status)) {
+        if (in_array($status, $available_status[])) {
             $this->set_meta('status', $status);
             return $status;
         }
