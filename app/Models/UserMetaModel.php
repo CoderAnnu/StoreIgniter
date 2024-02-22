@@ -10,10 +10,11 @@ class UserMetaModel extends Model
     protected $table            = 'user_meta';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
+    protected $insertID = 0;
+    protected $returnType       = 'App\Entities\userMeta';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['user_id', 'meta_key', 'meta_value'];
 
     // Dates
     protected $useTimestamps = false;
