@@ -62,7 +62,7 @@
                                         </span>
                                         <input type="password" ng-model="user.password" class="form-control" id="signInPassword" aria-describedby="signInPassword" placeholder="Password" required>
                                         <span class="input-group-addon password-eyes">
-                                            <span class="fa-regular set-eye fa-eye" ng-click="showPassword('signInPassword', $event)"></span>
+                                            <span class="fa-regular set-eye fa-eye" ng-click="showPassword('signInPassword', $event)" style="left: 25.5rem!important;"></span>
                                         </span>
                                     </div>
                                     <div id="emailHelp" class="form-text">Password must be minimum 8 characters length* </div>
