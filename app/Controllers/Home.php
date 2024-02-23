@@ -55,7 +55,6 @@ class Home extends BaseController
                 "controller" => $view->render('Auth/ForgotPassword/JsController/ForgotPasswordCtrl')
             ],
 
-
             [
                 "path" => "/reset-password/:key",
                 "title" => "Reset Password",
