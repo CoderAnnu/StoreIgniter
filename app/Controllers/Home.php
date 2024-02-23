@@ -14,7 +14,6 @@ class Home extends BaseController
         // enable Codeigniter content render service✅
         $view = \Config\Services::renderer();
 
-
         $routes = [
             // Dashboard Actions ✅
 
@@ -40,7 +39,30 @@ class Home extends BaseController
                 "template" => $view->render('Auth/SignUp/SignUp'),
                 "controller" => $view->render('Auth/SignUp/JsController/SignUpCtrl')
             ],
+            [
+                "path" => "/account-verify",
+                "title" => "Verify Account",
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$interval'],
+                "template" => $view->render('Auth/VerifyAccount/VerifyAccount'),
+                "controller" => $view->render('Auth/VerifyAccount/JsController/VerifyAccountCtrl')
+            ],
 
+            [
+                "path" => "/forgot-password",
+                "title" => "Forgot Password",
+                "injectors" => ['$http', '$window', '$scope', 'Auth', '$interval'],
+                "template" => $view->render('Auth/ForgotPassword/ForgotPassword'),
+                "controller" => $view->render('Auth/ForgotPassword/JsController/ForgotPasswordCtrl')
+            ],
+
+
+            [
+                "path" => "/reset-password/:key",
+                "title" => "Reset Password",
+                "injectors" => ['$http', '$window', '$scope', 'Auth', '$interval', '$routeParams'],
+                "template" => $view->render('Auth/ResetPassword/ResetPassword'),
+                "controller" => $view->render('Auth/ResetPassword/JsController/ResetPasswordCtrl')
+            ],
         ];
         // End Admin Section 
 
