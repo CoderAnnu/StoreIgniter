@@ -9,7 +9,7 @@ use CodeIgniter\Entity\Entity;
 
 class User extends Entity
 {
-    
+
     protected $datamap = [];
     protected $dates   = ['created_at', 'updated_at', 'deleted_at'];
     protected $casts   = [];
@@ -27,6 +27,12 @@ class User extends Entity
     }
 
     
+    /**
+     * update_status
+     *
+     * @param  mixed $status
+     * @return void
+     */
     function update_status($status)
     {
         $available_status = get_user_status();
@@ -84,7 +90,12 @@ class User extends Entity
         return true;
     }
 
-
+    
+    /**
+     * getBasicInfo
+     *
+     * @return void
+     */
     function getBasicInfo()
     {
         $map = (object) [];
@@ -103,21 +114,36 @@ class User extends Entity
         }
         return $map;
     }
-
+    
+    /**
+     * is
+     *
+     * @param  mixed $role
+     * @return void
+     */
     function is($role)
     {
         $current_role = $this->get_role();
         return $role == $current_role;
     }
-
-    function  get_role()
+    
+    /**
+     * get_role
+     *
+     * @return void
+     */
+    function get_role()
     {
         return $this->get_meta('role', 'subscriber');
     }
-
+    
+    /**
+     * is_subscribed
+     *
+     * @return void
+     */
     function is_subscribed()
     {
         return $this->get_meta('subscription', false);
     }
-
 }

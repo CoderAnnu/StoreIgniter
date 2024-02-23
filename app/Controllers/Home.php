@@ -42,7 +42,7 @@ class Home extends BaseController
             [
                 "path" => "/account-verify",
                 "title" => "Verify Account",
-                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$interval'],
+                "injectors" => ['$http', '$window', '$scope', 'Auth', '$interval'],
                 "template" => $view->render('Auth/VerifyAccount/VerifyAccount'),
                 "controller" => $view->render('Auth/VerifyAccount/JsController/VerifyAccountCtrl')
             ],

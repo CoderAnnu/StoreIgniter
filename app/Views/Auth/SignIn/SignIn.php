@@ -12,7 +12,7 @@
                          </div> -->
                     </div>
 
-                    <div ng-if="!loading" class="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                    <div ng-if="!loading" class="bg-white shadow border-0 rounded border-light p-3 p-md-4 w-100 fmxw-500">
                         <div class="mb-3 text-center">
                             <a class="navbar-brand d-flex justify-content-center" href="/">
                                 <img src="<?= base_url('/assets/img/logo/logo.png'); ?>" class="logo img-fluid w-50 " alt="Logo">
