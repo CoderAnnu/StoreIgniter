@@ -26,8 +26,6 @@ app.controller("globalCtrl", function ($window, $scope, $rootScope, $interval, $
     }
 
 
-
-
     //Global psssword hide and show eye button
     $scope.showPassword = function (elem, $element) {
 

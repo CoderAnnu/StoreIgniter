@@ -31,7 +31,7 @@
                             </div>
                             <!-- End of Form -->
                             <div class="d-grid">
-                                <button ng-if="!loading" type="submit" ng-disabled="loading || !user.email" class="btn btn-gray-800">Send Link</button>
+                                <button type="submit" ng-disabled="loading || !user.email" class="btn btn-gray-800">Send Link</button>
                             </div>
                         </form>
                         <div class="mt-2 text-center">

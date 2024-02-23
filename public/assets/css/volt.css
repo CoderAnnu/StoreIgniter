@@ -30199,8 +30199,8 @@ article .h6 {
 
 @media (max-width:768px) {
     .password-eyes .set-eye {
+        left: 26.2rem;
 
-        left: 17.2rem;
     }
 }
 
