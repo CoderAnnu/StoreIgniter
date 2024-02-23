@@ -53,7 +53,7 @@ $routes->group('api', function ($routes) {
     $routes->group('auth', function ($routes) {
         /*✅*/ $routes->post('create',               'Api\AuthAPIController::create');
         /*✅*/ $routes->get('verify_account/(:any)', 'Api\AuthAPIController::verify_account/$1');
-        /*✅*/ $routes->post('acccount-verify',      'Api\AuthAPIController::email_verify_account');
+        /*✅*/ $routes->post('account-verify',      'Api\AuthAPIController::email_verify_account');
         /*✅*/ $routes->get('get_state',             'Api\AuthAPIController::get_auth_state');
         /*✅*/ $routes->post('login',                'Api\AuthAPIController::login');
         /*✅*/ $routes->post('logout',               'Api\AuthAPIController::logout');
