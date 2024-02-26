@@ -4,17 +4,21 @@
         <div class="container">
             <div class="row justify-content-center form-bg-image" data-background-lg="<?= base_url('new/assets/img/illustrations/signin.svg') ?>">
                 <div class="col-12 d-flex align-items-center justify-content-center">
-                    <div ng-if="!loading" class="bg-white shadow border-0 rounded border-light p-3 p-md-4 w-100 fmxw-500">
+                    <div class="bg-white shadow border-0 rounded border-light p-3 p-md-4 w-100 fmxw-500">
                         <div class="mb-3 text-center">
                             <a class="navbar-brand d-flex justify-content-center" href="/">
                                 <img src="<?= base_url('/assets/img/logo/logo.png'); ?>" class="logo img-fluid w-50 " alt="Logo">
                             </a>
                         </div>
-                        <div class="text-center text-md-center mb-3 mt-md-0">
-                            <h1 class="h3">Verify your Account?</h1>
-                            <p class="mb-4">Don't fret! Just type in your email and we will send you a code to Verify your Account</p>
+                        <div class="text-center text-md-center mb-3 mt-md-0" ng-if="completed">
+                            <h1 class="h3">Check your Email Account!</h1>
+                            <p class="mb-4">Activation Email has been sent to your register email address.</p>
                         </div>
                         <form ng-submit="verifyAccount(user)" ng-if="!completed" class="mt-4">
+                            <div class="text-center text-md-center mb-3 mt-md-0">
+                                <h1 class="h3">Verify your Account?</h1>
+                                <p class="mb-4">Don't fret! Just type in your email and we will send you a code to Verify your Account</p>
+                            </div>
                             <!-- Form -->
                             <div class="form-group mb-4">
                                 <label for="VerifyEmail">Your Email</label>
@@ -34,6 +38,12 @@
                                 <button type="submit" ng-disabled="loading || !user.email" class="btn btn-gray-800">Send Link</button>
                             </div>
                         </form>
+                        <!-- when user send the mail then its showing Home page back button  -->
+                        <div class="d-flex align-items-center justify-content-center my-4" ng-if="completed">
+                            <a href="#!/signin" class="btn btn-sm btn-outline-primary rounded-5"><i class="fa-solid fa-arrow-left"></i></a>
+                            <h4 class="mb-0 ms-3">Back to log in</h4>
+                        </div>
+                        <!-- end log in Page  -->
                         <div class="mt-2 text-center">
                             <span class="fw-normal">or login with</span>
                         </div>
