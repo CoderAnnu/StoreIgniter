@@ -65,7 +65,7 @@
                                         <a href="#!/account-verify" class="small text-right">Account Verify</a>
                                     </div>
                                     <div class="forgot-password">
-                                        <a href="#!/forgot_password" class="small text-right">Forgot password?</a>
+                                        <a href="#!/forgot-password" class="small text-right">Forgot password?</a>
                                     </div>
                                 </div>
                             </div>
