@@ -39,22 +39,25 @@
                             </div>
                         </form>
                         <!-- when user send the mail then its showing Home page back button  -->
-                        <div class="d-flex align-items-center justify-content-center my-4" ng-if="completed">
+                        <!-- <div class="d-flex align-items-center justify-content-center my-4" ng-if="completed">
                             <a href="#!/signin" class="btn btn-sm btn-outline-primary rounded-5"><i class="fa-solid fa-arrow-left"></i></a>
                             <h4 class="mb-0 ms-3">Back to log in</h4>
+                        </div> -->
+                        <div class="d-flex align-items-center justify-content-center my-4" ng-if="completed">
+                            <a href="https://mail.google.com/" class="btn btn-sm btn-outline-primary rounded-5" target="_blank">
+                                <h4 class="mb-0">Go To Your Gmail</h4>
+                            </a>
                         </div>
                         <!-- end log in Page  -->
-                        <div class="mt-2 text-center">
-                            <span class="fw-normal">or login with</span>
-                        </div>
 
                         <!-- new login with accounts -->
-                        <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-flex justify-content-center align-items-center pt-2">
                             <span class="fw-normal">
                                 Not registered?
                                 <a href="#!/signup" class="fw-bold">Create an account</a>
                             </span>
                         </div>
+
                     </div>
                 </div>
             </div>
