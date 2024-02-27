@@ -58,7 +58,7 @@ class Home extends BaseController
             [
                 "path" => "/reset-password/:key",
                 "title" => "Reset Password",
-                "injectors" => ['$http', '$window', '$scope', 'Auth', '$interval', '$routeParams'],
+                "injectors" => ['$http', '$window', '$scope', 'Auth', '$location','$interval', '$routeParams'],
                 "template" => $view->render('Auth/ResetPassword/ResetPassword'),
                 "controller" => $view->render('Auth/ResetPassword/JsController/ResetPasswordCtrl')
             ],
