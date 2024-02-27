@@ -10,10 +10,7 @@
                                  <img src="<?= base_url('/assets/img/logo/logo.png'); ?>" class="logo img-fluid w-50 " alt="Logo">
                              </a>
                          </div>
-                         <div class="text-center text-md-center mb-3 mt-md-0" ng-if="completed">
-                             <h1 class="h3">Password Reset Successfully!</h1>
-                         </div>
-                         <form ng-submit="reset(user)" ng-if="!completed">
+                         <form ng-submit="reset(user)">
                              <div class="text-center text-md-center mb-3 mt-md-0">
                                  <h1 class="h3">Reset Password</h1>
                                  <p class="mb-4">Don't fret! Just type your new password and we will update your Account Password</p>
@@ -56,16 +53,12 @@
                                  <button type="submit" ng-disabled="!user.password || !user.confirm_password || user.password !== user.confirm_password" class="btn btn-gray-800">Reset password</button>
                              </div>
                          </form>
-                         <div class="d-flex align-items-center justify-content-center my-4" ng-if="completed">
-                             <a href="/#!/signin" class="btn btn-sm btn-outline-primary rounded-5" target="_blank">
-                                 <h4 class="mb-0">Go Back To Login</h4>
-                             </a>
-                         </div>
+                         
                          <!-- new login with accounts -->
-                         <div class="d-flex align-items-center justify-content-center my-4" ng-if="completed">
-                             <a href="/#!/signin" class="btn btn-sm btn-outline-primary rounded-5" target="_blank">
-                                 <h4 class="mb-0">Go Back To Login</h4>
-                             </a>
+                         <div class="d-flex align-items-center justify-content-start my-4">
+                             <a href="/#!/signin" class="btn btn-sm btn-outline-dark p-1" target="_blank"><i class="fa-solid fa-right-to-bracket"></i>
+                             <small>Go Back To Login</small>
+                            </a>
                          </div>
                      </div>
                  </div>

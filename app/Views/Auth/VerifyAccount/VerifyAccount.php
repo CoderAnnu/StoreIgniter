@@ -57,7 +57,6 @@
                                 <a href="#!/signup" class="fw-bold">Create an account</a>
                             </span>
                         </div>
-
                     </div>
                 </div>
             </div>
