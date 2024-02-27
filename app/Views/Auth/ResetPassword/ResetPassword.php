@@ -53,12 +53,12 @@
                                  <button type="submit" ng-disabled="!user.password || !user.confirm_password || user.password !== user.confirm_password" class="btn btn-gray-800">Reset password</button>
                              </div>
                          </form>
-                         
+
                          <!-- new login with accounts -->
                          <div class="d-flex align-items-center justify-content-start my-4">
                              <a href="/#!/signin" class="btn btn-sm btn-outline-dark p-1" target="_blank"><i class="fa-solid fa-right-to-bracket"></i>
-                             <small>Go Back To Login</small>
-                            </a>
+                                 <small>Go Back To Login</small>
+                             </a>
                          </div>
                      </div>
                  </div>

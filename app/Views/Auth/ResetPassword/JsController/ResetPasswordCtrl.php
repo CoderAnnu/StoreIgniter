@@ -19,7 +19,7 @@
                         x: 'center',
                         y: 'top',
                     },
-                    dimissible: true,
+                    dismissible: true,
 
                 });
                 const success = resp.data.message;
@@ -37,7 +37,7 @@
                         x: 'center',
                         y: 'top',
                     },
-                    dimissible: true,
+                    dismissible: true,
                 });
 
                 const error = err.data.messages.message;
