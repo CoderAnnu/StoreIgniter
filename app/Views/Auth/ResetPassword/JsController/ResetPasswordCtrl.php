@@ -41,7 +41,6 @@
                 });
 
                 const error = err.data.messages.message;
-
                 // Display error message Notification 
                 notyf.error(error);
             }
