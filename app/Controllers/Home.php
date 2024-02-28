@@ -16,7 +16,6 @@ class Home extends BaseController
 
         $routes = [
             // Dashboard Actions ✅
-
             [
                 "path" => "/",
                 "title" => "Dashboard",
