@@ -9,24 +9,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link rel="manifest" href="<?= base_url('assets/img/favicon/site.webmanifest') ?>"> -->
-    <!-- <link rel="mask-icon" href="../../assets/img/favicon/safari-pinned-tab.svg" color="#ffffff"> -->
-    <!-- <link rel="apple-touch-icon" sizes="120x120" href="<?= base_url('/Project-Template/assets/images/favicon.ico') ?>"> -->
-    <!-- <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('/Project-Template/assets/images/favicon.ico') ?>"> -->
-    <!-- <link rel="manifest" href="<?= base_url('assets/img/favicon/site.webmanifest') ?>"> -->
-    <!-- <link rel="mask-icon" href="<?= base_url('assets/img/favicon/safari-pinned-tab.svg') ?>" color="#ffffff"> -->
     <link type="text/css" href="<?= base_url('assets/vendor/sweetalert2/dist/sweetalert2.min.css') ?>" rel="stylesheet">
     <link type="text/css" href="<?= base_url('/assets/css/volt.css') ?>" rel="stylesheet">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" /> -->
 
-
     <!-- New Dashboard -->
     <link rel="icon" type="image/x-icon" href="<?= base_url('/Project-Template/Materio/assets/img/favicon/favicon.ico') ?>">
-
-
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,10 +24,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&ampdisplay=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/assets/vendor/fonts/materialdesignicons.css') ?>" />
-
     <!-- Menu waves for no-customizer fix -->
     <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/assets/vendor/libs/node-waves/node-waves.css') ?>" />
-
     <!-- Core CSS -->
     <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/assets/vendor/css/core.css') ?>" class="template-customizer-core-css" />
     <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/assets/vendor/css/theme-default.css') ?>" class="template-customizer-theme-css" />
@@ -47,7 +34,6 @@
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/assets/vendor/libs/apex-charts/apex-charts.css') ?>" />
-
     <!-- Page CSS -->
 
     <!-- Helpers -->
@@ -62,23 +48,6 @@
     <link rel="stylesheet" href="<?= base_url('/assets/css/custom.css'); ?>" />
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
-
-    <!-- Latest Project Template Latest -->
-
-    <!-- <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/css/app.css'); ?>" /> -->
-    <!-- <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/css/app.min.css'); ?>" />
-    <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/images/favicon.ico'); ?>" />
-    <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/css/icons.min.css'); ?>" />
-
-
-    
-    <!- <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/js/vendor.min.js'); ?>" />
-    <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/js/app.min.js'); ?>" />
-    <link rel="stylesheet" href="<?= base_url('/Project-Template/assets/js/config.js'); ?>" /> -->
-
-
-
-    <!--  -->
 
     <!-- End Project Template  -->
 
