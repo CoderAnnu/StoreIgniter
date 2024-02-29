@@ -3,7 +3,7 @@
 #-------------------------
 # /app/Controllers/Api/*.php
 app/Controllers/Api/*.php
-
+app/Views/Components/SideBar/SideBar.php
 
 # OS X
 .DS_Store
