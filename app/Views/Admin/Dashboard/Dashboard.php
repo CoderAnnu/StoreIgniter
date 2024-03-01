@@ -185,6 +185,25 @@
                 <hr class="m-0">
                 <div class="card-body">
                   <div class="row gy-3">
+                    <!-- Modal with YouTube Video -->
+                    <div class="col-lg-4 col-md-6">
+                      <small class="text-light fw-medium">YouTube Video</small>
+                      <div class="mt-3">
+                        <button type="button" class="btn btn-primary waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#youTubeModal" data-thevideo="https://www.youtube.com/embed/EngW7tLk6R8">
+                          Launch modal
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="youTubeModal" tabindex="-1" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <!-- <iframe height="350" src="https://www.youtube.com/embed/EngW7tLk6R8"></iframe> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                     <!-- Toggle Between Modals -->
                     <div class="col-lg-4 col-md-6">
                       <small class="text-light fw-medium">Toggle Between Modals</small>
