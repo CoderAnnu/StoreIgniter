@@ -1,34 +1,32 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme" data-bg-class="bg-menu-theme" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
 
-  <div class="app-brand bg-primary py-2">
+  <div class="app-brand bg-primary py-3">
     <a href="#" class="app-brand-link">
       <!-- use logo here  -->
       <span class="app-brand-text menu-text fw-semibold ms-2">Materio</span>
     </a>
-
     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
       <i class="mdi menu-toggle-icon d-xl-block align-middle mdi-20px"></i>
     </a>
   </div>
 
-  <div class="menu-inner-shadow" style="display: none;"></div>
-
+  <!-- start menu -->
   <nav id="sidebarMenu" class="sidebar d-lg-block collapse my-5" data-simplebar>
-    <!--  -->
     <ul class="menu-inner nav flex-column">
       <li class="nav-item menu-item" ng-class='{"active" : $ctrl.path == "/"}'>
-        <a href="#!/" class="nav-link menu-link" ng-class='{"menu-link" : $ctrl.path == "/"}'>
+        <a href="#!/" class="nav-link menu-link m-0" ng-class='{"menu-link" : $ctrl.path == "/"}'>
           <i class="me-3 fa-solid fa-house"></i>
           <span class="sidebar-text">Dashboard</span>
         </a>
       </li>
+      <!-- Example Sub menu   -->
       <li class="menu-item">
-        <span class="nav-link menu-link d-flex justify-content-between align-items-center me-3 pe-2" data-bs-toggle="collapse" data-bs-target="#submenu-components">
+        <span class="nav-link menu-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#submenu-components">
           <span>
             <span>
               <i class="me-3 fa-solid fa-robot"></i>
             </span>
-            <span class="sidebar-text">Bots</span>
+            <span class="sidebar-text">Test</span>
           </span>
           <span class="link-arrow">
             <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -36,30 +34,33 @@
             </svg>
           </span>
         </span>
-        <div class="multi-level collapse" ng-class='{"show" : ["/bots", "/bots/add"].includes($ctrl.path)}' role="list" id="submenu-components" aria-expanded="false">
+        <div class="multi-level collapse" ng-class='{"show" : ["/test", "/test/testnew"].includes($ctrl.path)}' role="list" id="submenu-components" aria-expanded="false">
           <ul class="flex-column nav">
-            <li class="nav-item" ng-class='{"active" : $ctrl.path == "/bots"}'>
+            <li class="nav-item" ng-class='{"active" : $ctrl.path == "/test"}'>
               <a href="#!/bots" class="menu-link">
                 <i class="me-3 fa-solid fa-robot"></i>
-                <span class="sidebar-text">My Bots</span>
+                <span class="sidebar-text">My Test</span>
               </a>
             </li>
-            <li class="nav-item" ng-class='{"active" : $ctrl.path == "/bots/add" }'>
+            <li class="nav-item" ng-class='{"active" : $ctrl.path == "/test/testnew" }'>
               <a href="#!/bots/add" class="menu-link">
                 <i class="me-3 fa-solid fa-plus"></i>
-                <span class="sidebar-text">Add New Bot</span>
+                <span class="sidebar-text">Add New Test</span>
               </a>
             </li>
           </ul>
         </div>
       </li>
-
-      <li class="nav-item menu-item" ng-class='{"active" : $ctrl.path == "/page"}'>
-        <a href="#!/" class="menu-link" ng-class='{"menu-link" : $ctrl.path == "/page"}'>
+      <!-- end Example Sub menu   -->
+      <!-- Single menu example  -->
+      <li class="nav-item menu-item" ng-class='{"active" : $ctrl.path == "/admin/users"}'>
+        <a href="#!/admin/users" class="menu-link" ng-class='{"menu-link" : $ctrl.path == "/admin/users"}'>
           <i class="me-3 fa-solid fa-house"></i>
-          <span class="sidebar-text">Dashboard</span>
+          <span class="sidebar-text">Users</span>
         </a>
       </li>
+      <!-- end Single menu example  -->
     </ul>
   </nav>
+  <!-- End menu  -->
 </aside>
