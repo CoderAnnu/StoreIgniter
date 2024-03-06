@@ -30205,5 +30205,10 @@ article .h6 {
 }
 
 .ul-li-custom-hover li a:hover {
-    color: red; 
+    color: red;
+}
+
+.menu-link {
+    padding-right: 0.5rem !important;
+    margin: 0 !important;
 }
