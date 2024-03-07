@@ -69,7 +69,7 @@ class Home extends BaseController
             "title" => "Admin dashboard",
             "injectors" => ['$http', '$window', '$timeout', '$scope', '$location', 'Auth', '$routeParams'],
             "template" =>  $view->render('Admin/Dashboard/Dashboard'),
-            "controller" => $view->render('Admin/Dashboard/Controller/DashboardCtrl'),
+            "controller" => $view->render('Admin/Dashboard/JsController/DashboardCtrl'),
         ];
 
         $routes[] = [
@@ -77,82 +77,45 @@ class Home extends BaseController
             "title" => "Users",
             "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
             "template" =>  $view->render('Admin/Users/Users'),
-            "controller" => $view->render('Admin/Users/Controller/UsersCtrl'),
+            "controller" => $view->render('Admin/Users/JsController/UsersCtrl'),
         ];
 
         // Admin Settings 
-        $routes[] = [
-            "path" => "/admin/setting",
-            "title" => "Admin Settings",
-            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
-            "template" =>  $view->render('Admin/GeneralSettings/GeneralSettings'),
-            "controller" => $view->render('Admin/GeneralSettings/Controller/GeneralSettingCtrl'),
-        ];
+        // $routes[] = [
+        //     "path" => "/admin/setting",
+        //     "title" => "Admin Settings",
+        //     "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
+        //     "template" =>  $view->render('Admin/GeneralSettings/GeneralSettings'),
+        //     "controller" => $view->render('Admin/GeneralSettings/JsController/GeneralSettingCtrl'),
+        // ];
 
-        $routes[] = [
-            "path" => "/user/edit/:key",
-            "title" => "Edit user",
-            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
-            "template" =>  $view->render('Admin/Users/Edit/EditUser'),
-            "controller" => $view->render('Admin/Users/Edit/Controller/EditUserCtrl'),
+        // $routes[] = [
+        //     "path" => "/user/edit/:key",
+        //     "title" => "Edit user",
+        //     "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
+        //     "template" =>  $view->render('Admin/Users/Edit/EditUser'),
+        //     "controller" => $view->render('Admin/Users/Edit/JsController/EditUserCtrl'),
 
-        ];
+        // ];
 
-        $routes[] = [
-            "path" => "/user/delete/:key",
-            "title" => "Delete user",
-            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
-            "template" =>  $view->render('Admin/Users/Users'),
-            "controller" => $view->render('Admin/Users/Controller/UsersCtrl'),
-        ];
+        // $routes[] = [
+        //     "path" => "/user/delete/:key",
+        //     "title" => "Delete user",
+        //     "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
+        //     "template" =>  $view->render('Admin/Users/Users'),
+        //     "controller" => $view->render('Admin/Users/JsController/UsersCtrl'),
+        // ];
 
-        $routes[] = [
-            "path" => "/user/restore/:key",
-            "title" => "Delete user",
-            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
-            "template" =>  $view->render('Admin/Users/Users'),
-            "controller" => $view->render('Admin/Users/Controller/UsersCtrl'),
-        ];
+        // $routes[] = [
+        //     "path" => "/user/restore/:key",
+        //     "title" => "Delete user",
+        //     "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
+        //     "template" =>  $view->render('Admin/Users/Users'),
+        //     "controller" => $view->render('Admin/Users/JsController/UsersCtrl'),
+        // ];
 
-        $routes[] =  [
-            "path" => "/subscription",
-            "title" => "Add subscription",
-            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
-            "template" => $view->render('Account/Subscription/Subscription'),
-            "controller" => $view->render('Account/Subscription/Controller/SubscriptionCtrl'),
-        ];
 
-        $routes[] =  [
-            "path" => "/subscription/plans",
-            "title" => "Subscription plans",
-            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
-            "template" => $view->render('Account/Subscription/AllSubscriptionPlans/AllSubscriptionPlans'),
-            "controller" => $view->render('Account/Subscription/AllSubscriptionPlans/Controller/AllSubscriptionPlansCtrl'),
-        ];
-
-        $routes[] =  [
-            "path" => "/subscription/plans/:key",
-            "title" => "Edit subscription plans",
-            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
-            "template" => $view->render('Account/Subscription/EditSubscription/EditSubscription'),
-            "controller" => $view->render('Account/Subscription/EditSubscription/Controller/EditSubscriptionCtrl'),
-        ];
-
-        $routes[] =  [
-            "path" => "/subscription/delete/:key",
-            "title" => "Delete Subscription plan",
-            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
-            "template" => $view->render('Account/Subscription/AllSubscriptionPlans/AllSubscriptionPlans'),
-            "controller" => $view->render('Account/Subscription/AllSubscriptionPlans/Controller/AllSubscriptionPlansCtrl'),
-        ];
-
-        $routes[] =  [
-            "path" => "/subscription/restore/:key",
-            "title" => "Restore Subscription plan",
-            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
-            "template" => $view->render('Account/Subscription/AllSubscriptionPlans/AllSubscriptionPlans'),
-            "controller" => $view->render('Account/Subscription/AllSubscriptionPlans/Controller/AllSubscriptionPlansCtrl'),
-        ];
+    
 
         // Start main Components likes Routes Components and error. ✅
         return view('home', [
