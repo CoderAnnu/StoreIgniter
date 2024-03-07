@@ -7,6 +7,7 @@
  * This is our Authentication Function  
  * 
  **************************/
+
 use App\Models\UsersModel;
 use Config\Services;
 
@@ -26,12 +27,13 @@ if (!function_exists('isLoggedIn')) {
 }
 
 // Get Store Current user Session   
+/**
+ * current_user
+ *
+ * @return void
+ */
 if (!function_exists('current_user')) {
-    /**
-     * current_user
-     *
-     * @return void
-     */
+
     function current_user()
     {
         if (isLoggedIn()) {
@@ -96,7 +98,4 @@ if (!function_exists('get_user')) {
         $DB = new UsersModel();
         return $DB->find($id);
     }
-
 }
-
-
