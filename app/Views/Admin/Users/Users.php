@@ -16,8 +16,6 @@
 
     <!-- Container -->
     <div class="container">
-
-
         <!-- breadcrumb -->
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
             <div class="d-block mb-4 mb-md-0">
@@ -38,7 +36,6 @@
 
         <div class="card table-responsive">
             <div class="card-header">
-
                 <div class="row">
                     <div class="col-md-4">
                         <input type="search" ng-change="search_user()" ng-model="config.query" class="form-control form-control-sm" placeholder="Search User">
@@ -70,19 +67,18 @@
                 </div>
             </div>
             <table class="table table-sm table-hover">
-
-                <thead>
+                <thead class="table-light">
                     <tr>
                         <th class="border-gray-200">ID</th>
                         <th class="border-gray-200">Name</th>
                         <th class="border-gray-200">Email</th>
                         <th class="border-gray-200">Created At</th>
-                        <th class="border-gray-200" style="width:180px;">Role</th>
+                        <th class="border-gray-200">Role</th>
                         <th class="border-bottom">Status</th>
                         <th class="border-gray-200 text-center">Action</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody style="border-top: none!important;">
                     <tr ng-repeat="user in user.items" ng-class='{"deleted-user" : user.deleted_at}' class="align-middle">
                         <td>
                             {{user.id}}</a>
@@ -94,16 +90,23 @@
                         </td>
                         <td>{{user.email}}</td>
                         <td>{{user.created_at.date | dateFormat}}</td>
+                        <!--  -->
                         <td>
+                            <span ng-if="user.role == 'subscriber'"><i class="mdi mdi-account-outline mdi-24px text-primary me-1"></i> Subscriber</span>
+                            <span ng-if="user.role == 'admin'"><i class="mdi mdi-laptop mdi-24px text-danger me-1"></i> Admin</span>
+                        </td>
+                        <!-- Show when admin can change their functionality -->
+                        <td class="d-none">
                             <select ng-disabled="!user.iamadmin == true" class="form-select form-select-sm" ng-model="user.role" ng-change="change_role(user);">
                                 <option value="admin">Admin</option>
                                 <option value="subscriber">Subscriber</option>
                             </select>
                         </td>
                         <td>
-                            <span class="badge border bg-light text-success border-success" ng-if="user.status == 'active'">✅ Active</span>
-                            <span class="badge border bg-light text-danger border-danger" ng-if="user.status == 'inactive'">❌ Inactive</span>
-                            <span class="badge border bg-light text-danger border-danger" ng-if="user.status == 'banned'">❌ Banned</span>
+                            <span class="badge bg-label-success rounded-pill" ng-if="user.status == 'active'">✅ Active</span>
+                            <span class="badge bg-label-warning rounded-pill" ng-if="user.status == 'pending'">🔜 Pending</span>
+                            <span class="badge bg-label-secondary rounded-pill" ng-if="user.status == 'inactive'">❗️Inactive</span>
+                            <span class="badge bg-label-danger rounded-pill" ng-if="user.status == 'banned'">❌ Banned</span>
                         </td>
                         <td>
                             <div class="d-flex jusity-content-center align-items-center">
