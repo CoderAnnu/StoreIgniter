@@ -55,7 +55,7 @@
       <!-- Single menu example  -->
       <li class="nav-item menu-item" ng-class='{"active" : $ctrl.path == "/admin/users"}'>
         <a href="#!/admin/users" class="menu-link" ng-class='{"menu-link" : $ctrl.path == "/admin/users"}'>
-          <i class="me-3 fa-solid fa-house"></i>
+          <i class="me-3 fa-solid fa-user"></i>
           <span class="sidebar-text">Users</span>
         </a>
       </li>
