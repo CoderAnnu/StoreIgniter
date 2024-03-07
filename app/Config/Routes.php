@@ -62,6 +62,9 @@ $routes->group('api', function ($routes) {
         /*✅*/ $routes->post('forgot-password',      'Api\AuthAPIController::forgot_password');
     });
 
+    $routes->group('admin', function($routes){
+        /*✅*/ $routes->get('users',               'Api\UsersManagementController::get_users');
+    });
 });
 
 
