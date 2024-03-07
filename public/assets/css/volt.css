@@ -23555,7 +23555,7 @@ fieldset:disabled .btn {
 }
 
 .sidebar .nav-item .nav-link {
-    color: #ffffff;
+    /* color: #ffffff; */
     cursor: pointer;
 }
 
