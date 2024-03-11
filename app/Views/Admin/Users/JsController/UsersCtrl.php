@@ -41,7 +41,7 @@
                     $scope.user.current_page = resp.data.current_page;
                     $scope.user.total_items = resp.data.total_items;
 
-                    $scope.user.items = [...$scope.user.items, ...resp.data.items];
+                    $scope.user = [...$scope.user, ...resp.data];
                 } else {
                     $scope.user = resp.data;
                 }
@@ -52,7 +52,6 @@
                 console.log(err);
             }
         )
-
     }
 
 
