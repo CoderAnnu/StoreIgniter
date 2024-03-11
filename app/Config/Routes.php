@@ -44,7 +44,7 @@ $routes->group('app', function ($routes) {
     $routes->get('/', 'Home::index');
 });
 
-    // if we need to check data on the page => http://localhost:8080/api/auth/test
+    // if we need to check 33 on the page => http://localhost:8080/api/auth/test
 
     // API our custom app api ✅
 $routes->group('api', function ($routes) {
@@ -57,13 +57,15 @@ $routes->group('api', function ($routes) {
         /*✅*/ $routes->get('get_state',             'Api\AuthAPIController::get_auth_state');
         /*✅*/ $routes->post('login',                'Api\AuthAPIController::login');
         /*✅*/ $routes->post('logout',               'Api\AuthAPIController::logout');
-        /*✅*/ $routes->get('reset',                'Api\AuthAPIController::reset');
+        /*✅*/ $routes->get('reset',                 'Api\AuthAPIController::reset');
         /*✅*/ $routes->post('reset',                'Api\AuthAPIController::reset');
         /*✅*/ $routes->post('forgot-password',      'Api\AuthAPIController::forgot_password');
     });
 
     $routes->group('admin', function($routes){
-        /*✅*/ $routes->get('users',               'Api\UsersManagementController::get_users');
+        /*✅*/ $routes->get('dashboard',            'Api\UsersManagementController::admin_dashboard');
+        /*✅*/ $routes->get('users',                'Api\UsersManagementController::get_users');
+        /*✅*/ $routes->post('users/delete/(:num)', 'Api\UsersManagementController::delete_user/$1');
     });
 });
 
