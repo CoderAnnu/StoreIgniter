@@ -19,9 +19,9 @@ class Home extends BaseController
             [
                 "path" => "/",
                 "title" => "Dashboard",
-                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
-                "template" => $view->render('Admin/Dashboard/Dashboard'),
-                "controller" => $view->render('Admin/Dashboard/JsController/DashboardCtrl'),
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth'],
+                "template" => $view->render('/Dashboard/Dashboard'),
+                "controller" => $view->render('/Dashboard/JsController/DashboardCtrl'),
             ],
 
             [
