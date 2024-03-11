@@ -35,7 +35,7 @@ $routes->set404Override();
 
 
 // This is our landing page ✅
-// $routes->get('/','LandingPageController::index');
+$routes->get('/','Public\LandingPageController::index');
 
 
 
