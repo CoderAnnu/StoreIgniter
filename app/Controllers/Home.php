@@ -61,6 +61,38 @@ class Home extends BaseController
                 "template" => $view->render('Auth/ResetPassword/ResetPassword'),
                 "controller" => $view->render('Auth/ResetPassword/JsController/ResetPasswordCtrl')
             ],
+            // Pages
+            [
+                "path" => "/product",
+                "title" => "All Product",
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth'],
+                "template" => $view->render('/Product/AllProduct/AllProduct'),
+                "controller" => $view->render('/Product/AllProduct/JsController/AllProductCtrl')
+            ], 
+            [
+                "path" => "/product/add/",
+                "title" => "Add Product",
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth'],
+                "template" => $view->render('/Product/AddProduct/addProduct'),
+                "controller" => $view->render('/Product/AddProduct/JsController/addProductCtrl')
+            ], 
+
+            [
+                "path" => "/product/edit/:key",
+                "title" => "Edit Product",
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth','$routeParams'],
+                "template" => $view->render('/Product/EditProduct/EditProduct'),
+                "controller" => $view->render('/Product/EditProduct/JsController/EditProductCtrl')
+            ],
+          
+            [
+                "path" => "/product/catelist",
+                "title" => "Edit Product",
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth','$routeParams'],
+                "template" => $view->render('/Product/ProductCategory/Catelist'),
+                "controller" => $view->render('/Product/ProductCategory/JsController/CatelistCtrl')
+            ],
+
         ];
         // End Admin Section 
         // Push admin's route to array
@@ -115,7 +147,7 @@ class Home extends BaseController
         // ];
 
 
-    
+
 
         // Start main Components likes Routes Components and error. ✅
         return view('home', [
