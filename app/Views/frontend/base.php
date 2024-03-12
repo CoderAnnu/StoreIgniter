@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/LandingPage/assets/css/materialdesignicons.css') ?>" />
     <!-- Menu waves for no-customizer fix -->
+    
     <!-- Core CSS -->
     <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/LandingPage/assets/css/demo.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/LandingPage/assets/css/core.css') ?>" />
@@ -25,7 +26,6 @@
     <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/LandingPage/assets/css/swiper.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/LandingPage/assets/css/node-waves.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/LandingPage/assets/css/theme-default.css') ?>" />
-
     <!-- end dashboard -->
 
     <!-- End Project Template  -->
@@ -329,10 +329,7 @@
                 <div class="position-relative hero-animation-img">
                     <a href="../vertical-menu-template/dashboards-crm.html" target="_blank">
                         <div class="hero-dashboard-img text-center">
-                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/hero-dashboard-light.png'); ?>" alt="hero dashboard" class="img-fluid animation-img" data-speed="2" data-app-light-img="front-pages/landing-page/hero-dashboard-light.png'); ?>" data-app-dark-img="front-pages/landing-page/hero-dashboard-dark.png'); ?>" style="transform: translate(6.22px, 1.12px);">
-                        </div>
-                        <div class="position-absolute hero-elements-img">
-                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/hero-elements-light.png'); ?>" alt="hero elements" class="img-fluid nimation-img" data-speed="4" data-app-light-img="front-pages/landing-page/hero-elements-light.png'); ?>" data-app-dark-img="front-pages/landing-page/hero-elements-dark.png'); ?>" style="transform: translate(-8.04px, -18.24px);">
+                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/hero-dashboard-light.png'); ?>" alt="hero dashboard" class="img-fluid animation-img"  style="transform: translate(6.22px, 1.12px);">
                         </div>
                     </a>
                 </div>
