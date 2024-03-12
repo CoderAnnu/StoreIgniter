@@ -14,7 +14,6 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&ampdisplay=swap" rel="stylesheet" />
-
     <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/LandingPage/assets/css/materialdesignicons.css') ?>" />
     <!-- Menu waves for no-customizer fix -->
     
@@ -302,7 +301,7 @@
 
                 <!-- navbar button: Start -->
                 <li>
-                    <a href="../vertical-menu-template/auth-login-cover.html" class="btn btn-primary px-2 px-sm-4 px-lg-2 px-xl-4 waves-effect waves-light" target="_blank"><span class="tf-icons mdi mdi-account me-md-1"></span><span class="d-none d-md-block">Login/Register</span></a>
+                    <a href="/app/#!/signin" class="btn btn-primary px-2 px-sm-4 px-lg-2 px-xl-4 waves-effect waves-light" ><span class="tf-icons mdi mdi-account me-md-1"></span><span class="d-none d-md-block">Login/Register</span></a>
                 </li>
                 <!-- navbar button: End -->
             </ul>
