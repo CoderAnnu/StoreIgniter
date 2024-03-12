@@ -54,7 +54,7 @@
                     <i class="tf-icons mdi mdi-menu mdi-24px align-middle"></i>
                 </button>
                 <!-- Mobile menu toggle: End-->
-                <a href="landing-page.html" class="app-brand-link">
+                <a href="" class="app-brand-link">
                     <span class="app-brand-logo demo">
                         <span style="color:#9055FD;">
                             <svg width="30" height="24" viewBox="0 0 250 196" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,19 +82,19 @@
                 </button>
                 <ul class="navbar-nav me-auto p-3 p-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link fw-medium" aria-current="page" href="landing-page.html#landingHero">Home</a>
+                        <a class="nav-link fw-medium" aria-current="page" href="#landingHero">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-medium" href="landing-page.html#landingFeatures">Features</a>
+                        <a class="nav-link fw-medium" href="#landingFeatures">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-medium" href="landing-page.html#landingTeam">Team</a>
+                        <a class="nav-link fw-medium" href="#landingTeam">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-medium" href="landing-page.html#landingFAQ">FAQ</a>
+                        <a class="nav-link fw-medium" href="#landingFAQ">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-medium text-nowrap" href="landing-page.html#landingContact">Contact us</a>
+                        <a class="nav-link fw-medium text-nowrap" href="#landingContact">Contact us</a>
                     </li>
                     <li class="nav-item mega-dropdown">
                         <a href="javascript:void(0);" class="nav-link dropdown-toggle navbar-ex-14-mega-dropdown mega-dropdown fw-medium" aria-expanded="false" data-bs-toggle="mega-dropdown" data-trigger="hover">
@@ -1362,7 +1362,7 @@
             <div class="container">
                 <div class="row gx-0 gy-4 g-md-5">
                     <div class="col-lg-5">
-                        <a href="landing-page.html" class="app-brand-link mb-4">
+                        <a href="" class="app-brand-link mb-4">
                             <span class="app-brand-logo demo me-2">
                                 <span style="color:#9055FD;">
                                     <svg width="30" height="24" viewBox="0 0 250 196" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1447,18 +1447,16 @@
             <div class="container d-flex flex-wrap justify-content-between flex-md-row flex-column text-center text-md-start">
                 <div class="mb-2 mb-md-0">
                     <span class="footer-text">©
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script>2024, Made with <i class="tf-icons mdi mdi-heart text-danger"></i> by
+2024, Made with <i class="tf-icons mdi mdi-heart text-danger"></i> by
                     </span>
-                    <a href="https://themeselection.com" target="_blank" class="footer-link fw-medium footer-theme-link">ThemeSelection</a>
+                    <a href="#" target="_blank" class="footer-link fw-medium footer-theme-link">CoderAnnu</a>
                 </div>
             </div>
         </div>
     </footer>
     <!-- Footer: End -->
 
-    <script type="text/javascript" id="">
+    <!-- <script type="text/javascript" id="">
         console.log("TS:GTM Worked!");
     </script>
     <script type="text/javascript" id="">
@@ -1471,7 +1469,7 @@
             a.dataset.account = d;
             b.getElementsByTagName("head")[0].appendChild(a)
         })(document, 252882, 269977);
-    </script>
+    </script> -->
 
     <!-- endbuild -->
     <!-- <div id="template-customizer" class="invert-bg-white" style="visibility: visible"> <a href="javascript:void(0)" class="template-customizer-open-btn" tabindex="-1"></a>
