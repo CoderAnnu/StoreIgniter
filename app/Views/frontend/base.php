@@ -19,6 +19,7 @@
     <!-- Menu waves for no-customizer fix -->
     <!-- Core CSS -->
     <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/LandingPage/assets/css/demo.css') ?>" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/LandingPage/assets/css/core.css') ?>" class="template-customizer-core-css" />
     <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/LandingPage/assets/css/front-page.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/LandingPage/assets/css/nouislider.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/LandingPage/assets/css/swiper.css') ?>" />
@@ -250,7 +251,7 @@
                                     </div>
                                     <div class="col-lg-4 d-none d-lg-block">
                                         <div class="bg-body nav-img-col p-2">
-                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/misc/nav-item-col-img-light.png'); ?>" class="img-fluid scaleX-n1-rtl w-100" alt="nav item col image" data-app-light-img="front-pages/misc/nav-item-col-img-light.png'); ?>" data-app-dark-img="front-pages/misc/nav-item-col-img-dark.png'); ?>">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/nav-item-col-img-light.png'); ?>" class="img-fluid scaleX-n1-rtl w-100" alt="nav item col image" data-app-light-img="<?= base_url('front-pages/misc/nav-item-col-img-light.png'); ?>" data-app-dark-img="front-pages/misc/nav-item-col-img-dark.png'); ?>">
                                         </div>
                                     </div>
                                 </div>
@@ -319,10 +320,10 @@
                     <div class="position-relative hero-animation-img">
                         <a href="../vertical-menu-template/dashboards-crm.html" target="_blank">
                             <div class="hero-dashboard-img text-center">
-                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/hero-dashboard-light.png'); ?>" alt="hero dashboard" class="animation-img" data-speed="2" data-app-light-img="front-pages/landing-page/hero-dashboard-light.png'); ?>" data-app-dark-img="front-pages/landing-page/hero-dashboard-dark.png'); ?>" style="transform: translate(6.22px, 1.12px);">
+                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/hero-dashboard-light.png'); ?>" alt="hero dashboard" class="img-fluid animation-img" data-speed="2" data-app-light-img="front-pages/landing-page/hero-dashboard-light.png'); ?>" data-app-dark-img="front-pages/landing-page/hero-dashboard-dark.png'); ?>" style="transform: translate(6.22px, 1.12px);">
                             </div>
                             <div class="position-absolute hero-elements-img">
-                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/hero-elements-light.png'); ?>" alt="hero elements" class="animation-img" data-speed="4" data-app-light-img="front-pages/landing-page/hero-elements-light.png'); ?>" data-app-dark-img="front-pages/landing-page/hero-elements-dark.png'); ?>" style="transform: translate(-8.04px, -18.24px);">
+                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/hero-elements-light.png'); ?>" alt="hero elements" class="img-fluid nimation-img" data-speed="4" data-app-light-img="front-pages/landing-page/hero-elements-light.png'); ?>" data-app-dark-img="front-pages/landing-page/hero-elements-dark.png'); ?>" style="transform: translate(-8.04px, -18.24px);">
                             </div>
                         </a>
                     </div>
@@ -334,7 +335,7 @@
             <section id="landingFeatures" class="section-py landing-features">
                 <div class="container">
                     <h6 class="text-center fw-semibold d-flex justify-content-center align-items-center mb-4">
-                        <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/section-tilte-icon.png'); ?>" alt="section title icon" class="me-2">
+                        <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/section-tilte-icon.png'); ?>" alt="section title icon" class="me-2">
                         <span class="text-uppercase">Useful features</span>
                     </h6>
                     <h3 class="text-center mb-2"><span class="fw-bold">Everything you need</span> to start your next project</h3>
@@ -344,7 +345,7 @@
                     <div class="features-icon-wrapper row gx-0 gy-4 g-sm-5">
                         <div class="col-lg-4 col-sm-6 text-center features-icon-box">
                             <div class="features-icon mb-3">
-                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/laptop-charging.png'); ?>" alt="laptop charging">
+                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/laptop-charging.png'); ?>" alt="laptop charging">
                             </div>
                             <h5 class="mb-2">Quality Code</h5>
                             <p class="features-icon-description">
@@ -353,7 +354,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6 text-center features-icon-box">
                             <div class="features-icon mb-3">
-                                <img src="../../assets/img/front-pages/icons/transition-up.png'); ?>" alt="transition up">
+                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/transition-up.png'); ?>" alt="transition up">
                             </div>
                             <h5 class="mb-2">Continuous Updates</h5>
                             <p class="features-icon-description">
@@ -362,7 +363,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6 text-center features-icon-box">
                             <div class="features-icon mb-3">
-                                <img src="../../assets/img/front-pages/icons/edit.png'); ?>" alt="edit">
+                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/edit.png'); ?>" alt="edit">
                             </div>
                             <h5 class="mb-2">Stater-Kit</h5>
                             <p class="features-icon-description">
@@ -371,7 +372,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6 text-center features-icon-box">
                             <div class="features-icon mb-3">
-                                <img src="../../assets/img/front-pages/icons/3d-select-solid.png'); ?>" alt="3d select solid">
+                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/3d-select-solid.png'); ?>" alt="3d select solid">
                             </div>
                             <h5 class="mb-2">API Ready</h5>
                             <p class="features-icon-description">
@@ -380,14 +381,14 @@
                         </div>
                         <div class="col-lg-4 col-sm-6 text-center features-icon-box">
                             <div class="features-icon mb-3">
-                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/lifebelt.png'); ?>" alt="lifebelt">
+                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/lifebelt.png'); ?>" alt="lifebelt">
                             </div>
                             <h5 class="mb-2">Excellent Support</h5>
                             <p class="features-icon-description">An easy-to-follow doc with lots of references and code examples.</p>
                         </div>
                         <div class="col-lg-4 col-sm-6 text-center features-icon-box">
                             <div class="features-icon mb-3">
-                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/google-docs.png'); ?>" alt="google docs">
+                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/google-docs.png'); ?>" alt="google docs">
                             </div>
                             <h5 class="mb-2">Well Documented</h5>
                             <p class="features-icon-description">An easy-to-follow doc with lots of references and code examples.</p>
@@ -401,7 +402,7 @@
             <section id="landingReviews" class="section-py bg-body landing-reviews pb-0">
                 <div class="container">
                     <h6 class="text-center fw-semibold d-flex justify-content-center align-items-center mb-4">
-                        <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/section-tilte-icon.png'); ?>" alt="section title icon" class="me-2">
+                        <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/section-tilte-icon.png'); ?>" alt="section title icon" class="me-2">
                         <span class="text-uppercase">real customers reviews</span>
                     </h6>
                     <h3 class="text-center mb-2"><span class="fw-bold">Success stories</span> from clients</h3>
@@ -414,7 +415,7 @@
                                 <div class="card h-100">
                                     <div class="card-body text-body d-flex flex-column justify-content-between text-center">
                                         <div class="mb-3">
-                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-2.png'); ?>" alt="client logo" class="client-logo img-fluid">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-2.png'); ?>" alt="client logo" class="client-logo img-fluid">
                                         </div>
                                         <p>
                                             All the requirements for developers have been taken into consideration, so I’m able to build any
@@ -438,7 +439,7 @@
                                 <div class="card h-100">
                                     <div class="card-body text-body d-flex flex-column justify-content-between text-center">
                                         <div class="mb-3">
-                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-5.png'); ?>" alt="client logo" class="client-logo img-fluid">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-5.png'); ?>" alt="client logo" class="client-logo img-fluid">
                                         </div>
                                         <p>
                                             “I've never used a theme as versatile and flexible as Vuexy. It's my go to for building dashboard
@@ -462,7 +463,7 @@
                                 <div class="card h-100">
                                     <div class="card-body text-body d-flex flex-column justify-content-between text-center h-100">
                                         <div class="mb-3">
-                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-4.png'); ?>" alt="client logo" class="client-logo img-fluid">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-4.png'); ?>" alt="client logo" class="client-logo img-fluid">
                                         </div>
                                         <p>
                                             “I've never used a theme as versatile and flexible as Vuexy. It's my go to for building dashboard
@@ -486,7 +487,7 @@
                                 <div class="card h-100">
                                     <div class="card-body text-body d-flex flex-column justify-content-between text-center h-100">
                                         <div class="mb-3">
-                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-1.png'); ?>" alt="client logo" class="client-logo img-fluid">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-1.png'); ?>" alt="client logo" class="client-logo img-fluid">
                                         </div>
                                         <p>Materio is awesome, and I particularly enjoy knowing that if I get stuck on something.</p>
                                         <div class="text-warning mb-3">
@@ -507,7 +508,7 @@
                                 <div class="card h-100">
                                     <div class="card-body text-body d-flex flex-column justify-content-between text-center h-100">
                                         <div class="mb-3">
-                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-3.png'); ?>" alt="client logo" class="client-logo img-fluid">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-3.png'); ?>" alt="client logo" class="client-logo img-fluid">
                                         </div>
                                         <p>
                                             This template is superior in so many ways. The code, the design, the regular updates, the
@@ -531,7 +532,7 @@
                                 <div class="card h-100">
                                     <div class="card-body text-body d-flex flex-column justify-content-between text-center h-100">
                                         <div class="mb-3">
-                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-2.png'); ?>" alt="client logo" class="client-logo img-fluid">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-2.png'); ?>" alt="client logo" class="client-logo img-fluid">
                                         </div>
                                         <p>
                                             All the requirements for developers have been taken into consideration, so I’m able to build any
@@ -555,7 +556,7 @@
                                 <div class="card h-100">
                                     <div class="card-body text-body d-flex flex-column justify-content-between text-center h-100">
                                         <div class="mb-3">
-                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-5.png'); ?>" alt="client logo" class="client-logo img-fluid">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-5.png'); ?>" alt="client logo" class="client-logo img-fluid">
                                         </div>
                                         <p>
                                             “I've never used a theme as versatile and flexible as Vuexy. It's my go to for building dashboard
@@ -579,7 +580,7 @@
                                 <div class="card h-100">
                                     <div class="card-body text-body d-flex flex-column justify-content-between text-center">
                                         <div class="mb-3">
-                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-4.png'); ?>" alt="client logo" class="client-logo img-fluid">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-4.png'); ?>" alt="client logo" class="client-logo img-fluid">
                                         </div>
                                         <p>
                                             “I've never used a theme as versatile and flexible as Vuexy. It's my go to for building dashboard
@@ -603,7 +604,7 @@
                                 <div class="card h-100">
                                     <div class="card-body text-body d-flex flex-column justify-content-between text-center">
                                         <div class="mb-3">
-                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-1.png'); ?>" alt="client logo" class="client-logo img-fluid">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-1.png'); ?>" alt="client logo" class="client-logo img-fluid">
                                         </div>
                                         <p>Materio is awesome, and I particularly enjoy knowing that if I get stuck on something.</p>
                                         <div class="text-warning mb-3">
@@ -624,7 +625,7 @@
                                 <div class="card h-100">
                                     <div class="card-body text-body d-flex flex-column justify-content-between text-center">
                                         <div class="mb-3">
-                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-3.png'); ?>" alt="client logo" class="client-logo img-fluid">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-3.png'); ?>" alt="client logo" class="client-logo img-fluid">
                                         </div>
                                         <p>
                                             This template is superior in so many ways. The code, the design, the regular updates, the
@@ -648,7 +649,7 @@
                                 <div class="card h-100">
                                     <div class="card-body text-body d-flex flex-column justify-content-between text-center">
                                         <div class="mb-3">
-                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-2.png'); ?>" alt="client logo" class="client-logo img-fluid">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-2.png'); ?>" alt="client logo" class="client-logo img-fluid">
                                         </div>
                                         <p>
                                             All the requirements for developers have been taken into consideration, so I’m able to build any
@@ -672,7 +673,7 @@
                                 <div class="card h-100">
                                     <div class="card-body text-body d-flex flex-column justify-content-between text-center">
                                         <div class="mb-3">
-                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-5.png'); ?>" alt="client logo" class="client-logo img-fluid">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-5.png'); ?>" alt="client logo" class="client-logo img-fluid">
                                         </div>
                                         <p>
                                             “I've never used a theme as versatile and flexible as Vuexy. It's my go to for building dashboard
@@ -696,7 +697,7 @@
                                 <div class="card h-100">
                                     <div class="card-body text-body d-flex flex-column justify-content-between text-center">
                                         <div class="mb-3">
-                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-4.png'); ?>" alt="client logo" class="client-logo img-fluid">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-4.png'); ?>" alt="client logo" class="client-logo img-fluid">
                                         </div>
                                         <p>
                                             “I've never used a theme as versatile and flexible as Vuexy. It's my go to for building dashboard
@@ -720,7 +721,7 @@
                                 <div class="card h-100">
                                     <div class="card-body text-body d-flex flex-column justify-content-between text-center">
                                         <div class="mb-3">
-                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-1.png'); ?>" alt="client logo" class="client-logo img-fluid">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-1.png'); ?>" alt="client logo" class="client-logo img-fluid">
                                         </div>
                                         <p>Materio is awesome, and I particularly enjoy knowing that if I get stuck on something.</p>
                                         <div class="text-warning mb-3">
@@ -741,7 +742,7 @@
                                 <div class="card h-100">
                                     <div class="card-body text-body d-flex flex-column justify-content-between text-center">
                                         <div class="mb-3">
-                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-3.png'); ?>" alt="client logo" class="client-logo img-fluid">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-3.png'); ?>" alt="client logo" class="client-logo img-fluid">
                                         </div>
                                         <p>
                                             This template is superior in so many ways. The code, the design, the regular updates, the
@@ -772,19 +773,19 @@
                         <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden" id="swiper-clients-logos">
                             <div class="swiper-wrapper" id="swiper-wrapper-ba5fff481533bbf10" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-458.667px, 0px, 0px);">
                                 <div class="swiper-slide" role="group" aria-label="1 / 5" style="width: 229.333px;">
-                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-1-light.png'); ?>" alt="client logo" class="client-logo" data-app-light-img="front-pages/branding/logo-1-light.png'); ?>" data-app-dark-img="front-pages/branding/logo-1-dark.png'); ?>">
+                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-1-light.png'); ?>" alt="client logo" class="client-logo" data-app-light-img="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-1-light.png'); ?>" data-app-dark-img="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-1-dark.png'); ?>">
                                 </div>
                                 <div class="swiper-slide swiper-slide-prev" role="group" aria-label="2 / 5" style="width: 229.333px;">
-                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-2-light.png'); ?>" alt="client logo" class="client-logo" data-app-light-img="front-pages/branding/logo-2-light.png'); ?>" data-app-dark-img="front-pages/branding/logo-2-dark.png'); ?>">
+                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-2-light.png'); ?>" alt="client logo" class="client-logo" data-app-light-img="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-2-light.png'); ?>" data-app-dark-img="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-2-dark.png'); ?>">
                                 </div>
                                 <div class="swiper-slide swiper-slide-active" role="group" aria-label="3 / 5" style="width: 229.333px;">
-                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-3-light.png'); ?>" alt="client logo" class="client-logo" data-app-light-img="front-pages/branding/logo-3-light.png'); ?>" data-app-dark-img="front-pages/branding/logo-3-dark.png'); ?>">
+                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-3-light.png'); ?>" alt="client logo" class="client-logo" data-app-light-img="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-3-light.png'); ?>" data-app-dark-img="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-3-dark.png'); ?>">
                                 </div>
                                 <div class="swiper-slide swiper-slide-next" role="group" aria-label="4 / 5" style="width: 229.333px;">
-                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-4-light.png'); ?>" alt="client logo" class="client-logo" data-app-light-img="front-pages/branding/logo-4-light.png'); ?>" data-app-dark-img="front-pages/branding/logo-4-dark.png'); ?>">
+                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-4-light.png'); ?>" alt="client logo" class="client-logo" data-app-light-img="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-4-light.png'); ?>" data-app-dark-img="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-4-dark.png'); ?>">
                                 </div>
                                 <div class="swiper-slide" role="group" aria-label="5 / 5" style="width: 229.333px;">
-                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/branding/logo-5-light.png'); ?>" alt="client logo" class="client-logo" data-app-light-img="front-pages/branding/logo-5-light.png'); ?>" data-app-dark-img="front-pages/branding/logo-5-dark.png'); ?>">
+                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-5-light.png'); ?>" alt="client logo" class="client-logo" data-app-light-img="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-5-light.png'); ?>" data-app-dark-img="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/logo-5-dark.png'); ?>">
                                 </div>
                             </div>
                             <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
@@ -798,7 +799,7 @@
             <section id="landingTeam" class="section-py landing-team">
                 <div class="container bg-icon-right">
                     <h6 class="text-center fw-semibold d-flex justify-content-center align-items-center mb-4">
-                        <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/section-tilte-icon.png'); ?>" alt="section title icon" class="me-2">
+                        <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/section-tilte-icon.png'); ?>" alt="section title icon" class="me-2">
                         <span class="text-uppercase">our great team</span>
                     </h6>
                     <h3 class="text-center mb-2"><span class="fw-bold">Supported</span> by Real People</h3>
@@ -807,7 +808,7 @@
                         <div class="col-lg-3 col-sm-6">
                             <div class="card card-hover-border-primary mt-3 mt-lg-0 shadow-none">
                                 <div class="bg-label-primary position-relative team-image-box">
-                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/landing-page/team-member-1.png'); ?>" class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl" alt="human image">
+                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/team-member-1.png'); ?>" class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl" alt="human image">
                                 </div>
                                 <div class="card-body text-center">
                                     <h5 class="card-title fw-semibold mb-1">Sophie Gilbert</h5>
@@ -829,7 +830,7 @@
                         <div class="col-lg-3 col-sm-6">
                             <div class="card card-hover-border-danger mt-3 mt-lg-0 shadow-none">
                                 <div class="bg-label-danger position-relative team-image-box">
-                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/landing-page/team-member-2.png'); ?>" class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl" alt="human image">
+                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/team-member-2.png'); ?>" class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl" alt="human image">
                                 </div>
                                 <div class="card-body text-center">
                                     <h5 class="card-title fw-semibold mb-1">Nannie Ford</h5>
@@ -851,7 +852,7 @@
                         <div class="col-lg-3 col-sm-6">
                             <div class="card card-hover-border-success mt-3 mt-lg-0 shadow-none">
                                 <div class="bg-label-success position-relative team-image-box">
-                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/landing-page/team-member-3.png'); ?>" class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl" alt="human image">
+                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/team-member-3.png'); ?>" class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl" alt="human image">
                                 </div>
                                 <div class="card-body text-center">
                                     <h5 class="card-title fw-semibold mb-1">Chris Watkins</h5>
@@ -873,7 +874,7 @@
                         <div class="col-lg-3 col-sm-6">
                             <div class="card card-hover-border-info mt-3 mt-lg-0 shadow-none">
                                 <div class="bg-label-info position-relative team-image-box">
-                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/landing-page/team-member-4.png'); ?>" class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl" alt="human image">
+                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/team-member-4.png'); ?>" class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl" alt="human image">
                                 </div>
                                 <div class="card-body text-center">
                                     <h5 class="card-title fw-semibold mb-1">Paul Miles</h5>
@@ -901,7 +902,7 @@
             <section id="landingPricing" class="section-py bg-body landing-pricing">
                 <div class="container bg-icon-left">
                     <h6 class="text-center fw-semibold d-flex justify-content-center align-items-center mb-4">
-                        <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/section-tilte-icon.png'); ?>" alt="section title icon" class="me-2">
+                        <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/section-tilte-icon.png'); ?>" alt="section title icon" class="me-2">
                         <span class="text-uppercase">pricing plans</span>
                     </h6>
                     <h3 class="text-center mb-0"><span class="fw-bold">Tailored pricing plans</span> designed for you</h3>
@@ -935,43 +936,43 @@
                                             <p class="small mb-0">10% off for yearly subscription</p>
                                         </div>
                                     </div>
-                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/smiling-icon.png'); ?>" alt="smiling icon">
+                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/smiling-icon.png'); ?>" alt="smiling icon">
                                 </div>
                                 <div class="card-body">
                                     <ul class="list-unstyled">
                                         <li>
                                             <h5>
-                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
+                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
                                                 Timeline
                                             </h5>
                                         </li>
                                         <li>
                                             <h5>
-                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
+                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
                                                 Basic search
                                             </h5>
                                         </li>
                                         <li>
                                             <h5>
-                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
+                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
                                                 Live chat widget
                                             </h5>
                                         </li>
                                         <li>
                                             <h5>
-                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
+                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
                                                 Email marketing
                                             </h5>
                                         </li>
                                         <li>
                                             <h5>
-                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
+                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
                                                 Custom Forms
                                             </h5>
                                         </li>
                                         <li>
                                             <h5>
-                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
+                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
                                                 Traffic analytics
                                             </h5>
                                         </li>
@@ -1004,43 +1005,43 @@
                                             <p class="small mb-0">10% off for yearly subscription</p>
                                         </div>
                                     </div>
-                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/smiling-icon.png'); ?>" alt="smiling icon">
+                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/smiling-icon.png'); ?>" alt="smiling icon">
                                 </div>
                                 <div class="card-body">
                                     <ul class="list-unstyled">
                                         <li>
                                             <h5>
-                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
+                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
                                                 Everything in basic
                                             </h5>
                                         </li>
                                         <li>
                                             <h5>
-                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
+                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
                                                 Timeline with database
                                             </h5>
                                         </li>
                                         <li>
                                             <h5>
-                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
+                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
                                                 Advanced search
                                             </h5>
                                         </li>
                                         <li>
                                             <h5>
-                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
+                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
                                                 Marketing automation
                                             </h5>
                                         </li>
                                         <li>
                                             <h5>
-                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
+                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
                                                 Advanced chatbot
                                             </h5>
                                         </li>
                                         <li>
                                             <h5>
-                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
+                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
                                                 Campaign management
                                             </h5>
                                         </li>
@@ -1073,43 +1074,43 @@
                                             <p class="small mb-0">10% off for yearly subscription</p>
                                         </div>
                                     </div>
-                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/smiling-icon.png'); ?>" alt="smiling icon">
+                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/smiling-icon.png'); ?>" alt="smiling icon">
                                 </div>
                                 <div class="card-body">
                                     <ul class="list-unstyled">
                                         <li>
                                             <h5>
-                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
+                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
                                                 Everything in premium
                                             </h5>
                                         </li>
                                         <li>
                                             <h5>
-                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
+                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
                                                 Timeline with database
                                             </h5>
                                         </li>
                                         <li>
                                             <h5>
-                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
+                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
                                                 Fuzzy search
                                             </h5>
                                         </li>
                                         <li>
                                             <h5>
-                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
+                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
                                                 A/B testing sanbox
                                             </h5>
                                         </li>
                                         <li>
                                             <h5>
-                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
+                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
                                                 Custom permissions
                                             </h5>
                                         </li>
                                         <li>
                                             <h5>
-                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
+                                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/list-arrow-icon.png'); ?>" alt="list arrow icon" class="me-2 pe-1 scaleX-n1-rtl">
                                                 Social media automation
                                             </h5>
                                         </li>
@@ -1167,7 +1168,7 @@
             <section id="landingFAQ" class="section-py bg-body landing-faq">
                 <div class="container bg-icon-right">
                     <h6 class="text-center fw-semibold d-flex justify-content-center align-items-center mb-4">
-                        <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/section-tilte-icon.png'); ?>" alt="section title icon" class="me-2">
+                        <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/section-tilte-icon.png'); ?>" alt="section title icon" class="me-2">
                         <span class="text-uppercase">faq</span>
                     </h6>
                     <h3 class="text-center mb-2">Frequently asked<span class="fw-bold"> questions</span></h3>
@@ -1177,7 +1178,7 @@
                     <div class="row gy-5">
                         <div class="col-lg-5">
                             <div class="text-center">
-                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/landing-page/sitting-girl-with-laptop.png'); ?>" alt="sitting girl with laptop" class="faq-image">
+                                <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/sitting-girl-with-laptop.png'); ?>" alt="sitting girl with laptop" class="faq-image">
                             </div>
                         </div>
                         <div class="col-lg-7">
@@ -1273,7 +1274,7 @@
                             <a href="payment-page.html" class="btn btn-primary waves-effect waves-light">Get Started<i class="mdi mdi-arrow-right mdi-24px ms-3 scaleX-n1-rtl"></i></a>
                         </div>
                         <div class="col-lg-6 pt-lg-5">
-                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/landing-page/cta-dashboard.png'); ?>" alt="cta dashboard" class="img-fluid">
+                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/cta-dashboard.png'); ?>" alt="cta dashboard" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -1284,7 +1285,7 @@
             <section id="landingContact" class="section-py bg-body landing-contact">
                 <div class="container bg-icon-left">
                     <h6 class="text-center fw-semibold d-flex justify-content-center align-items-center mb-4">
-                        <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/icons/section-tilte-icon.png'); ?>" alt="section title icon" class="me-2">
+                        <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/section-tilte-icon.png'); ?>" alt="section title icon" class="me-2">
                         <span class="text-uppercase">contact us</span>
                     </h6>
                     <h3 class="text-center mb-2"><span class="fw-bold">Lets work</span> together</h3>
@@ -1295,8 +1296,7 @@
                                 <div class="bg-primary rounded text-white card-body">
                                     <p class="fw-medium mb-1">Let’s contact with us</p>
                                     <p class="display-6 mb-4">Share your ideas or requirement with our experts.</p>
-                                    <img src="../../assets/img/front-pages/landing-page/let’s-contact.png
-            " alt="let’s contact" class="w-100 mb-2 pb-1">
+                                    <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/contact.png')?>" alt="let’s contact" class="w-100 mb-2 pb-1">
                                     <p class="mb-0">
                                         Looking for more customisation, more features, and more anything? Don’t worry, We’ve provide you with
                                         an entire team of experienced professionals.
@@ -1428,8 +1428,8 @@
                         </div>
                         <div class="col-lg-3 col-md-4">
                             <h6 class="footer-title mb-4">Download our app</h6>
-                            <a href="javascript:void(0);" class="d-block footer-link mb-3 pb-2"><img src="../../assets/img/front-pages/landing-page/apple-icon.png'); ?>" alt="apple icon"></a>
-                            <a href="javascript:void(0);" class="d-block footer-link"><img src="../../assets/img/front-pages/landing-page/google-play-icon.png'); ?>" alt="google play icon"></a>
+                            <a href="javascript:void(0);" class="d-block footer-link mb-3 pb-2"><img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/apple-icon.png'); ?>" alt="apple icon"></a>
+                            <a href="javascript:void(0);" class="d-block footer-link"><img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/google-play-icon.png'); ?>" alt="google play icon"></a>
                         </div>
                     </div>
                 </div>
@@ -1449,8 +1449,6 @@
         </footer>
         <!-- Footer: End -->
 
-        <!-- Core JS -->
-        <!-- build:js assets/vendor/js/core.js -->
         <script type="text/javascript" id="">
             console.log("TS:GTM Worked!");
         </script>
@@ -1482,7 +1480,7 @@
                                 <div class="form-check custom-option custom-option-icon checked">
                                     <label class="form-check-label custom-option-content p-0" for="customRadioIconlight">
                                         <span class="custom-option-body mb-0">
-                                            <img src="../../assets/img/customizer/light.svg" alt="Light" class="img-fluid scaleX-n1-rtl">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/light.svg')?>" alt="Light" class="img-fluid scaleX-n1-rtl">
                                         </span>
                                         <input name="customRadioIcon" class="form-check-input d-none" type="radio" value="light" id="customRadioIconlight" checked="checked">
                                     </label>
@@ -1493,7 +1491,7 @@
                                 <div class="form-check custom-option custom-option-icon">
                                     <label class="form-check-label custom-option-content p-0" for="customRadioIcondark">
                                         <span class="custom-option-body mb-0">
-                                            <img src="../../assets/img/customizer/dark.svg" alt="Dark" class="img-fluid scaleX-n1-rtl">
+                                            <img src=""<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/dark.svg')?>" alt="Dark" class="img-fluid scaleX-n1-rtl">
                                         </span>
                                         <input name="customRadioIcon" class="form-check-input d-none" type="radio" value="dark" id="customRadioIcondark">
                                     </label>
@@ -1504,7 +1502,7 @@
                                 <div class="form-check custom-option custom-option-icon">
                                     <label class="form-check-label custom-option-content p-0" for="customRadioIconsystem">
                                         <span class="custom-option-body mb-0">
-                                            <img src="../../assets/img/customizer/system.svg" alt="System" class="img-fluid scaleX-n1-rtl">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/system.svg') ?>" alt="System" class="img-fluid scaleX-n1-rtl">
                                         </span>
                                         <input name="customRadioIcon" class="form-check-input d-none" type="radio" value="system" id="customRadioIconsystem">
                                     </label>
@@ -1523,7 +1521,7 @@
                                 <div class="form-check custom-option custom-option-icon checked">
                                     <label class="form-check-label custom-option-content p-0" for="directionRadioIconltr">
                                         <span class="custom-option-body mb-0">
-                                            <img src="../../assets/img/customizer/ltr.svg" alt="Left to Right (En)" class="img-fluid scaleX-n1-rtl">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/ltr.svg') ?>" alt="Left to Right (En)" class="img-fluid scaleX-n1-rtl">
                                         </span>
                                         <input name="directionRadioIcon" class="form-check-input d-none" type="radio" value="ltr" id="directionRadioIconltr" checked="checked">
                                     </label>
@@ -1534,7 +1532,7 @@
                                 <div class="form-check custom-option custom-option-icon">
                                     <label class="form-check-label custom-option-content p-0" for="directionRadioIconrtl">
                                         <span class="custom-option-body mb-0">
-                                            <img src="../../assets/img/customizer/rtl.svg" alt="Right to Left (Ar)" class="img-fluid scaleX-n1-rtl">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/elements/rtl.svg')?>" alt="Right to Left (Ar)" class="img-fluid scaleX-n1-rtl">
                                         </span>
                                         <input name="directionRadioIcon" class="form-check-input d-none" type="radio" value="rtl" id="directionRadioIconrtl">
                                     </label>
