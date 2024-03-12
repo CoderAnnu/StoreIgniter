@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang="en"  class="light-style layout-navbar-fixed layout-compact layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../../assets/" data-template="vertical-menu-template">
 
 <head>
     <meta charset="utf-8">
@@ -28,22 +28,11 @@
     <!-- end dashboard -->
 
     <!-- End Project Template  -->
-
-    <script>
-        window.BASE_URL = "<?= base_url(); ?>";
-    </script>
-
     <title>StoreIgniter E-Commerce PlatForm</title>
 </head>
 
 <body>
-
-    <div ng-view class="light-style layout-menu-fixed layout-compact" dir="ltr" data-theme="theme-default" data-assets-path="../Project-Template/Materio/assets/" data-template="vertical-menu-template-free"></div>
-
     <!-- landing page -->
-
-    <body>
-
 
         <!-- Navbar: Start -->
         <nav class="layout-navbar container shadow-none py-0">
@@ -261,7 +250,7 @@
                                     </div>
                                     <div class="col-lg-4 d-none d-lg-block">
                                         <div class="bg-body nav-img-col p-2">
-                                            <img src="../../assets/img/front-pages/misc/nav-item-col-img-light.png'); ?>" class="img-fluid scaleX-n1-rtl w-100" alt="nav item col image" data-app-light-img="front-pages/misc/nav-item-col-img-light.png'); ?>" data-app-dark-img="front-pages/misc/nav-item-col-img-dark.png'); ?>">
+                                            <img src="<?= base_url('Project-Template/Materio/LandingPage/assets/img/backgrounds/../../assets/img/front-pages/misc/nav-item-col-img-light.png'); ?>" class="img-fluid scaleX-n1-rtl w-100" alt="nav item col image" data-app-light-img="front-pages/misc/nav-item-col-img-light.png'); ?>" data-app-dark-img="front-pages/misc/nav-item-col-img-dark.png'); ?>">
                                         </div>
                                     </div>
                                 </div>
@@ -272,11 +261,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="landing-menu-overlay d-lg-none"></div>
                 <!-- Menu wrapper: End -->
                 <!-- Toolbar: Start -->
                 <ul class="navbar-nav flex-row align-items-center ms-auto">
-
                     <!-- Style Switcher -->
                     <li class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0">
                         <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
