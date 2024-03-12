@@ -1,7 +1,7 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme" data-bg-class="bg-menu-theme" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
 
   <div class="app-brand bg-primary py-3">
-    <a href="#" class="app-brand-link">
+    <a href="/" class="app-brand-link">
       <!-- use logo here  -->
       <span class="app-brand-text menu-text fw-semibold ms-2">Materio</span>
     </a>
@@ -75,8 +75,8 @@
               <span class="sidebar-text">Product List</span>
               </a>
             </li>
-            <li class="nav-item" ng-class='{"active" : $ctrl.path == "/product/addProduct" }'>
-              <a href="#!/product/addProduct" class="menu-link">
+            <li class="nav-item" ng-class='{"active" : $ctrl.path == "/product/add" }'>
+              <a href="#!/product/add" class="menu-link">
                 <i class="me-3 fa-solid fa-plus"></i>
                 <span class="sidebar-text">Add Product</span>
               </a>
