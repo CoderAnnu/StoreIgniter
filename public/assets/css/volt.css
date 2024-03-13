@@ -23560,8 +23560,16 @@ fieldset:disabled .btn {
 }
 
 .sidebar .nav-item .nav-link:hover {
-    color: #F2F4F6;
-    background-color: #374151;
+    /* color: #F2F4F6; */
+    /* background-color: #374151; */
+    color: #544f5a;
+    background-color: rgba(58, 53, 65, 0.04);
+}
+
+
+.m-menu {
+    background-color: rgba(58, 53, 65, .08) !important;
+
 }
 
 .sidebar .nav-link+.multi-level {
