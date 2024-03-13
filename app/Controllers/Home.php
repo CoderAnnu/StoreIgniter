@@ -70,7 +70,7 @@ class Home extends BaseController
                 "controller" => $view->render('/Product/AllProduct/JsController/AllProductCtrl')
             ], 
             [
-                "path" => "/product/add/",
+                "path" => "/product/add",
                 "title" => "Add Product",
                 "injectors" => ['$http', '$window', '$scope', '$location', 'Auth'],
                 "template" => $view->render('/Product/AddProduct/addProduct'),
@@ -93,6 +93,34 @@ class Home extends BaseController
                 "controller" => $view->render('/Product/ProductCategory/JsController/CatelistCtrl')
             ],
 
+            [
+                "path" => "/product/order",
+                "title" => "Edit Product",
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth','$routeParams'],
+                "template" => $view->render('/Product/Order/Order'),
+                "controller" => $view->render('/Product/Order/JsController/OrderCtrl')
+            ],
+            [
+                "path" => "/product/order/details",
+                "title" => "Edit Product",
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth','$routeParams'],
+                "template" => $view->render('/Product/Order/OrderDetails/OrderDetails'),
+                "controller" => $view->render('/Product/Order/OrderDetails/JsController/OrderDetailsCtrl')
+            ],
+            [
+                "path" => "/product/customer",
+                "title" => "Edit Product",
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth','$routeParams'],
+                "template" => $view->render('/Product/Customer/Customer'),
+                "controller" => $view->render('/Product/Customer/JsController/CustomerCtrl')
+            ],
+            [
+                "path" => "/product/customer/details",
+                "title" => "Edit Product",
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth','$routeParams'],
+                "template" => $view->render('/Product/Customer/Customer'),
+                "controller" => $view->render('/Product/Customer/JsController/CustomerCtrl')
+            ],
         ];
         // End Admin Section 
         // Push admin's route to array
