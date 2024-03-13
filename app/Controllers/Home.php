@@ -149,14 +149,14 @@ class Home extends BaseController
         //     "controller" => $view->render('Admin/GeneralSettings/JsController/GeneralSettingCtrl'),
         // ];
 
-        // $routes[] = [
-        //     "path" => "/user/edit/:key",
-        //     "title" => "Edit user",
-        //     "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
-        //     "template" =>  $view->render('Admin/Users/Edit/EditUser'),
-        //     "controller" => $view->render('Admin/Users/Edit/JsController/EditUserCtrl'),
+        $routes[] = [
+            "path" => "/user/edit/:key",
+            "title" => "Edit user",
+            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
+            "template" =>  $view->render('Admin/Users/EditUser/EditUser'),
+            "controller" => $view->render('Admin/Users/EditUser/JsController/EditUserCtrl'),
 
-        // ];
+        ];
 
         // $routes[] = [
         //     "path" => "/user/delete/:key",
