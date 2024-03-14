@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" /> -->
 
     <!-- New Dashboard -->
-    <link rel="icon" type="image/x-icon" href="<?= base_url('/Project-Template/Materio/assets/img/favicon/favicon.ico') ?>">
+    <link rel="icon" type="image/x-icon" href="<?= base_url('/assets/img/favicon/favicon.ico') ?>">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,25 +23,25 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&ampdisplay=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/assets/vendor/fonts/materialdesignicons.css') ?>" />
+    <link rel="stylesheet" href="<?= base_url('/assets/fonts/materialdesignicons.css') ?>" />
     <!-- Menu waves for no-customizer fix -->
-    <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/assets/vendor/libs/node-waves/node-waves.css') ?>" />
+    <link rel="stylesheet" href="<?= base_url('/assets/vendor/libs/node-waves/node-waves.css') ?>" />
     <!-- Core CSS -->
-    <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') ?>" />
+    <link rel="stylesheet" href="<?= base_url('/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') ?>" />
 
-    <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/assets/vendor/css/core.css') ?>" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/assets/vendor/css/theme-default.css') ?>" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/assets/css/demo.css') ?>" />
+    <link rel="stylesheet" href="<?= base_url('/assets/css/core.css') ?>" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="<?= base_url('/assets/css/theme-default.css') ?>" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="<?= base_url('/assets/css/demo.css') ?>" />
 
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="<?= base_url('/Project-Template/Materio/assets/vendor/libs/apex-charts/apex-charts.css') ?>" />
+    <link rel="stylesheet" href="<?= base_url('/assets/vendor/libs/apex-charts/apex-charts.css') ?>" />
     <!-- Page CSS -->
 
     <!-- Helpers -->
-    <script src="<?= base_url('/Project-Template/Materio/assets/vendor/js/helpers.js') ?>"></script>
+    <script src="<?= base_url('/assets/js/helpers.js') ?>"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="<?= base_url('/Project-Template/Materio/assets/js/config.js') ?>"></script>
+    <script src="<?= base_url('/assets/js/config.js') ?>"></script>
     <!-- end dashboard -->
 
     <!-- Custom Css -->
@@ -49,7 +49,6 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
 
     <!-- End Project Template  -->
-
     <script>
         window.BASE_URL = "<?= base_url(); ?>";
     </script>
@@ -59,26 +58,25 @@
 
 <body ng-controller="globalCtrl" ng-cloak>
 
-    <div ng-view   class="light-style layout-menu-fixed layout-compact" dir="ltr" data-theme="theme-default" data-assets-path="../Project-Template/Materio/assets/" data-template="vertical-menu-template-free"></div>
+    <div ng-view class="light-style layout-menu-fixed layout-compact" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-free"></div>
     <!-- Dashboard footer  -->
     <!-- Core JS -->
-    <!-- build:js assets/vendor/js/core.js -->
-    <script src="<?= base_url('/Project-Template/Materio/assets/vendor/libs/jquery/jquery.js') ?>"></script>
-    <script src="<?= base_url('/Project-Template/Materio/assets/vendor/libs/popper/popper.js') ?>"></script>
-    <script src="<?= base_url('/Project-Template/Materio/assets/vendor/js/bootstrap.js') ?>"></script>
-    <script src="<?= base_url('/Project-Template/Materio/assets/vendor/libs/node-waves/node-waves.js') ?>"></script>
-    <script src="<?= base_url('/Project-Template/Materio/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') ?>"></script>
-    <script src="<?= base_url('/Project-Template/Materio/assets/vendor/js/menu.js') ?>"></script>
+    <script src="<?= base_url('/assets/vendor/libs/jquery/jquery.js') ?>"></script>
+    <script src="<?= base_url('/assets/vendor/libs/popper/popper.js') ?>"></script>
+    <script src="<?= base_url('/assets/js/bootstrap.js') ?>"></script>
+    <script src="<?= base_url('/assets/vendor/libs/node-waves/node-waves.js') ?>"></script>
+    <script src="<?= base_url('/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') ?>"></script>
+    <script src="<?= base_url('/assets/js/menu.js') ?>"></script>
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="<?= base_url('/Project-Template/Materio/assets/vendor/libs/apex-charts/apexcharts.js') ?>"></script>
+    <script src="<?= base_url('/assets/vendor/libs/apex-charts/apexcharts.js') ?>"></script>
 
     <!-- Main JS -->
-    <script src="<?= base_url('/Project-Template/Materio/assets/js/main.js') ?>"></script>
+    <script src="<?= base_url('/assets/js/main.js') ?>"></script>
 
     <!-- Page JS -->
-    <script src="<?= base_url('/Project-Template/Materio/assets/js/dashboards-analytics.js') ?>"></script>
+    <script src="<?= base_url('/assets/js/dashboards-analytics.js') ?>"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -92,8 +90,6 @@
     <script src="<?= base_url('assets/vendor/vanillajs-datepicker/dist/js/datepicker.min.js') ?>"></script>
     <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
     <script src="<?= base_url('assets/vendor/simplebar/dist/simplebar.min.js') ?>"></script>
-    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
-    <script src="<?= base_url('assets/js/volt.js') ?>"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.3/angular-route.min.js"></script>
     <!-- <script src="</?= base_url('assets/js/chart.js') ?>"></script> -->
