@@ -26,7 +26,7 @@
             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                 <a class="nav-link dropdown-toggle hide-arrow p-0" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                        <img src="<?= base_url('/Project-Template/Materio/assets/img/avatars/1.png')?>" alt class="w-px-40 h-auto rounded-circle" />
+                        <img src="<?= base_url('/assets/img/avatars/1.png')?>" alt class="w-px-40 h-auto rounded-circle" />
                     </div>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end mt-3 py-2">
@@ -35,7 +35,7 @@
                             <div class="d-flex align-items-center">
                                 <div class="flex-shrink-0 me-2 pe-1">
                                     <div class="avatar avatar-online">
-                                        <img src="<?= base_url('/Project-Template/Materio/assets/img/avatars/1.png')?>" alt class="w-px-40 h-auto rounded-circle" />
+                                        <img src="<?= base_url('/assets/img/avatars/1.png')?>" alt class="w-px-40 h-auto rounded-circle" />
                                     </div>
                                 </div>
                                 <div class="flex-grow-1">

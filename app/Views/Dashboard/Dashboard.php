@@ -33,8 +33,8 @@
                       <p class="mb-2 pb-1">78% of target 🚀</p>
                       <a href="javascript:;" class="btn btn-sm btn-primary">View Sales</a>
                     </div>
-                    <img src="<?= base_url('/Project-Template/Materio/assets/img/icons/misc/triangle-light.png') ?>" class="scaleX-n1-rtl position-absolute bottom-0 end-0" width="166" alt="triangle background" data-app-light-img="icons/misc/triangle-light.png" data-app-dark-img="icons/misc/triangle-dark.png>" />
-                    <img src="<?= base_url('/Project-Template/Materio/assets/img/illustrations/trophy.png') ?>" class="scaleX-n1-rtl position-absolute bottom-0 end-0 me-4 mb-4 pb-2" width="83" alt="view sales" />
+                    <img src="<?= base_url('/assets/img/icons/misc/triangle-light.png') ?>" class="scaleX-n1-rtl position-absolute bottom-0 end-0" width="166" alt="triangle background" data-app-light-img="icons/misc/triangle-light.png" data-app-dark-img="icons/misc/triangle-dark.png>" />
+                    <img src="<?= base_url('/assets/img/illustrations/trophy.png') ?>" class="scaleX-n1-rtl position-absolute bottom-0 end-0 me-4 mb-4 pb-2" width="83" alt="view sales" />
                   </div>
                 </div>
                 <!--/ Congratulations card -->
@@ -182,7 +182,7 @@
                       <ul class="p-0 m-0">
                         <li class="d-flex mb-4 pb-md-2">
                           <div class="avatar flex-shrink-0 me-3">
-                            <img src="<?= base_url('/Project-Template/Materio/assets/img/icons/misc/zipcar.png') ?>" alt="zipcar" class="rounded" />
+                            <img src="<?= base_url('/assets/img/icons/misc/zipcar.png') ?>" alt="zipcar" class="rounded" />
                           </div>
                           <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                             <div class="me-2">
@@ -199,7 +199,7 @@
                         </li>
                         <li class="d-flex mb-4 pb-md-2">
                           <div class="avatar flex-shrink-0 me-3">
-                            <img src="<?= base_url('/Project-Template/Materio/assets/img/icons/misc/bitbank.png') ?>" alt="bitbank" class="rounded" />
+                            <img src="<?= base_url('/assets/img/icons/misc/bitbank.png') ?>" alt="bitbank" class="rounded" />
                           </div>
                           <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                             <div class="me-2">
@@ -216,7 +216,7 @@
                         </li>
                         <li class="d-flex mb-md-3">
                           <div class="avatar flex-shrink-0 me-3">
-                            <img src="<?= base_url('/Project-Template/Materio/assets/img/icons/misc/aviato.png') ?>" alt="aviato" class="rounded" />
+                            <img src="<?= base_url('/assets/img/icons/misc/aviato.png') ?>" alt="aviato" class="rounded" />
                           </div>
                           <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                             <div class="me-2">
@@ -462,7 +462,7 @@
                           <ul class="p-0 m-0">
                             <li class="d-flex mb-4 align-items-center pb-2">
                               <div class="flex-shrink-0 me-3">
-                                <img src="<?= base_url('/Project-Template/Materio/assets/img/icons/payments/gumroad.png') ?>" class="img-fluid" alt="gumroad" height="30" width="30" />
+                                <img src="<?= base_url('/assets/img/icons/payments/gumroad.png') ?>" class="img-fluid" alt="gumroad" height="30" width="30" />
                               </div>
                               <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                 <div class="me-2">
@@ -474,7 +474,7 @@
                             </li>
                             <li class="d-flex mb-4 align-items-center pb-2">
                               <div class="flex-shrink-0 me-3">
-                                <img src="<?= base_url('/Project-Template/Materio/assets/img/icons/payments/mastercard-2.png') ?>" class="img-fluid" alt="mastercard" height="30" width="30" />
+                                <img src="<?= base_url('/assets/img/icons/payments/mastercard-2.png') ?>" class="img-fluid" alt="mastercard" height="30" width="30" />
                               </div>
                               <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                 <div class="me-2">
@@ -486,7 +486,7 @@
                             </li>
                             <li class="d-flex mb-4 align-items-center pb-2">
                               <div class="flex-shrink-0 me-3">
-                                <img src="<?= base_url('/Project-Template/Materio/assets/img/icons/payments/stripes.png') ?>" class="img-fluid" alt="stripes" height="30" width="30" />
+                                <img src="<?= base_url('/assets/img/icons/payments/stripes.png') ?>" class="img-fluid" alt="stripes" height="30" width="30" />
                               </div>
                               <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                 <div class="me-2">
@@ -498,7 +498,7 @@
                             </li>
                             <li class="d-flex mb-4 align-items-center pb-2">
                               <div class="flex-shrink-0 me-3">
-                                <img src="<?= base_url('/Project-Template/Materio/assets/img/icons/payments/american-bank.png') ?>" class="img-fluid" alt="american" height="30" width="30" />
+                                <img src="<?= base_url('/assets/img/icons/payments/american-bank.png') ?>" class="img-fluid" alt="american" height="30" width="30" />
                               </div>
                               <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                 <div class="me-2">
@@ -510,7 +510,7 @@
                             </li>
                             <li class="d-flex align-items-center">
                               <div class="flex-shrink-0 me-3">
-                                <img src="<?= base_url('/Project-Template/Materio/assets/img/icons/payments/citi.png') ?>" class="img-fluid" alt="citi" height="30" width="30" />
+                                <img src="<?= base_url('/assets/img/icons/payments/citi.png') ?>" class="img-fluid" alt="citi" height="30" width="30" />
                               </div>
                               <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                 <div class="me-2">
@@ -532,7 +532,7 @@
                           <ul class="p-0 m-0">
                             <li class="d-flex mb-4 align-items-center pb-2">
                               <div class="flex-shrink-0 me-3">
-                                <img src="<?= base_url('/Project-Template/Materio/assets/img/icons/brands/google.png') ?>" class="img-fluid" alt="google" height="30" width="30" />
+                                <img src="<?= base_url('/assets/img/icons/brands/google.png') ?>" class="img-fluid" alt="google" height="30" width="30" />
                               </div>
                               <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                 <div class="me-2">
@@ -544,7 +544,7 @@
                             </li>
                             <li class="d-flex mb-4 align-items-center pb-2">
                               <div class="flex-shrink-0 me-3">
-                                <img src="<?= base_url('/Project-Template/Materio/assets/img/icons/brands/github.png') ?>" class="img-fluid" alt="github" height="30" width="30" />
+                                <img src="<?= base_url('/assets/img/icons/brands/github.png') ?>" class="img-fluid" alt="github" height="30" width="30" />
                               </div>
                               <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                 <div class="me-2">
@@ -556,7 +556,7 @@
                             </li>
                             <li class="d-flex mb-4 align-items-center pb-2">
                               <div class="flex-shrink-0 me-3">
-                                <img src="<?= base_url('/Project-Template/Materio/assets/img/icons/brands/slack.png') ?>" class="img-fluid" alt="slack" height="30" width="30" />
+                                <img src="<?= base_url('/assets/img/icons/brands/slack.png') ?>" class="img-fluid" alt="slack" height="30" width="30" />
                               </div>
                               <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                 <div class="me-2">
@@ -568,7 +568,7 @@
                             </li>
                             <li class="d-flex mb-4 align-items-center pb-2">
                               <div class="flex-shrink-0 me-3">
-                                <img src="<?= base_url('/Project-Template/Materio/assets/img/icons/payments/digital-ocean.png') ?>" class="img-fluid" alt="digital" height="30" width="30" />
+                                <img src="<?= base_url('/assets/img/icons/payments/digital-ocean.png') ?>" class="img-fluid" alt="digital" height="30" width="30" />
                               </div>
                               <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                 <div class="me-2">
@@ -580,7 +580,7 @@
                             </li>
                             <li class="d-flex align-items-center">
                               <div class="flex-shrink-0 me-3">
-                                <img src="<?= base_url('/Project-Template/Materio/assets/img/icons/brands/aws.png') ?>" class="img-fluid" alt="aws" height="30" width="30" />
+                                <img src="<?= base_url('/assets/img/icons/brands/aws.png') ?>" class="img-fluid" alt="aws" height="30" width="30" />
                               </div>
                               <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                 <div class="me-2">
@@ -618,7 +618,7 @@
                             <td>
                               <div class="d-flex align-items-center">
                                 <div class="avatar avatar-sm me-3">
-                                  <img src="<?= base_url('/Project-Template/Materio/assets/img/avatars/1.png') ?>" alt="Avatar" class="rounded-circle" />
+                                  <img src="<?= base_url('/assets/img/avatars/1.png') ?>" alt="Avatar" class="rounded-circle" />
                                 </div>
                                 <div>
                                   <h6 class="mb-0 text-truncate">Jordan Stevenson</h6>
@@ -638,7 +638,7 @@
                             <td>
                               <div class="d-flex align-items-center">
                                 <div class="avatar avatar-sm me-3">
-                                  <img src="<?= base_url('/Project-Template/Materio/assets/img/avatars/3.png') ?>" alt="Avatar" class="rounded-circle" />
+                                  <img src="<?= base_url('/assets/img/avatars/3.png') ?>" alt="Avatar" class="rounded-circle" />
                                 </div>
                                 <div>
                                   <h6 class="mb-0 text-truncate">Benedetto Rossiter</h6>
@@ -658,7 +658,7 @@
                             <td>
                               <div class="d-flex align-items-center">
                                 <div class="avatar avatar-sm me-3">
-                                  <img src="<?= base_url('/Project-Template/Materio/assets/img/avatars/2.png') ?>" alt="Avatar" class="rounded-circle" />
+                                  <img src="<?= base_url('/assets/img/avatars/2.png') ?>" alt="Avatar" class="rounded-circle" />
                                 </div>
                                 <div>
                                   <h6 class="mb-0 text-truncate">Bentlee Emblin</h6>
@@ -678,7 +678,7 @@
                             <td>
                               <div class="d-flex align-items-center">
                                 <div class="avatar avatar-sm me-3">
-                                  <img src="<?= base_url('/Project-Template/Materio/assets/img/avatars/5.png') ?>" alt="Avatar" class="rounded-circle" />
+                                  <img src="<?= base_url('/assets/img/avatars/5.png') ?>" alt="Avatar" class="rounded-circle" />
                                 </div>
                                 <div>
                                   <h6 class="mb-0 text-truncate">Bertha Biner</h6>
@@ -698,7 +698,7 @@
                             <td>
                               <div class="d-flex align-items-center">
                                 <div class="avatar avatar-sm me-3">
-                                  <img src="<?= base_url('/Project-Template/Materio/assets/img/avatars/4.png') ?>" alt="Avatar" class="rounded-circle" />
+                                  <img src="<?= base_url('/assets/img/avatars/4.png') ?>" alt="Avatar" class="rounded-circle" />
                                 </div>
                                 <div>
                                   <h6 class="mb-0 text-truncate">Beverlie Krabbe</h6>
@@ -718,7 +718,7 @@
                             <td>
                               <div class="d-flex align-items-center">
                                 <div class="avatar avatar-sm me-3">
-                                  <img src="<?= base_url('/Project-Template/Materio/assets/img/avatars/7.png') ?>" alt="Avatar" class="rounded-circle" />
+                                  <img src="<?= base_url('/assets/img/avatars/7.png') ?>" alt="Avatar" class="rounded-circle" />
                                 </div>
                                 <div>
                                   <h6 class="mb-0 text-truncate">Bradan Rosebotham</h6>
@@ -738,7 +738,7 @@
                             <td>
                               <div class="d-flex align-items-center">
                                 <div class="avatar avatar-sm me-3">
-                                  <img src="<?= base_url('/Project-Template/Materio/assets/img/avatars/6.png') ?>" alt="Avatar" class="rounded-circle" />
+                                  <img src="<?= base_url('/assets/img/avatars/6.png') ?>" alt="Avatar" class="rounded-circle" />
                                 </div>
                                 <div>
                                   <h6 class="mb-0 text-truncate">Bree Kilday</h6>
@@ -758,7 +758,7 @@
                             <td>
                               <div class="d-flex align-items-center">
                                 <div class="avatar avatar-sm me-3">
-                                  <img src="<?= base_url('/Project-Template/Materio/assets/img/avatars/1.png') ?>" alt="Avatar" class="rounded-circle" />
+                                  <img src="<?= base_url('/assets/img/avatars/1.png') ?>" alt="Avatar" class="rounded-circle" />
                                 </div>
                                 <div>
                                   <h6 class="mb-0 text-truncate">Breena Gallemore</h6>
