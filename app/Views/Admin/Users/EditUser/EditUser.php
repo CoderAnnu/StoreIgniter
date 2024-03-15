@@ -7,7 +7,7 @@
         <!-- Content -->
         <div class="container-xxl flex-grow-1 container-p-y">
             <h4 class="py-3 mb-4">
-                <span class="text-muted fw-light">User / View /</span> Account
+                <span class="text-muted fw-light">User / View / </span> Account
             </h4>
             <div class="row">
                 <div class="container-xl px-4 mt-4">
@@ -27,8 +27,9 @@
                                                 <!-- Profile picture upload button-->
                                             </div>
                                             <div class="user-info text-center">
-                                                <h4>Violet Mendoza</h4>
-                                                <span class="badge bg-label-danger rounded-pill">Author</span>
+                                                <h4>{{data.full_name}}</h4>
+                                                <span class="badge bg-label-danger rounded-pill" ng-if="data.role == 'subscriber'">{{data.role}}</span>
+                                                <span class="badge bg-label-success rounded-pill" ng-if="data.role == 'admin'">{{data.role}}</span>
                                             </div>
                                             <button class="btn btn-primary mt-2" type="button">Upload new image</button>
 
@@ -63,19 +64,22 @@
                                         <ul class="list-unstyled mb-4">
                                             <li class="mb-3">
                                                 <span class="h6">Username:</span>
-                                                <span>@violet.dev</span>
+                                                <span>{{data.full_name}}</span>
                                             </li>
                                             <li class="mb-3">
                                                 <span class="h6">Email:</span>
-                                                <span>vafgot@vultukir.org</span>
+                                                <span>{{data.email}}</span>
                                             </li>
                                             <li class="mb-3">
                                                 <span class="h6">Status:</span>
-                                                <span class="badge bg-label-success rounded-pill">Active</span>
+                                                <span class="badge bg-label-success rounded-pill" ng-if="data.status == 'active'">✅ Active</span>
+                                                <span class="badge bg-label-warning rounded-pill" ng-if="data.status == 'pending'">🔜 Pending</span>
+                                                <span class="badge bg-label-secondary rounded-pill" ng-if="data.status == 'inactive'">❗️Inactive</span>
+                                                <span class="badge bg-label-danger rounded-pill" ng-if="data.status == 'banned'">❌ Banned</span>
                                             </li>
                                             <li class="mb-3">
                                                 <span class="h6">Role:</span>
-                                                <span>Author</span>
+                                                <span>{{data.role}}</span>
                                             </li>
                                             <li class="mb-3">
                                                 <span class="h6">Tax id:</span>
@@ -460,8 +464,6 @@
             </div>
         </footer>
         <!-- / Footer -->
-
-
         <div class="content-backdrop fade"></div>
     </div>
     <footer-Bar></footer-Bar>

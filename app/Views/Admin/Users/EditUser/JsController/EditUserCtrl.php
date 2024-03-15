@@ -1,14 +1,16 @@
 <script>
-    Auth.onlyFor('logged-in', '/');
+    Auth.onlyFor('logged-in', '/', 'admin');
 
     $scope.loading = false;
     $scope.user_id = $routeParams.key;
 
     $http.get(`../../../api/admin/user/edit/${$scope.user_id}`).then(
         resp => {
+            console.log(resp.data);
             $scope.data = resp.data;
         },
         err => {
+            console.log(err);
             err.data
         }
     )
