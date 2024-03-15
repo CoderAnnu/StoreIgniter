@@ -4,7 +4,7 @@
     $scope.loading = false;
     $scope.user_id = $routeParams.key;
 
-    $http.get(`../../../api/user/edit/${$scope.user_id}`).then(
+    $http.get(`../../../api/admin/user/edit/${$scope.user_id}`).then(
         resp => {
             $scope.data = resp.data;
         },
