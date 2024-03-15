@@ -3,7 +3,6 @@
 <main class="content">
     <top-bar></top-bar>
     <div class="content-wrapper">
-
         <!-- Content -->
         <div class="container-xxl flex-grow-1 container-p-y">
             <h4 class="py-3 mb-4">
@@ -14,7 +13,6 @@
                     <!-- Account page navigation-->
                     <div class="row">
                         <div class="col-xl-4">
-                            <!-- Profile picture card-->
                             <!-- User Card -->
                             <div class="card mb-4">
                                 <div class="card-body">
@@ -32,7 +30,6 @@
                                                 <span class="badge bg-label-success rounded-pill" ng-if="data.role == 'admin'">{{data.role}}</span>
                                             </div>
                                             <button class="btn btn-primary mt-2" type="button">Upload new image</button>
-
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between flex-wrap my-2 py-3">
@@ -82,8 +79,8 @@
                                                 <span>{{data.role}}</span>
                                             </li>
                                             <li class="mb-3">
-                                                <span class="h6">Tax id:</span>
-                                                <span>Tax-8965</span>
+                                                <span class="h6">Account Created</span>
+                                                <span>{{data.created_at | dateFormat}}</span>
                                             </li>
                                             <li class="mb-3">
                                                 <span class="h6">Contact:</span>
@@ -123,6 +120,16 @@
                                 <div class="card-body">
                                     <form>
                                         <!-- Form Group (username)-->
+                                        <div class="mb-3 col-12 col-sm-6 form-password-toggle fv-plugins-icon-container">
+                                            <div class="input-group input-group-merge">
+                                                <div class="form-floating form-floating-outline">
+                                                    <input class="form-control" type="password" id="newPassword" name="newPassword" placeholder="············">
+                                                    <label for="newPassword">New Password</label>
+                                                </div>
+                                                <span class="input-group-text cursor-pointer"><i class="mdi mdi-eye-off-outline"></i></span>
+                                            </div>
+                                            <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
+                                        </div>
                                         <div class="mb-3">
                                             <label class="small mb-1" for="inputUsername">Username (how your name will appear to other users on the site)</label>
                                             <input class="form-control" id="inputUsername" type="text" placeholder="Enter your username" value="username">
