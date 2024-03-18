@@ -66,7 +66,8 @@ $routes->group('api', function ($routes) {
         /*✅*/ $routes->get('dashboard',            'Api\UsersManagementController::admin_dashboard');
         /*✅*/ $routes->get('users',                'Api\UsersManagementController::get_users');
         /*✅*/ $routes->get('user/edit/(:num)',     'Api\UsersManagementController::edit_user/$1');
-        /*✅*/ $routes->post('user/edit/(:num)',    'Api\UsersManagementController::edit_user/$1');
+        // /*✅*/ $routes->get('user/update/(:num)',    'Api\UsersManagementController::update_user/$1');
+        /*✅*/ $routes->post('user/update/(:num)',    'Api\UsersManagementController::update_user/$1');
         /*✅*/ $routes->post('user/delete/(:num)',  'Api\UsersManagementController::delete_user/$1');
     });
 });
