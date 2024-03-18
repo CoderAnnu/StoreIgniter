@@ -150,7 +150,7 @@ class Home extends BaseController
         // ];
 
         $routes[] = [
-            "path" => "/user/edit/:key",
+            "path" => "/admin/user/edit/:key",
             "title" => "Edit user",
             "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
             "template" =>  $view->render('Admin/Users/EditUser/EditUser'),
