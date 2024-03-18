@@ -17,7 +17,7 @@
 
     $scope.updateUserMeta = (data) => {
         $scope.loading = true;
-        $http.post(`../../../api/user/update/${$scope.user_id}`, data).then(
+        $http.post(`../../../api/admin/user/update/${$scope.user_id}`, data).then(
             resp => {
                 let notyf = new Notyf({
                     duration: 5000,

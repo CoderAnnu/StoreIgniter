@@ -118,21 +118,10 @@
                             <div class="card mb-4">
                                 <div class="card-header">Account Details</div>
                                 <div class="card-body">
-                                    <form>
-                                        <!-- Form Group (username)-->
-                                        <div class="mb-3 col-12 col-sm-6 form-password-toggle fv-plugins-icon-container">
-                                            <div class="input-group input-group-merge">
-                                                <div class="form-floating form-floating-outline">
-                                                    <input class="form-control" type="password" id="newPassword" name="newPassword" placeholder="············">
-                                                    <label for="newPassword">New Password</label>
-                                                </div>
-                                                <span class="input-group-text cursor-pointer"><i class="mdi mdi-eye-off-outline"></i></span>
-                                            </div>
-                                            <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
-                                        </div>
+                                    <form ng-submit="updateUserMeta(data)">
                                         <div class="mb-3">
                                             <label class="small mb-1" for="inputUsername">Username (how your name will appear to other users on the site)</label>
-                                            <input class="form-control" id="inputUsername" type="text" placeholder="Enter your username" value="username">
+                                            <input class="form-control" id="inputUsername" ng-model="data.full_name" type="text" placeholder="Enter your username" value="username">
                                         </div>
                                         <!-- Form Row-->
                                         <div class="row gx-3 mb-3">
@@ -163,7 +152,7 @@
                                         <!-- Form Group (email address)-->
                                         <div class="mb-3">
                                             <label class="small mb-1" for="inputEmailAddress">Email address</label>
-                                            <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" value="name@example.com">
+                                            <input class="form-control" id="inputEmailAddress" type="email" ng-model="data.email" disabled placeholder="Enter your email address" readonly="readonly">
                                         </div>
                                         <!-- Form Row-->
                                         <div class="row gx-3 mb-3">
@@ -179,7 +168,7 @@
                                             </div>
                                         </div>
                                         <!-- Save changes button-->
-                                        <button class="btn btn-primary" type="button">Save changes</button>
+                                        <button class="btn btn-primary" type="submit" ng-disabled="submit">Save changes</button>
                                     </form>
                                 </div>
                             </div>
@@ -302,7 +291,7 @@
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="form-floating form-floating-outline">
-                                        <input type="text" id="modalEditUserEmail" name="modalEditUserEmail" class="form-control" placeholder="example@domain.com">
+                                        <input type="text" id="modalEditUserEmail" name="modalEditUserEmail" ng-model="data.email" class="form-control" placeholder="example@domain.com">
                                         <label for="modalEditUserEmail">Email</label>
                                     </div>
                                 </div>
@@ -459,7 +448,7 @@
             <div class="container-xxl">
                 <div class="footer-container d-flex align-items-center justify-content-between py-3 flex-md-row flex-column">
                     <div class="text-body mb-2 mb-md-0">
-                        © 2024, made with <span class="text-danger"><i class="tf-icons mdi mdi-heart"></i></span> by <a href="https://themeselection.com" target="_blank" class="footer-link fw-medium">ThemeSelection</a>
+                        © <?= date('Y'); ?>, made with <span class="text-danger"><i class="tf-icons mdi mdi-heart"></i></span> by <a href="https://themeselection.com" target="_blank" class="footer-link fw-medium">ThemeSelection</a>
                     </div>
                     <div class="d-none d-lg-inline-block">
                         <a href="https://themeselection.com/license/" class="footer-link me-3" target="_blank">License</a>
