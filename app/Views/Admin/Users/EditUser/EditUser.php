@@ -96,7 +96,7 @@
                                             </li>
                                         </ul>
                                         <div class="d-flex justify-content-center">
-                                            <a href="javascript:;" class="btn btn-primary me-3 waves-effect waves-light" data-bs-target="#editUser" data-bs-toggle="modal">Edit</a>
+                                            <!-- <a href="javascript:;" class="btn btn-primary me-3 waves-effect waves-light" data-bs-target="#editUser" data-bs-toggle="modal">Edit</a> -->
                                             <a href="javascript:;" class="btn btn-outline-danger suspend-user waves-effect">Suspend</a>
                                         </div>
                                     </div>
@@ -258,7 +258,7 @@
 
             <!-- Modal -->
             <!-- Edit User Modal -->
-            <div class="modal fade" id="editUser" tabindex="-1" aria-hidden="true">
+            <!-- <div class="modal fade" id="editUser" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-simple modal-edit-user">
                     <div class="modal-content p-3 p-md-5">
                         <div class="modal-body py-3 py-md-0">
@@ -393,7 +393,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!--/ Edit User Modal -->
 
             <!-- Add New Credit Card Modal -->

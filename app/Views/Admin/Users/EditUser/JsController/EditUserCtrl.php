@@ -44,7 +44,7 @@
                     },
                     dismissible: true,
                 });
-                const error = err.data.messages.message;
+                const error = err.data.message;
                 // Display a error message Notification
                 notyf.error(error);
                 $scope.loading = false;
