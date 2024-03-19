@@ -42,6 +42,7 @@ class User extends Entity
         }
         return $this->get_status();
     }
+    
     /**
      * get_meta
      * getting a user meta value to identifies the user data through Get meta function 
