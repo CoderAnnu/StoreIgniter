@@ -93,14 +93,14 @@
                         <td>{{user.created_at.date | dateFormat}}</td>
                         <!--  -->
                         <td>
-                            <span ng-if="user.role == 'subscriber'"><i class="mdi mdi-account-outline mdi-24px text-primary me-1"></i> Subscriber</span>
+                            <span ng-if="user.role == 'customer'"><i class="mdi mdi-account-outline mdi-24px text-primary me-1"></i> Customer</span>
                             <span ng-if="user.role == 'admin'"><i class="mdi mdi-laptop mdi-24px text-danger me-1"></i> Admin</span>
                         </td>
                         <!-- Show when admin can change their functionality -->
                         <td class="d-none">
                             <select ng-disabled="!user.iamadmin == true" class="form-select form-select-sm" ng-model="user.role" ng-change="change_role(user);">
                                 <option value="admin">Admin</option>
-                                <option value="subscriber">Subscriber</option>
+                                <option value="customer">Customer</option>
                             </select>
                         </td>
                         <td>

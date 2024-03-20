@@ -26,7 +26,7 @@
                                             </div>
                                             <div class="user-info text-center">
                                                 <h4>{{data.full_name}}</h4>
-                                                <span class="badge bg-label-danger rounded-pill" ng-if="data.role == 'subscriber'">{{data.role}}</span>
+                                                <span class="badge bg-label-danger rounded-pill" ng-if="data.role == 'customer'">{{data.role}}</span>
                                                 <span class="badge bg-label-success rounded-pill" ng-if="data.role == 'admin'">{{data.role}}</span>
                                             </div>
                                             <button class="btn btn-primary mt-2" type="button">Upload new image</button>

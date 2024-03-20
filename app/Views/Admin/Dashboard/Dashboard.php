@@ -1506,7 +1506,7 @@
                             </td>
                             <td class="text-truncate">otho21@gmail.com</td>
                             <td class="text-truncate">
-                              <i class="mdi mdi-account-outline mdi-24px text-primary me-1"></i> Subscriber
+                              <i class="mdi mdi-account-outline mdi-24px text-primary me-1"></i> Customer 
                             </td>
                             <td class="text-truncate">23</td>
                             <td class="text-truncate">23500$</td>
@@ -1526,7 +1526,7 @@
                             </td>
                             <td class="text-truncate">florencio.Little@hotmail.com</td>
                             <td class="text-truncate">
-                              <i class="mdi mdi-account-outline mdi-24px text-primary me-1"></i> Subscriber
+                              <i class="mdi mdi-account-outline mdi-24px text-primary me-1"></i> customer 
                             </td>
                             <td class="text-truncate">33</td>
                             <td class="text-truncate">20500$</td>

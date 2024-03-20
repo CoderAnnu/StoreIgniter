@@ -135,7 +135,7 @@ class User extends Entity
      */
     function get_role()
     {
-        return $this->get_meta('role', 'subscriber');
+        return $this->get_meta('role', 'customer');
     }
     
     /**
@@ -143,8 +143,8 @@ class User extends Entity
      *
      * @return void
      */
-    function is_subscribed()
+    function is_customer()
     {
-        return $this->get_meta('subscription', false);
+        return $this->get_meta('customer', false);
     }
 }
