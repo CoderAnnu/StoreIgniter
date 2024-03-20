@@ -159,7 +159,7 @@
                                             <!-- Form Group (phone number)-->
                                             <div class="col-md-6">
                                                 <label class="small mb-1" for="inputPhone">Phone number</label>
-                                                <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number" value="555-123-4567">
+                                                <input class="form-control" id="inputPhone" type="tel" ng-model="data.contact" placeholder="Enter your phone number">
                                             </div>
                                             <!-- Form Group (birthday)-->
                                             <div class="col-md-6">

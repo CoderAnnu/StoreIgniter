@@ -104,6 +104,7 @@ class User extends Entity
         $map->id = (int) $this->id;
         $map->full_name = $this->full_name;
         $map->email = $this->email;
+        $map->contact = $this->contact;
         $map->created_at = $this->created_at;
         $map->deleted_at = $this->deleted_at;
         $map->updated_at = $this->updated_at;

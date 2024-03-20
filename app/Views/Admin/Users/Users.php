@@ -184,7 +184,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <footer-Bar></footer-Bar>
