@@ -85,7 +85,7 @@
                             {{user.id}}</a>
                         </td>
                         <td>
-                            <a ng-href="#!/admin/user/edit/{{user.id}}">
+                            <a ng-href="#!/user/edit/{{user.id}}">
                                 {{user.full_name}}
                             </a>
                         </td>
@@ -112,7 +112,7 @@
                         <td>
                             <div class="d-flex jusity-content-center align-items-center">
                                 <div class="">
-                                    <a class="dropdown-item d-flex align-items-center" href="#!/admin/user/edit/{{user.id}}">
+                                    <a class="dropdown-item d-flex align-items-center" href="#!/user/edit/{{user.id}}">
                                         <i class="fa-solid fa-eye me-1"></i> View </a>
                                 </div>
                                 <!-- user Delete Modal  -->
