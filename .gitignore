@@ -5,6 +5,8 @@
 # app/Controllers/Api/*.php
 app/Views/Components/SideBar/SideBar.php
 
+
+test
 # OS X
 .DS_Store
 .AppleDouble
