@@ -4,7 +4,7 @@
 # /app/Controllers/Api/*.php
 # app/Controllers/Api/*.php
 # Hide some files 
-app/Controllers/Api/*.php
+app/Controllers/Api/.php
 app/Views/Components/SideBar/SideBar.php
 
 
