@@ -4,7 +4,7 @@
     $scope.loading = false;
     $scope.user_id = $routeParams.key;
 
-    $http.get(`../../../api/admin/user/edit/${$scope.user_id}`).then(
+    $http.get(`../../../api/user/edit/${$scope.user_id}`).then(
         resp => {
             console.log(resp.data);
             $scope.data = resp.data;
@@ -17,7 +17,7 @@
 
     $scope.updateUserMeta = (data) => {
         $scope.loading = true;
-        $http.post(`../../../api/admin/user/update/${$scope.user_id}`, data).then(
+        $http.post(`../../../api/user/update/${$scope.user_id}`, data).then(
             resp => {
                 let notyf = new Notyf({
                     duration: 5000,
