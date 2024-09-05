@@ -23555,13 +23555,21 @@ fieldset:disabled .btn {
 }
 
 .sidebar .nav-item .nav-link {
-    color: #ffffff;
+    /* color: #ffffff; */
     cursor: pointer;
 }
 
 .sidebar .nav-item .nav-link:hover {
-    color: #F2F4F6;
-    background-color: #374151;
+    /* color: #F2F4F6; */
+    /* background-color: #374151; */
+    color: #544f5a;
+    background-color: rgba(58, 53, 65, 0.04);
+}
+
+
+.m-menu {
+    background-color: rgba(58, 53, 65, .08) !important;
+
 }
 
 .sidebar .nav-link+.multi-level {
@@ -30183,26 +30191,32 @@ article .h6 {
 }
 
 
-.password-eye {
+.password-eyes {
     position: absolute;
 }
 
 
-.password-eye .set-eye {
+.password-eyes .set-eye {
     cursor: pointer;
     position: relative;
-    left: 23.5rem;
+    left: 25.5rem;
+    /* left: 38vh; */
     top: 6px;
     z-index: 5;
 }
 
 @media (max-width:768px) {
-    .password-eye .set-eye {
+    .password-eyes .set-eye {
+        left: 26.2rem;
 
-        left: 17.2rem;
     }
 }
 
 .ul-li-custom-hover li a:hover {
-    color: red; 
+    color: red;
+}
+
+.menu-link {
+    padding-right: 0.5rem !important;
+    margin: 0 !important;
 }

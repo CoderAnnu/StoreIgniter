@@ -35,7 +35,7 @@ $routes->set404Override();
 
 
 // This is our landing page ✅
-// $routes->get('/','LandingPageController::index');
+$routes->get('/','Public\LandingPageController::index');
 
 
 
@@ -44,16 +44,31 @@ $routes->group('app', function ($routes) {
     $routes->get('/', 'Home::index');
 });
 
+    // if we need to check 33 on the page => http://localhost:8080/api/auth/test
 
-// API our custom app api ✅
+    // API our custom app api ✅
 $routes->group('api', function ($routes) {
-
+    
     // Authentication ✅
     $routes->group('auth', function ($routes) {
-        /*✅*/ $routes->post('create',                 'Api\AuthAPIController::create');
-        /*✅*/ $routes->get('verify_account/(:any)',   'Api\AuthAPIController::verify_account/$1');
-        /*✅*/ $routes->post('acccount-verify',        'Api\AuthAPIController::email_verify');
-        /*✅*/ $routes->post('get_state',        'Api\AuthAPIController::get_auth_state');
+        /*✅*/ $routes->post('create',               'Api\AuthAPIController::create');
+        /*✅*/ $routes->get('verify_account/(:any)', 'Api\AuthAPIController::verify_account/$1');
+        /*✅*/ $routes->post('account-verify',       'Api\AuthAPIController::email_verify_account');
+        /*✅*/ $routes->get('get_state',             'Api\AuthAPIController::get_auth_state');
+        /*✅*/ $routes->post('login',                'Api\AuthAPIController::login');
+        /*✅*/ $routes->post('logout',               'Api\AuthAPIController::logout');
+        /*✅*/ $routes->get('reset',                 'Api\AuthAPIController::reset');
+        /*✅*/ $routes->post('reset',                'Api\AuthAPIController::reset');
+        /*✅*/ $routes->post('forgot-password',      'Api\AuthAPIController::forgot_password');
+    });
+
+    $routes->group('admin', function($routes){
+        /*✅*/ $routes->get('dashboard',            'Api\UsersManagementController::admin_dashboard');
+        /*✅*/ $routes->get('users',                'Api\UsersManagementController::get_users');
+        /*✅*/ $routes->get('user/edit/(:num)',     'Api\UsersManagementController::edit_user/$1');
+        // /*✅*/ $routes->get('user/update/(:num)',    'Api\UsersManagementController::update_user/$1');
+        /*✅*/ $routes->post('user/update/(:num)',    'Api\UsersManagementController::update_user/$1');
+        /*✅*/ $routes->post('user/delete/(:num)',  'Api\UsersManagementController::delete_user/$1');
     });
 });
 

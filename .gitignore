@@ -1,12 +1,14 @@
 #-------------------------
 # Operating Specific Junk Files
 #-------------------------
+# /app/Controllers/Api/*.php
+app/Controllers/Api/*.php
+app/Views/Components/SideBar/SideBar.php
 
 # OS X
 .DS_Store
 .AppleDouble
 .LSOverride
-
 # OS X Thumbnails
 ._*
 

@@ -10,10 +10,11 @@ class UsersModel extends Model
     protected $table            = 'users';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
-    protected $useSoftDeletes   = false;
+    protected $insertID         = 0;
+    protected $returnType       = 'App\Entities\User';
+    protected $useSoftDeletes   = true;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['full_name', 'email', 'contact', 'password', 'u_key', 'token_timestamp', 'deleted_at'];
 
     // Dates
     protected $useTimestamps = false;

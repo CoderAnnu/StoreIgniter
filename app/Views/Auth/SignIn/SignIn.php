@@ -7,12 +7,15 @@
                     <div ng-if="loading" class="d-flex align-items-center justify-content-center">
                         <p class="mb-0 me-3">Redirecting to the dashboard......</p>
                         <span class="loader"></span>
+                        <!-- <div class="spinner-border" role="status">
+                             <span class="visually-hidden">Loading...</span>
+                         </div> -->
                     </div>
 
-                    <div ng-if="!loading" class="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                    <div ng-if="!loading" class="bg-white shadow border-0 rounded border-light p-3 p-md-4 w-100 fmxw-500">
                         <div class="mb-3 text-center">
-                            <a class="navbar-brand" href="/">
-                                <img src="<?= base_url('homepage/assets/img/logo/logo1.png'); ?>" class="logo" alt="Logo">
+                            <a class="navbar-brand d-flex justify-content-center" href="/">
+                                <img src="<?= base_url('/assets/img/logo/logo.png'); ?>" class="logo img-fluid w-50 " alt="Logo">
                             </a>
                         </div>
                         <div class="text-center text-md-center mb-3 mt-md-0">
@@ -45,7 +48,7 @@
                                             </svg>
                                         </span>
                                         <input type="password" ng-model="user.password" class="form-control" id="signInPassword" aria-describedby="signInPassword" placeholder="Password" required>
-                                        <span class="input-group-addon password-eye">
+                                        <span class="input-group-addon password-eyes">
                                             <span class="fa-regular set-eye fa-eye" ng-click="showPassword('signInPassword', $event)"></span>
                                         </span>
                                     </div>
@@ -53,16 +56,16 @@
                                 <!-- End of Form -->
                                 <div class="d-flex justify-content-between align-items-top mb-4">
                                     <!-- <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="remember">
-                                        <label class="form-check-label mb-0" for="remember">
-                                            Remember me
-                                        </label>
-                                    </div> -->
+                                         <input class="form-check-input" type="checkbox" value="" id="remember" >
+                                         <label class="form-check-label mb-0" for="remember">
+                                             Remember me
+                                         </label>
+                                     </div> -->
                                     <div class="email-verify">
                                         <a href="#!/account-verify" class="small text-right">Account Verify</a>
                                     </div>
                                     <div class="forgot-password">
-                                        <a href="#!/forgot_password" class="small text-right">Forgot password?</a>
+                                        <a href="#!/forgot-password" class="small text-right">Forgot password?</a>
                                     </div>
                                 </div>
                             </div>
@@ -70,10 +73,10 @@
                                 <button ng-if="!loading" type="submit" ng-disabled="loading || !user.email || !user.password" class="btn btn-gray-800">Sign in</button>
                             </div>
                         </form>
-                        <div class="mt-3 mb-4 text-center">
+                        <div class="mt-2 text-center">
                             <span class="fw-normal">or login with</span>
                         </div>
-                        <div class="d-flex justify-content-center my-4">
+                        <!-- <div class="d-flex justify-content-center my-4">
                             <a href="#" class="btn btn-icon-only btn-pill btn-outline-gray-500 me-2" aria-label="facebook button" title="facebook button">
                                 <svg class="icon icon-xxs" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
@@ -92,8 +95,26 @@
                                     </path>
                                 </svg>
                             </a>
+                        </div> -->
+                        <!-- new login with accounts -->
+                        <div class="text-center">
+                            <p class="text-muted fs-16">Create account using</p>
+                            <ul class="social-list list-inline">
+                                <li class="list-inline-item">
+                                    <a href="javascript: void(0);" class="social-list-item border-primary text-primary"><i class="ri-facebook-circle-fill"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="javascript: void(0);" class="social-list-item border-danger text-danger"><i class="ri-google-fill"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="ri-twitter-fill"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="javascript: void(0);" class="social-list-item border-secondary text-secondary"><i class="ri-github-fill"></i></a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center mt-4">
+                        <div class="d-flex justify-content-center align-items-center">
                             <span class="fw-normal">
                                 Not registered?
                                 <a href="#!/signup" class="fw-bold">Create an account</a>
