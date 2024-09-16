@@ -56,6 +56,7 @@
     <title>StoreIgniter E-Commerce PlatForm</title>
 </head>
 
+
 <body ng-controller="globalCtrl" ng-cloak>
 
     <div ng-view class="light-style layout-menu-fixed layout-compact" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-free"></div>

@@ -1,3 +1,4 @@
+<!-- Sidebar section  -->
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme" data-bg-class="bg-menu-theme" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
 
   <div class="app-brand bg-primary py-3">
@@ -11,8 +12,8 @@
   </div>
 
   <!-- start menu -->
-  <nav id="sidebarMenu" class="sidebar d-lg-block collapse my-5" data-simplebar>
-    <ul class="menu-inner nav flex-column">
+  <nav id="sidebarMenu" class="sidebar d-lg-block collapse my-5">
+    <ul class="menu-inner nav flex-column mt-4">
       <li class="nav-item menu-item" ng-class='{"active" : $ctrl.path == "/"}'>
         <a href="#!/" class="ps-3 nav-link" ng-class='{"menu-link" : $ctrl.path == "/"}'>
           <i class="menu-icon tf-icons mdi mdi-home-outline"></i>
@@ -162,3 +163,4 @@
   </nav>
   <!-- End menu  -->
 </aside>
+<!-- End SideBar Menu  -->
