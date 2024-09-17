@@ -5,8 +5,10 @@
 # app/Controllers/Api/*.php
 
 # When we have to hide all php file in folder 
-app/Controllers/Api/*.php 
-app/Controllers/Api/.php 
+# app/Controllers/Api/*.php 
+# app/Controllers/Api/.php 
+app/Controllers/Api/AuthAPIController.php
+
 app/Views/Components/SideBar/SideBar.php
 
 
