@@ -4,6 +4,7 @@ namespace App\Controllers\Api;
 
 use App\Controllers\BaseController;
 use App\Models\UsersModel;
+use App\Entities\User;
 use CodeIgniter\API\ResponseTrait;
 use CodeIgniter\HTTP\Response;
 
@@ -31,6 +32,7 @@ class UsersManagementController extends BaseController
      */
     function get_users()
     {
+        // condition for only if user is admin then this function return the value and if it not then it will return access denied 
         if (current_user() && current_user()->is('admin')) {
 
             $users = $this->usersModel->findAll();
@@ -70,6 +72,8 @@ class UsersManagementController extends BaseController
 
                 // Get items
                 $items = $users->paginate($per_page);
+
+                $its = [];
 
                 //Modifier 
                 foreach ($items as $user) {
@@ -218,12 +222,14 @@ class UsersManagementController extends BaseController
             // if showing error when user is not exists 
             return $this->fail("User doesn't exist");
         }
+        // return error when the user has no permisssion of this erea 
         return $this->fail("You are not allowed to access this area.");
     }
 
     /**
      * edit_user
      *
+     * all user can Edit their functionality 
      * @param  mixed $user_id
      * @return void
      */
@@ -241,11 +247,20 @@ class UsersManagementController extends BaseController
                 "role" => $user->get_role(),
                 "status" => $user->get_status()
             ];
+
             return $this->respond($data);
         }
+        // return error when the user has no permisssion of this erea 
         return $this->fail("You are not allowed to access this area.");
     }
 
+    /**
+     * update_user
+     * only update admin this functionality 
+     *
+     * @param  mixed $user_id
+     * @return void
+     */
     public function update_user($user_id)
     {
         if (current_user() && current_user()->is('admin')) {
@@ -254,7 +269,62 @@ class UsersManagementController extends BaseController
 
             $role = $this->request->getVar('role');
             $status = $this->request->getVar('status');
+            $full_name = $this->request->getVar('full_name');
             $email = $this->request->getVar('email');
+
+            if (!$status) return $this->fail("Status is required");
+
+            if ($role) return $this->fail("Assign a role");
+
+            if ($full_name) return $this->fail("Empty name field.");
+
+            if ($email) return $this->fail("Empty email field");
+
+            $email_exist = $this->usersModel->where('email', $email)->first();
+
+            if ($email_exist  && $email != $user->email) return $this->fail("Email already taken.");
+
+            $data = ["full_name" => $full_name, "email" => $email];
+
+            // update user data 
+            $this->usersModel->update($user_id, $data);
+
+            // Set user data 
+            if (in_array($role, ['subscriber', 'admin'])) {
+                $user->set_meta('role', $role);
+            }
+            // User update 
+            $user->update_status($status);
+            return $this->respond(["message" => "User Updated", $data]);
         }
+
+        // return error when the user has no permisssion of this erea 
+        return $this->fail("You are not allowed to access this area.");
+    }
+
+    /**
+     * restore_user
+     *Only addmin can restore user.
+     * @param  mixed $id
+     * @return void
+     */
+    public function restore_user($id)
+    {
+        if (current_user() && current_user()->is('admin')) {
+            $user = $this->usersModel->withDeleted()->find($id);
+
+            if ($user) {
+                // Restore user 
+                $user->restore([
+                    "message" => "User has been restored",
+                    "user" => $user->getBasicIinfo()
+                ]);
+            }
+            // if user is not found then it will return this value or message 
+            return $this->fail("User not found..! ");
+        }
+
+        // return error when the user has no permisssion of this erea 
+        return $this->fail("You are not allowed to access this area.");
     }
 }
