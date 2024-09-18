@@ -57,6 +57,13 @@ class UsersManagementController extends BaseController
                     ]);
                 }
 
+                // To shoiw only inactive data
+                if ($filter == 'inactive') {
+                    $users->where([
+                        "deleted_at" => null
+                    ]);
+                }
+
                 // To show only deleted data 
                 if ($filter == 'deleted') {
                     $users->withDeleted();
@@ -116,14 +123,14 @@ class UsersManagementController extends BaseController
      *
      * @return void
      */
-    public function admin_dashboard()
-    {
-        $days = $this->request->getGet('days');
-        $days = ($days) ? $days : 30;
+    // public function admin_dashboard()
+    // {
+    //     $days = $this->request->getGet('days');
+    //     $days = ($days) ? $days : 30;
 
-        // Getting from database 
-        $unique_id = "id";
-    }
+    //     // Getting from database 
+    //     $unique_id = "id";
+    // }
 
     /**
      * update User role 
@@ -315,9 +322,10 @@ class UsersManagementController extends BaseController
 
             if ($user) {
                 // Restore user 
-                $user->restore([
+                $user->restore();
+                return $this->respond([
                     "message" => "User has been restored",
-                    "user" => $user->getBasicIinfo()
+                    "user" => $user->getBasicInfo()
                 ]);
             }
             // if user is not found then it will return this value or message 
