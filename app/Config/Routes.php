@@ -51,25 +51,36 @@ $routes->group('api', function ($routes) {
     
     // Authentication ✅
     $routes->group('auth', function ($routes) {
-        /*✅*/ $routes->post('create',               'Api\AuthAPIController::create');
-        /*✅*/ $routes->get('verify_account/(:any)', 'Api\AuthAPIController::verify_account/$1');
-        /*✅*/ $routes->post('account-verify',       'Api\AuthAPIController::email_verify_account');
-        /*✅*/ $routes->get('get_state',             'Api\AuthAPIController::get_auth_state');
-        /*✅*/ $routes->post('login',                'Api\AuthAPIController::login');
-        /*✅*/ $routes->post('logout',               'Api\AuthAPIController::logout');
-        /*✅*/ $routes->get('reset',                 'Api\AuthAPIController::reset');
-        /*✅*/ $routes->post('reset',                'Api\AuthAPIController::reset');
-        /*✅*/ $routes->post('forgot-password',      'Api\AuthAPIController::forgot_password');
+        /*✅*/ $routes->post('create',                 'Api\AuthAPIController::create');
+        /*✅*/ $routes->get('verify_account/(:any)',   'Api\AuthAPIController::verify_account/$1');
+        /*✅*/ $routes->post('account-verify',         'Api\AuthAPIController::email_verify_account');
+        /*✅*/ $routes->get('get_state',               'Api\AuthAPIController::get_auth_state');
+        /*✅*/ $routes->post('login',                  'Api\AuthAPIController::login');
+        /*✅*/ $routes->post('logout',                 'Api\AuthAPIController::logout');
+        /*✅*/ $routes->get('reset',                   'Api\AuthAPIController::reset');
+        /*✅*/ $routes->post('reset',                  'Api\AuthAPIController::reset');
+        /*✅*/ $routes->post('forgot-password',        'Api\AuthAPIController::forgot_password');
     });
 
+    // User Controllers ✅
+    // $routes->group('user', function($routes){
+    //     // /*✅*/ $routes->post('Profile',               'Api\AuthAPIController::create');
+
+    // });
+    
+    // Admin Routing 
     $routes->group('admin', function($routes){
-        /*✅*/ $routes->get('dashboard',            'Api\UsersManagementController::admin_dashboard');
-        /*✅*/ $routes->get('users',                'Api\UsersManagementController::get_users');
-        /*✅*/ $routes->get('edit/(:num)',          'Api\UsersManagementController::edit_user/$1');
-        // /*✅*/ $routes->get('user/update/(:num)',    'Api\UsersManagementController::update_user/$1');
-        /*✅*/ $routes->post('update/(:num)',       'Api\UsersManagementController::update_user/$1');
-        /*✅*/ $routes->post('delete/(:num)',       'Api\UsersManagementController::delete_user/$1');
+        /*✅*/ $routes->get('dashboard',               'Api\UsersManagementController::admin_dashboard');
+        /*✅*/ $routes->get('users',                   'Api\UsersManagementController::get_users');
+        /*✅*/ $routes->get('user/update/role/(:num)', 'Api\UsersManagementController::update_role/$1');
+        /*✅*/ $routes->get('user/edit/(:num)',        'Api\UsersManagementController::edit_user/$1');
+        /*✅*/ $routes->get('user/update/(:num)',      'Api\UsersManagementController::update_user/$1');
+        /*✅*/ $routes->post('update/(:num)',          'Api\UsersManagementController::update_user/$1');
+        /*✅*/ $routes->get('user/delete/(:num)',      'Api\UsersManagementController::delete_user/$1');
+        /*✅*/ $routes->get('user/restore/(:num)',     'Api\UsersManagementController::restore_user/$1');
     });
+
+
 });
 
 
