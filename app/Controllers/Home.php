@@ -158,21 +158,21 @@ class Home extends BaseController
 
         ];
 
-        // $routes[] = [
-        //     "path" => "/user/delete/:key",
-        //     "title" => "Delete user",
-        //     "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
-        //     "template" =>  $view->render('Admin/Users/Users'),
-        //     "controller" => $view->render('Admin/Users/JsController/UsersCtrl'),
-        // ];
+        $routes[] = [
+            "path" => "/user/delete/:key",
+            "title" => "Delete user",
+            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
+            "template" =>  $view->render('Admin/Users/Users'),
+            "controller" => $view->render('Admin/Users/JsController/UsersCtrl'),
+        ];
 
-        // $routes[] = [
-        //     "path" => "/user/restore/:key",
-        //     "title" => "Delete user",
-        //     "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
-        //     "template" =>  $view->render('Admin/Users/Users'),
-        //     "controller" => $view->render('Admin/Users/JsController/UsersCtrl'),
-        // ];
+        $routes[] = [
+            "path" => "/user/restore/:key",
+            "title" => "Delete user",
+            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
+            "template" =>  $view->render('Admin/Users/Users'),
+            "controller" => $view->render('Admin/Users/JsController/UsersCtrl'),
+        ];
 
 
 
