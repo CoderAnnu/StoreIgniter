@@ -16,12 +16,11 @@
         $scope.get_users();
     }
 
-    $scope.updateFilter = (filer_val) => {
+    $scope.updateFilter = ( filer_val ) => {
         $scope.config.filter = filer_val;
         $scope.config.page = 1;
         $scope.get_users();
     }
-
 
     $scope.get_users = () => {
         $scope.loading = true;
@@ -41,7 +40,7 @@
                     $scope.user.current_page = resp.data.current_page;
                     $scope.user.total_items = resp.data.total_items;
 
-                    $scope.user = [...$scope.user, ...resp.data];
+                    $scope.user.items = [...$scope.user.items, ...resp.data.items];
                 } else {
                     $scope.user = resp.data;
                 }
