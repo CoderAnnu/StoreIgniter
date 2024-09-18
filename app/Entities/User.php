@@ -26,7 +26,7 @@ class User extends Entity
         return $this->get_meta('status', 'inactive');
     }
 
-    
+
     /**
      * update_status
      *
@@ -42,7 +42,7 @@ class User extends Entity
         }
         return $this->get_status();
     }
-    
+
     /**
      * get_meta
      * getting a user meta value to identifies the user data through Get meta function 
@@ -91,9 +91,10 @@ class User extends Entity
         return true;
     }
 
-    
+
     /**
      * getBasicInfo
+     * This will return user basic values 
      *
      * @return void
      */
@@ -116,7 +117,7 @@ class User extends Entity
         }
         return $map;
     }
-    
+
     /**
      * is
      *
@@ -128,7 +129,7 @@ class User extends Entity
         $current_role = $this->get_role();
         return $role == $current_role;
     }
-    
+
     /**
      * get_role
      *
@@ -138,7 +139,37 @@ class User extends Entity
     {
         return $this->get_meta('role', 'customer');
     }
+
+    /**
+     * delete
+     * This function delete user 
+     * this is global function we can use globallay 
+     * @return void
+     */
+    function delete()
+    {
+        $usersModel = new UsersModel();
+        $usersModel->delete($this->id);
+        $user = $usersModel->withDeleted()->find($this->id);
+        $this->delete_at = $user->delete_at;
+        return $this;
+    }
     
+    /**
+     * restore User this is global function 
+     *
+     * @return void
+     */
+    function restore()
+    {
+        $usersModel = new UsersModel();
+        $usersModel->update($this->id, [
+            "deleted_at" => null
+        ]);
+        $this->delete_at = null;
+        return $this;
+    }
+
     /**
      * is_subscribed
      *
