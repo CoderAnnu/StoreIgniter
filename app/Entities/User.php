@@ -151,7 +151,7 @@ class User extends Entity
         $usersModel = new UsersModel();
         $usersModel->delete($this->id);
         $user = $usersModel->withDeleted()->find($this->id);
-        $this->delete_at = $user->delete_at;
+        $this->deleted_at = $user->deleted_at;
         return $this;
     }
     
@@ -166,7 +166,7 @@ class User extends Entity
         $usersModel->update($this->id, [
             "deleted_at" => null
         ]);
-        $this->delete_at = null;
+        $this->deleted_at = null;
         return $this;
     }
 
