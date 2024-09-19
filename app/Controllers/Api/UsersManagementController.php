@@ -4,7 +4,6 @@ namespace App\Controllers\Api;
 
 use App\Controllers\BaseController;
 use App\Models\UsersModel;
-use App\Entities\User;
 use CodeIgniter\API\ResponseTrait;
 use CodeIgniter\HTTP\Response;
 
@@ -13,7 +12,7 @@ class UsersManagementController extends BaseController
     use ResponseTrait;
 
     // Aissgning private variable to hide VsCode Erorr 
-    private $usersModel;
+    private $usersModel, $userMetaModel;
 
     /**
      * __construct
@@ -57,12 +56,6 @@ class UsersManagementController extends BaseController
                     ]);
                 }
 
-                // To shoiw only inactive data
-                if ($filter == 'inactive') {
-                    $users->where([
-                        "deleted_at" => null
-                    ]);
-                }
 
                 // To show only deleted data 
                 if ($filter == 'deleted') {
