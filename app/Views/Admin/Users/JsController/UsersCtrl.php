@@ -1,4 +1,5 @@
 <script>
+    // only Admin can use this functionality 
     Auth.onlyFor('logged-in', '/', 'admin');
 
     $scope.loading = false;
@@ -16,7 +17,7 @@
         $scope.get_users();
     }
 
-    $scope.updateFilter = ( filer_val ) => {
+    $scope.updateFilter = (filer_val) => {
         $scope.config.filter = filer_val;
         $scope.config.page = 1;
         $scope.get_users();
@@ -71,7 +72,7 @@
         )
     }
 
-
+    // When scroll then data fetch continue scrolling 
     window.onscroll = function() {
         if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
             if (!$scope.loading) {

@@ -45,7 +45,7 @@
                             <select class="form-select me-2" ng-model="filter" ng-init="filter = 'all'" ng-change="updateFilter(filter)">
                                 <option value="all" selected>All</option>
                                 <option value="active">Active</option>
-                                <option value="inactive">Inactive</option>
+                                <!-- <option value="inactive">Inactive</option> -->
                                 <option value="deleted">Deleted</option>
                             </select>
                             <select class="form-select me-2">

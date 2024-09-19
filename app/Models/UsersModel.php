@@ -14,7 +14,7 @@ class UsersModel extends Model
     protected $returnType       = 'App\Entities\User';
     protected $useSoftDeletes   = true;
     protected $protectFields    = true;
-    protected $allowedFields    = ['full_name', 'email', 'contact', 'password', 'u_key', 'token_timestamp', 'deleted_at'];
+    protected $allowedFields    = ['full_name', 'email', 'contact', 'password', 'u_key', 'token_timestamp', 'deleted_at','status'];
 
     // Dates
     protected $useTimestamps = false;
