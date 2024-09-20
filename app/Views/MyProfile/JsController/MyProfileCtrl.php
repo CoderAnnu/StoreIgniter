@@ -1,24 +1,16 @@
 <script>
-    Auth.onlyFor('logged-in', '/', 'admin');
+    Auth.onlyFor('logged-in', '/');
 
-    $scope.loading = false;
-    $scope.user_id = $routeParams.key;
-
-    $http.get(`../../../api/user/edit/${$scope.user_id}`).then(
-        resp => {
-            console.log(resp.data);
-            $scope.data = resp.data;
-        },
-        err => {
-            console.log(err);
-            err.data
+    $scope.userProfile = (user) => {
+        // $scope.name = user.name;
+        let data = {
+            'full_name': user.full_name,
+            'email': user.email,
+            'contact': user.contact,
         }
-    )
-
-    $scope.updateUserMeta = (data) => {
-        $scope.loading = true;
-        $http.post(`../../../api/user/update/${$scope.user_id}`, data).then(
+        $http.post('../../../api/user/profile', data).then(
             resp => {
+                console.log(resp);
                 let notyf = new Notyf({
                     duration: 5000,
                     position: {
@@ -27,13 +19,9 @@
                     },
                     dismissible: true,
                 });
-
                 const success = resp.data.message;
-
-                // Display a success Notification
                 notyf.success(success);
-                $scope.loading = false;
-                console.log(resp);
+                // console.log(resp.data);
             },
             err => {
                 let notyf = new Notyf({
@@ -45,11 +33,10 @@
                     dismissible: true,
                 });
                 const error = err.data.messages.error;
-                // Display a error message Notification
+                // Display an error notification
                 notyf.error(error);
-                $scope.loading = false;
-                console.log(err);
             }
         )
+
     }
 </script>

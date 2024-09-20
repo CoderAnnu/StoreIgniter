@@ -24,6 +24,15 @@ class Home extends BaseController
                 "controller" => $view->render('/Dashboard/JsController/DashboardCtrl'),
             ],
 
+            // User Profile 
+            [
+                "path" => "/my-profile",
+                "title" => "My Profile",
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth'],
+                "template" => $view->render('MyProfile/MyProfile'),
+                "controller" => $view->render('MyProfile/JsController/MyProfileCtrl'),
+            ],
+
             [
                 "path" => "/signin",
                 "title" => "Signin",
@@ -68,27 +77,27 @@ class Home extends BaseController
                 "injectors" => ['$http', '$window', '$scope', '$location', 'Auth'],
                 "template" => $view->render('/Product/AllProduct/AllProduct'),
                 "controller" => $view->render('/Product/AllProduct/JsController/AllProductCtrl')
-            ], 
+            ],
             [
                 "path" => "/product/add",
                 "title" => "Add Product",
                 "injectors" => ['$http', '$window', '$scope', '$location', 'Auth'],
                 "template" => $view->render('/Product/AddProduct/addProduct'),
                 "controller" => $view->render('/Product/AddProduct/JsController/addProductCtrl')
-            ], 
+            ],
 
             [
                 "path" => "/product/edit/:key",
                 "title" => "Edit Product",
-                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth','$routeParams'],
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
                 "template" => $view->render('/Product/EditProduct/EditProduct'),
                 "controller" => $view->render('/Product/EditProduct/JsController/EditProductCtrl')
             ],
-          
+
             [
                 "path" => "/product/catelist",
                 "title" => "Edit Product",
-                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth','$routeParams'],
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
                 "template" => $view->render('/Product/ProductCategory/Catelist'),
                 "controller" => $view->render('/Product/ProductCategory/JsController/CatelistCtrl')
             ],
@@ -96,28 +105,28 @@ class Home extends BaseController
             [
                 "path" => "/product/order",
                 "title" => "Edit Product",
-                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth','$routeParams'],
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
                 "template" => $view->render('/Product/Order/Order'),
                 "controller" => $view->render('/Product/Order/JsController/OrderCtrl')
             ],
             [
                 "path" => "/product/order/details",
                 "title" => "Edit Product",
-                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth','$routeParams'],
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
                 "template" => $view->render('/Product/Order/OrderDetails/OrderDetails'),
                 "controller" => $view->render('/Product/Order/OrderDetails/JsController/OrderDetailsCtrl')
             ],
             [
                 "path" => "/product/customer",
                 "title" => "Edit Product",
-                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth','$routeParams'],
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
                 "template" => $view->render('/Product/Customer/Customer'),
                 "controller" => $view->render('/Product/Customer/JsController/CustomerCtrl')
             ],
             [
                 "path" => "/product/customer/details",
                 "title" => "Edit Product",
-                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth','$routeParams'],
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
                 "template" => $view->render('/Product/Customer/Customer'),
                 "controller" => $view->render('/Product/Customer/JsController/CustomerCtrl')
             ],

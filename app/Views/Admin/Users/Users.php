@@ -185,7 +185,6 @@
             </div>
         </div>
     </div>
-
+    <!-- Footer Bar section components -->
     <footer-Bar></footer-Bar>
-
 </main>

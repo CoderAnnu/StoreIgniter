@@ -84,7 +84,7 @@
                                             </li>
                                             <li class="mb-3">
                                                 <span class="h6">Contact:</span>
-                                                <span>(123) 456-7890</span>
+                                                <span>{{data.contact}}</span>
                                             </li>
                                             <li class="mb-3">
                                                 <span class="h6">Languages:</span>
@@ -94,6 +94,7 @@
                                                 <span class="h6">Country:</span>
                                                 <span>England</span>
                                             </li>
+                                            
                                         </ul>
                                         <div class="d-flex justify-content-center">
                                             <!-- <a href="javascript:;" class="btn btn-primary me-3 waves-effect waves-light" data-bs-target="#editUser" data-bs-toggle="modal">Edit</a> -->

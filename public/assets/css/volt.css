@@ -4833,6 +4833,7 @@ textarea.form-control.is-invalid {
     user-select: none;
     background-color: transparent;
     border: 0.0625rem solid transparent;
+    border: 1px solid #f8f5ff!important;
     padding: 0.5rem 1rem;
     font-size: 0.875rem;
     border-radius: 0.5rem;

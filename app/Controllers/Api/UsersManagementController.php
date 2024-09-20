@@ -172,18 +172,21 @@ class UsersManagementController extends BaseController
 
             $full_name = $this->request->getVar('full_name');
             $email = $this->request->getVar('email');
+            $contact = $this->request->getVar('contact');
 
             if (!$full_name) return $this->fail("Full name is required");
             if (!$email) return $this->fail("Email  is required");
+            if (!$contact) return $this->fail("Contact No. is required");
 
             // Check email is exists or 
             $email_exist = $this->usersModel->where('email', $email)->first();
 
-            if ($email_exist && $email != $user->$email) return $this->fail("Email already taken.");
+            if (!$email_exist && $email = !$user->$email) return $this->fail("Email already taken.");
 
             $value = [
                 "email" => $email,
-                "full_name" => $full_name
+                "full_name" => $full_name,
+                "contact" => $contact,
             ];
 
             // insert values in database 
@@ -243,6 +246,7 @@ class UsersManagementController extends BaseController
                 "id" => $user->id,
                 "full_name" => $user->full_name,
                 "email" => $user->email,
+                "contact" => $user->contact,
                 "created_at" => date($user->created_at),
                 "role" => $user->get_role(),
                 "status" => $user->get_status()
@@ -271,20 +275,29 @@ class UsersManagementController extends BaseController
             $status = $this->request->getVar('status');
             $full_name = $this->request->getVar('full_name');
             $email = $this->request->getVar('email');
+            $contact = $this->request->getVar('contact');
 
             if (!$status) return $this->fail("Status is required");
 
-            if ($role) return $this->fail("Assign a role");
+            if (!$role) return $this->fail("Assign a role");
 
-            if ($full_name) return $this->fail("Empty name field.");
+            if (!$full_name) return $this->fail("Empty name field.");
 
-            if ($email) return $this->fail("Empty email field");
+            if (!$email) return $this->fail("Empty email field");
+
+            if (!$contact) return $this->fail("Contact No. is required");
+            
 
             $email_exist = $this->usersModel->where('email', $email)->first();
 
             if ($email_exist  && $email != $user->email) return $this->fail("Email already taken.");
 
-            $data = ["full_name" => $full_name, "email" => $email];
+            $data = [
+                "full_name" => $full_name,
+                "email" => $email,
+                "contact" => $contact
+            ];
+
 
             // update user data 
             $this->usersModel->update($user_id, $data);

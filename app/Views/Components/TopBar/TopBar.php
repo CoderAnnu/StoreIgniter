@@ -49,7 +49,7 @@
                         <div class="dropdown-divider my-1"></div>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="#!/my-profile">
                             <i class="mdi mdi-account-outline me-1 mdi-20px"></i>
                             <span class="align-middle">My Profile</span>
                         </a>

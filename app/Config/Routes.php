@@ -62,11 +62,12 @@ $routes->group('api', function ($routes) {
         /*✅*/ $routes->post('forgot-password',        'Api\AuthAPIController::forgot_password');
     });
 
-    // User Controllers ✅
-    // $routes->group('user', function($routes){
-    //     // /*✅*/ $routes->post('Profile',               'Api\AuthAPIController::create');
-
-    // });
+    // // User Controllers ✅
+    $routes->group('user', function($routes){
+        /*✅*/ $routes->post('profile',               'Api\UsersManagementController::update_profile');
+        /*✅*/ $routes->get('edit/(:num)',            'Api\UsersManagementController::edit_user/$1');
+        /*✅*/ $routes->post('update/(:num)',            'Api\UsersManagementController::update_user/$1');
+    });
     
     // Admin Routing 
     $routes->group('admin', function($routes){
