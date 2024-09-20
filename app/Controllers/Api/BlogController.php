@@ -106,6 +106,7 @@ class BlogController extends BaseController
      */
     public function all_blogs()
     {
+        // set if user is admin then he is only one who can use this functionality
         if (current_user() && current_user()->is('admin')) {
             $blogModel = $this->blogModel->withDeleted()->findAll();
 
@@ -134,7 +135,8 @@ class BlogController extends BaseController
                         "deleted_at !=" => null
                     ]);
                 }
-
+                
+                // Fetching query title, slug, status 
                 if ($query) {
                     $blogModel->like('title', $query);
                     $blogModel->orLike('slug', $query);
@@ -187,7 +189,7 @@ class BlogController extends BaseController
 
     /**
      * delete_blog
-     *
+     * This functionality works soft delete 
      * @param  mixed $id
      * @return void
      */
@@ -204,6 +206,7 @@ class BlogController extends BaseController
                     "blog" => $blog->getBlogBasicInfo()
                 ]);
             }
+            // When blog is delete and still showing in the list then it will show the error 
             return $this->fail("Blog doesn't exist");
         }
         // user permission only admin can allow to access this area 
@@ -218,9 +221,11 @@ class BlogController extends BaseController
      */
     public function restore_blog($id)
     {
+        // set if user is admin then he is only one who can use this functionality
         if (current_user() && current_user()->is('admin')) {
             $blog = $this->blogModel->withDeleted()->find($id);
             if ($blog) {
+                // Restore Blog 
                 $blog->restore();
                 return $this->respond([
                     "message" => "Blog has been restored",
@@ -233,6 +238,12 @@ class BlogController extends BaseController
         return $this->fail("You are not allow to access this area.");
     }
 
+    /**
+     * permanent_delete
+     * This functionality works for Permanent Blog delete functionality
+     * @param  mixed $id
+     * @return void
+     */
     public function permanent_delete($id)
     {
         if (current_user() && current_user()->is('admin')) {
