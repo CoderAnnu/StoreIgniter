@@ -10,7 +10,7 @@ class Blog extends Entity
     protected $datamap = [];
     protected $dates   = ['created_at', 'updated_at', 'deleted_at'];
     protected $casts   = [];
-    
+
     /**
      * getBlogBasicInfo
      *
@@ -39,5 +39,36 @@ class Blog extends Entity
             $map->iamadmin = true;
         }
         return $map;
+    }
+
+    /**
+     * delete 
+     * Delete Blog using this global function 
+     *
+     * @return void
+     */
+    function delete()
+    {
+        $blogModel =  new BlogModel();
+        $blogModel->delete($this->id);
+        $blog = $blogModel->withDeleted()->find($this->id);
+        $this->delete_at = $blog->delete_at;
+        return $this;
+    }
+    
+    /**
+     * restore
+     * Restore blog using this global function
+     *
+     * @return void
+     */
+    function restore()
+    {
+        $blogModel = new BlogModel();
+        $blogModel->update($this->id, [
+            "deleted_at" => null,
+        ]);
+        $this->delete_at =  null;
+        return $this;
     }
 }
