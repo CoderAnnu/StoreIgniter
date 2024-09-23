@@ -135,7 +135,7 @@ class BlogController extends BaseController
                         "deleted_at !=" => null
                     ]);
                 }
-                
+
                 // Fetching query title, slug, status 
                 if ($query) {
                     $blogModel->like('title', $query);
@@ -260,5 +260,35 @@ class BlogController extends BaseController
 
         // user permission only admin can allow to access this area 
         return $this->fail("You are not allow to access this area.");
+    }
+
+    public function edit_blog($blog_id)
+    {
+        if (current_user() && current_user()->is('admin')) {
+            $blogModel = $this->blogModel->withDeleted()->find($blog_id);
+            if (!$blogModel) return $this->fail("No blog");
+
+            // fetching data from blogs to edit  
+            $data = [
+                "id" => (int)$blogModel->id,
+                "title" => $blogModel->title,
+                "slug" => $blogModel->slug,
+                "status" => $blogModel->status,
+                "image" => $blogModel->image,
+                "content" => $blogModel->content,
+                "created_at" => $blogModel->created_at,
+                "updated_at" => $blogModel->updated_at,
+                "deleted_at" => $blogModel->deleted_at
+            ];
+            return $this->respond($data);
+        }
+
+        // user permission only admin can allow to access this area 
+        return $this->fail("You are not allow to access this area.");
+    }
+
+    public function update_blog($blog_id)
+    {
+    
     }
 }
