@@ -10,10 +10,11 @@ class BlogModel extends Model
     protected $table            = 'blogs';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
-    protected $useSoftDeletes   = false;
+    protected $insetID          = 0;
+    protected $returnType       = 'App\Entities\Blog';
+    protected $useSoftDeletes   = true;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ["title", "slug", "content", "status", "image","created_at", "updated_at", "deleted_at"];
 
     // Dates
     protected $useTimestamps = false;

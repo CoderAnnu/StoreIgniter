@@ -2,9 +2,11 @@
 
 namespace App\Controllers\Api;
 
-use App\Models\BlogModel;
 use App\Controllers\BaseController;
+use App\Models\BlogModel;
 use CodeIgniter\API\ResponseTrait;
+use CodeIgniter\Files\File;
+use FFI;
 
 class BlogController extends BaseController
 {
@@ -42,6 +44,7 @@ class BlogController extends BaseController
                 $i++;
             }
         }
+        // return blog slug 
         return $this->respond([
             "slug" => $slug
         ]);
@@ -262,6 +265,12 @@ class BlogController extends BaseController
         return $this->fail("You are not allow to access this area.");
     }
 
+    /**
+     * edit_blog
+     * Edit blog page data 
+     * @param  mixed $blog_id
+     * @return void
+     */
     public function edit_blog($blog_id)
     {
         if (current_user() && current_user()->is('admin')) {
@@ -287,8 +296,114 @@ class BlogController extends BaseController
         return $this->fail("You are not allow to access this area.");
     }
 
+    /**
+     * update_blog
+     *
+     * Update blog functionality 
+     * 
+     * @param  mixed $blog_id
+     * @return void
+     */
     public function update_blog($blog_id)
     {
+        if (current_user() && current_user()->is('admin')) {
+            $title = $this->request->getVar('title');
+            $slug = $this->request->getVar('slug');
+            $status = $this->request->getVar('status');
+            $content =  $this->request->getVar('content');
+            $img = $this->request->getFile('image');
+
+            $findblog = $this->blogModel->find($blog_id);
+            $check_slug = $this->blogModel->where('slug', $slug)->first();
+
+            if ($check_slug && $slug != $findblog->slug) return $this->fail("This Slug already exist.");
+
+            if (!$title) return $this->fail("Blog title field is empty.");
+            if (!$slug) return $this->fail("Slug title field is empty.");
+            if (!$content) return $this->fail("content field is empty.");
+            if (!$img) return $this->fail("Thumbnail image is required.");
+
+            if ($img->getName() !== $findblog->image) {
+                if ($img->isValid() && !$img->hasMoved()) {
+                    $imagName = $img->getName();
+                    $img->move('uploads', $imagName);
+                }
+            }
+
+            $value = [
+                "title" => $title,
+                "slug" => $slug,
+                "status" => $status,
+                "image" => $img->getName(),
+                "content" => $content
+            ];
+
+            $this->blogModel->update($blog_id,  $value);
+            return $this->respond(["message" => "Blog updated"]);
+        }
+
+        // user permission only admin can allow to access this area 
+        return $this->fail("You are not allow to access this area.");
+    }
     
+    /**
+     * view_blog
+     *
+     * view blog only single blog 
+     * 
+     * @param  mixed $slug
+     * @return void
+     */
+    public function view_blog($slug)
+    {
+        $blogStatus =  $this->blogModel->where('slug', $slug)->find();
+        $blog = isset($blog) ? "$blog - " . get_option('Blog_status', $blogStatus) : get_option('Blog_status', $blogStatus);
+
+        if ($blog == true && $blogStatus) {
+            // Load view  
+            $blog = $this->blogModel->where(['slug' => $slug, 'status' => 'publish'])->first();
+
+            $excerpt = substr(strip_tags($blog->content), 0, 500);
+            $excerpt = explode('.', $excerpt);
+            $excerpt = $excerpt[0];
+
+            if (strlen($blog->content) > 500) $excerpt = $excerpt . '.';
+
+            if ($blog) {
+                return view('frontend/blog/BlogPage', [
+                    "title" => $blog->title,
+                    "blog" => $blog,
+                    "excerpt" => $excerpt,
+                ]);
+            }
+        } else {
+            // if blog has delete and if it's not exists  then show 404
+            return show_404();
+        }
+    }
+    
+    /**
+     * view_all_blog
+     * 
+     * view all blogs in a single page like a blog list 
+     *
+     * @return void
+     */
+    public function view_all_blog()
+    {
+        $allBlogs = $this->blogModel->findAll();
+        $blog = isset($blog) ? "$blog - " . get_option('Blog_status', $allBlogs) : get_option('Blog_status', $allBlogs);
+
+        if ($blog == true && $allBlogs) {
+            $data = [
+                "blogs" => $allBlogs,
+            ];
+            
+            // display all pages 
+            return view('frontend/blogPage', $data);
+        } else {
+            // if blogs is not exists then it will show 404 page 
+            return show_404();
+        }
     }
 }
