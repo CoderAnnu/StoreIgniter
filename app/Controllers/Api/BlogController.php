@@ -6,7 +6,6 @@ use App\Controllers\BaseController;
 use App\Models\BlogModel;
 use CodeIgniter\API\ResponseTrait;
 use CodeIgniter\Files\File;
-use FFI;
 
 class BlogController extends BaseController
 {
@@ -97,7 +96,8 @@ class BlogController extends BaseController
             // Respond 201 Success message Code  
             return $this->respond([
                 "success" => "Blog Created Successfully",
-                "Value" =>  $value,
+                // "Value" =>  $value,
+                $value,
             ]);
         };
     }
@@ -345,7 +345,7 @@ class BlogController extends BaseController
         // user permission only admin can allow to access this area 
         return $this->fail("You are not allow to access this area.");
     }
-    
+
     /**
      * view_blog
      *
@@ -381,7 +381,7 @@ class BlogController extends BaseController
             return show_404();
         }
     }
-    
+
     /**
      * view_all_blog
      * 
@@ -398,7 +398,7 @@ class BlogController extends BaseController
             $data = [
                 "blogs" => $allBlogs,
             ];
-            
+
             // display all pages 
             return view('frontend/blogPage', $data);
         } else {
