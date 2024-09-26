@@ -70,7 +70,8 @@ class Home extends BaseController
                 "template" => $view->render('Auth/ResetPassword/ResetPassword'),
                 "controller" => $view->render('Auth/ResetPassword/JsController/ResetPasswordCtrl')
             ],
-            // Pages
+
+            // Product page 
             [
                 "path" => "/product",
                 "title" => "All Product",
@@ -101,7 +102,6 @@ class Home extends BaseController
                 "template" => $view->render('/Product/ProductCategory/Catelist'),
                 "controller" => $view->render('/Product/ProductCategory/JsController/CatelistCtrl')
             ],
-
             [
                 "path" => "/product/order",
                 "title" => "Edit Product",
@@ -132,6 +132,7 @@ class Home extends BaseController
             ],
         ];
         // End Admin Section 
+
         // Push admin's route to array
         $routes[] = [
             "path" => "/admin/dashboard",
@@ -183,7 +184,30 @@ class Home extends BaseController
             "controller" => $view->render('Admin/Users/JsController/UsersCtrl'),
         ];
 
+        // Blogs for front-end pages 
+        $routes[] = [
+            "path" => "/blogs",
+            "title" => "All Blogs",
+            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
+            "template" => $view->render('Blog/AllBlogs/AllBlogs'),
+            "controller" => $view->render('Blog/AllBlogs/JsController/BlogCtrl'),
+        ];
+        
+        $routes[] = [
+            "path" => "/blog/add",
+            "title" => "Add Blog",
+            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$timeout', '$routeParams', 'fileUpload'],
+            "template" => $view->render('Blog/AddBlog/AddBlog'),
+            "controller" => $view->render('Blog/AddBlog/JsController/AddBlogCtrl'),
+        ];
 
+        $routes[] = [
+            "path" => "blog/edit/:key",
+            "title" => "Edit Blog",
+            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$timeout', '$routeParams'],
+            "template" => $view->render('Blog/EditBlog/EditBlog'),
+            "controller" => $view->render('Blog/EditBlog/JsController/EditBlogCtrl'),
+        ];
 
 
         // Start main Components likes Routes Components and error. ✅
@@ -201,7 +225,6 @@ class Home extends BaseController
                         "template" => $view->render('Components/TopBar/TopBar'),
                         "controller" => $view->render('Components/TopBar/JsController/TopBarCtrl')
                     ],
-
                     [
                         "tagName" => "sideBar",
                         "injectors" => ['$http', '$interval', '$window', '$scope', '$location', 'Auth', '$element'],

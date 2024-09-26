@@ -37,6 +37,8 @@ $routes->set404Override();
 // This is our landing page ✅
 $routes->get('/','Public\LandingPageController::index');
 
+$routes->get('blog/(:any)', 'Api\BlogController::view_blog/$1');
+$routes->get('blogs', 'Api\BlogController::view_all_blog');
 
 
 // App Starting controller point✅
@@ -79,11 +81,21 @@ $routes->group('api', function ($routes) {
         /*✅*/ $routes->post('update/(:num)',          'Api\UsersManagementController::update_user/$1');
         /*✅*/ $routes->get('user/delete/(:num)',      'Api\UsersManagementController::delete_user/$1');
         /*✅*/ $routes->get('user/restore/(:num)',     'Api\UsersManagementController::restore_user/$1');
+    
+     // Blogs 
+        /*✅*/ $routes->get('blog/slug-suggestions/(:any)', 'Api\BlogController::blog_slug_generator/$1');
+        /*✅*/ $routes->post('blog/add',                    'Api\BlogController::add_blog');
+        /*✅*/ $routes->get('blogs',                        'Api\BlogController::all_blogs');
+        /*✅*/ $routes->get('blog/delete/(:any)',           'Api\BlogController::delete_blog/$1');
+        /*✅*/ $routes->get('blog/restore/(:any)',          'Api\BlogController::restore_blog/$1');
+        /*✅*/ $routes->get('blog/permanent_delete/(:any)', 'Api\BlogController::permanent_delete/$1');
+        /*✅*/ $routes->get('blog/edit/(:any)',             'Api\BlogController::edit_blog/$1');
+        /*✅*/ $routes->post('blog/update/(:any)',          'Api\BlogController::update_blog/$1');
+        /*✅*/ $routes->post('blog/img/upload',             'Api\BlogController::upload_img');
+        /*✅*/ $routes->post('blog/get_picture/(:any)',     'Api\BlogController::upload_img/$1');
     });
-
-
+   
 });
-
 
 
 /*
