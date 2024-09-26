@@ -24,6 +24,41 @@
       <li class="menu-header fw-medium mt-4">
         <span class="menu-header-text" data-i18n="eCommerce"> eCommerce</span>
       </li>
+
+      <!-- Blogs Section  -->
+      <li class="nav-item  menu-item" ng-if="user.role == 'admin'">
+        <span class="nav-link menu-link d-flex justify-content-between align-items-center" ng-class='{"m-menu" : ["/blogs", "/blogs/add"].includes($ctrl.path)}' data-bs-toggle="collapse" data-bs-target="#blog">
+          <span>
+            <span>
+              <i class="me-3 fa-solid fa-bag-shopping"></i>
+            </span>
+            <span class="sidebar-text">Blog</span>
+          </span>
+          <span class="link-arrow">
+            <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+            </svg>
+          </span>
+        </span>
+        <div class="multi-level collapse" ng-class='{"show" : ["/blogs", "/blog/add"].includes($ctrl.path)}' role="list" id="blog" aria-expanded="false">
+          <ul class="flex-column nav">
+            <li class="nav-item menu-item" ng-class='{"active" : $ctrl.path == "/blogs"}'>
+              <a href="#!/blogs" class="nav-link" ng-class='{"menu-link" : $ctrl.path == "/blogs"}'>
+                <i class="me-3 fa-regular fa-clipboard"></i>
+                <span class="sidebar-text">All Blog</span>
+              </a>
+            </li>
+            <li class="nav-item menu-item" ng-class='{"active" : $ctrl.path == "/blog/add" }'>
+              <a href="#!/blog/add" class="nav-link" ng-class='{"menu-link" : $ctrl.path == "/blog/add"}'>
+                <i class="me-3 fa-solid fa-plus"></i>
+                <span class="sidebar-text">Add Blog</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <!-- End blog section -->
+
       <!-- Product menu bar  -->
       <li class="nav-item  menu-item">
         <span class="nav-link menu-link d-flex justify-content-between align-items-center" ng-class='{"m-menu" : ["/product", "/product/add", "/product/catelist"].includes($ctrl.path)}' data-bs-toggle="collapse" data-bs-target="#product">
