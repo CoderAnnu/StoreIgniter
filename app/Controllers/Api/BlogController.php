@@ -180,14 +180,17 @@ class BlogController extends BaseController
                     $pagination_map['next_page'] = base_url('api/blog') . '?' . http_build_query($_GET);
                 }
 
-                // return  a meessage when Blog is not found 
-                return $this->fail([
-                    "message" => "No such a blog found."
-                ]);
+                // fetch data through Pagination 
+                return $this->respond($pagination_map);
             }
-            // user permission only admin can allow to access this area 
-            return $this->fail("You are not allow to access this area.");
+            // return  a meessage when Blog is not found 
+            return $this->fail([
+                "message" => "No such a blog found."
+            ]);
         }
+
+        // user permission only admin can allow to access this area 
+        return $this->fail("You are not allow to access this area.");
     }
 
     /**
