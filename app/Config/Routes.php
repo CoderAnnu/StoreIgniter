@@ -51,6 +51,13 @@ $routes->group('app', function ($routes) {
     // API our custom app api ✅
 $routes->group('api', function ($routes) {
     
+    // Media Image routes 
+    $routes->group('image', function($routes){
+        /*✅*/ $routes->get('(:any)',               'Api\MediaController::index/$1');
+        /*✅*/ $routes->get('(:any)/(:any)',        'Api\MediaController::index/$1/$2');
+        /*✅*/ $routes->get('(:any)/(:any)/(:num)', 'Api\MediaController::index/$1/$2/$3');
+    });
+
     // Authentication ✅
     $routes->group('auth', function ($routes) {
         /*✅*/ $routes->post('create',                 'Api\AuthAPIController::create');
