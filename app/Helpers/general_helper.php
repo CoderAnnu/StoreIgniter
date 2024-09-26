@@ -114,3 +114,75 @@ if (!function_exists('delete_option')) {
         return $optionsModel->where('option_key', $key)->delete();
     }
 }
+
+/**
+ * Get file mime type 
+ * MIME type (Multipurpose Internet Mail Extensions)
+ * It's used to tell the browser or server what type of file it is (e.g., image, PDF, text, etc.)
+ */
+
+if (!function_exists('get_mime_type')) {
+    function get_mime_type($extension)
+    {
+        $ctype = null;
+        switch ($extension) {
+            case "gif":
+                $ctype = "image/gif";
+                break;
+            case "png":
+                $ctype = "image/png";
+                break;
+            case "jpeg":
+            case "jpg":
+                $ctype = "image/jpeg";
+                break;
+            case "svg":
+                $ctype = "image/svg+xml";
+                break;
+            default:
+        }
+        return $ctype;
+    }
+}
+
+
+/**
+ * echo_image
+ * Display image through this globale function 
+ *
+ * @param  mixed $path
+ * @param  mixed $extension
+ * @return void
+ */
+function echo_image($path, $extension = 'jpg')
+{
+    $content = file_get_contents($path);
+    header('content-type:' . get_mime_type($extension));
+    echo $content;
+    die();
+}
+
+/**
+ * get_size_from_string
+ * 
+ * get file size  in number with height and widht
+ * @param  mixed $size
+ * @return void
+ */
+function get_size_from_string($size = null)
+{
+    $sizes = explode('x', $size);
+    if (!isset($sizes[0])) return null;
+    if (!isset($sizes[1])) return null;
+
+    $width = $sizes[0];
+    $height = $sizes[1];
+
+    if (is_numeric($width) && is_numeric($height)) {
+        return [
+            "width" => $width,
+            "height" => $height,
+        ];
+    }
+    return null;
+}
