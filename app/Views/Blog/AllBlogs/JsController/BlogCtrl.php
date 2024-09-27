@@ -42,13 +42,29 @@
 
                 console.log($scope.blogs);
             },
+            // err => {
+            //     $scope.loading = false;
+            //     $scope.pagination_loading = false;
+            //     console.log(err);
+            // }
             err => {
+                let notyf = new Notyf({
+                    duration: 5000,
+                    position: {
+                        x: 'center',
+                        y: 'top',
+                    },
+                    dismissible: true,
+                });
+
+                const error = err.data.messages.message;
+                // Display a success notification
+                notyf.error(error);
                 $scope.loading = false;
                 $scope.pagination_loading = false;
                 console.log(err);
             }
         )
-
     }
 
     window.onscroll = function() {
