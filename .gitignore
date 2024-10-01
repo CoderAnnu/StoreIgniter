@@ -10,7 +10,7 @@
 app/Controllers/Api/AuthAPIController.php
 
 app/Views/Components/SideBar/SideBar.php
-
+/public/uploads/*
 
 # OS X
 .DS_Store
