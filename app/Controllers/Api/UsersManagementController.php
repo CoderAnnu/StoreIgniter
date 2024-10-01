@@ -271,12 +271,14 @@ class UsersManagementController extends BaseController
             $user = $this->usersModel->find($user_id);
             if (!$user) return $this->fail("Invalid user");
 
+            // getting the values from  fields 
             $role = $this->request->getVar('role');
             $status = $this->request->getVar('status');
             $full_name = $this->request->getVar('full_name');
             $email = $this->request->getVar('email');
             $contact = $this->request->getVar('contact');
 
+            // if values of field are empty it must be selected or fill 
             if (!$status) return $this->fail("Status is required");
 
             if (!$role) return $this->fail("Assign a role");
