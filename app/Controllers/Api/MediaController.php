@@ -53,6 +53,7 @@ class MediaController extends BaseController
                 echo_image($cache_path, $extension);
             }
         }
+        
         // display error or output when image is not found 
         return  "File Not Found";
     }
