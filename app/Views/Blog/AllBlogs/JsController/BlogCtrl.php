@@ -127,7 +127,7 @@
                 // Close Modal
                 modal.modal('hide');
 
-                const error = err.data.messages;
+                const error = err.data.messages.error;
                 // Display a success notification
                 notyf.error(error);
                 $scope.loading = false;
@@ -214,7 +214,6 @@
 
                 // Remove item from an array
                 $scope.blogs.items.splice(index, 1);
-
 
             },
             err => {

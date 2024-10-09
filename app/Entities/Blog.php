@@ -52,7 +52,7 @@ class Blog extends Entity
         $blogModel =  new BlogModel();
         $blogModel->delete($this->id);
         $blog = $blogModel->withDeleted()->find($this->id);
-        $this->delete_at = $blog->delete_at;
+        $this->deleted_at = $blog->deleted_at;
         return $this;
     }
     

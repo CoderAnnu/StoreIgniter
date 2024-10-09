@@ -171,7 +171,7 @@
                 // Close Modal
                 modal.modal('hide');
 
-                const error = err.data.messages.message;
+                const error = err.data.messages.error;
                 // Display a success notification
                 notyf.error(error);
                 $scope.loading = false;
