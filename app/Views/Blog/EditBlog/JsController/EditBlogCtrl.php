@@ -11,7 +11,6 @@
         });
     }, false);
 
-
     // $scope.getSlugSuggestions = (title) => {
     //     $http.get(`../../../api/admin/blog/edit/${title}`).then(
     //         resp => {
@@ -84,7 +83,6 @@
                 const error = err.data.messages.error;
                 // Display an error notification
                 notyf.error(error);
-
             }
         )
     }

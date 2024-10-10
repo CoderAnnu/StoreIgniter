@@ -202,7 +202,7 @@ class Home extends BaseController
         ];
 
         $routes[] = [
-            "path" => "blog/edit/:key",
+            "path" => "/blog/edit/:key",
             "title" => "Edit Blog",
             "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$timeout', '$routeParams'],
             "template" => $view->render('Blog/EditBlog/EditBlog'),
