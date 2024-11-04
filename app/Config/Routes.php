@@ -89,6 +89,11 @@ $routes->group('api', function ($routes) {
         /*✅*/ $routes->get('user/delete/(:num)',      'Api\UsersManagementController::delete_user/$1');
         /*✅*/ $routes->get('user/restore/(:num)',     'Api\UsersManagementController::restore_user/$1');
     
+     // Pages ✅
+        /*✅*/ $routes->get('pages/slug-generator/(:any)',  'Api\PageController::slug_generator/$1');
+        /*✅*/ $routes->get('pages',                        'Api\PageController::get_pages');
+        /*✅*/ $routes->post('page/add',                    'Api\PageController::create_page');
+
      // Blogs 
         /*✅*/ $routes->get('blog/slug-suggestions/(:any)', 'Api\BlogController::blog_slug_generator/$1');
         /*✅*/ $routes->post('blog/add',                    'Api\BlogController::add_blog');
