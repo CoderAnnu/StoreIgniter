@@ -68,7 +68,7 @@ class Blog extends Entity
         $blogModel->update($this->id, [
             "deleted_at" => null,
         ]);
-        $this->delete_at =  null;
+        $this->deleted_at =  null;
         return $this;
     }
 }

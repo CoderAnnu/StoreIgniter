@@ -1,7 +1,6 @@
 <script>
     Auth.onlyFor('logged-in', '/', 'admin');
 
-
     $scope.loading = false;
     $scope.pagination_loading = false;
 
