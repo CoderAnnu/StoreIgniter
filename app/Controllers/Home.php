@@ -184,6 +184,56 @@ class Home extends BaseController
             "controller" => $view->render('Admin/Users/JsController/UsersCtrl'),
         ];
 
+        // Pages front-end routing  
+        $routes[] = [
+            "path" => "/pages",
+            "title" => "All Pages",
+            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
+            "template" => $view->render('Page/AllPages/AllPages'),
+            "controller" => $view->render('Page/AllPages/JsController/AllPagesCtrl'),
+        ];
+
+        $routes[] = [
+            "path" => "/page/add",
+            "title" => "Add Page",
+            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$timeout', '$routeParams'],
+            "template" => $view->render('Page/AddPage/AddPage'),
+            "controller" => $view->render('Page/AddPage/JsController/AddPageCtrl'),
+        ];
+
+        $routes[] = [
+            "path" => "/page/edit/:key",
+            "title" => "Edit Page",
+            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$timeout', '$routeParams'],
+            "template" => $view->render('Page/EditPage/EditPage'),
+            "controller" => $view->render('Page/EditPage/JsController/EditPageCtrl'),
+        ];
+
+        $routes[] =  [
+            "path" => "/page/delete/:key",
+            "title" => "Delete Page",
+            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
+            "template" => $view->render('Page/AllPages/AllPages'),
+            "controller" => $view->render('Page/AllPages/JsController/AllPagesCtrl'),
+        ];
+
+        $routes[] = [
+            "path" => "/page/restore/:key",
+            "title" => "Restore Page",
+            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
+            "template" => $view->render('Page/AllPages/AllPages'),
+            "controller" => $view->render('Page/AllPages/JsController/AllPagesCtrl'),
+        ];
+
+        $routes[] = [
+            "path" => "/page/delete/permanent/:key",
+            "title" => "Delete Page",
+            "injectors" => ['$http', '$window', '$scope', '$location', 'Auth', '$routeParams'],
+            "template" => $view->render('Page/AllPages/AllPages'),
+            "controller" => $view->render('Page/AllPages/JsController/AllPagesCtrl'),
+        ];
+
+
         // Blogs for front-end pages 
         $routes[] = [
             "path" => "/blogs",
@@ -192,7 +242,7 @@ class Home extends BaseController
             "template" => $view->render('Blog/AllBlogs/AllBlogs'),
             "controller" => $view->render('Blog/AllBlogs/JsController/BlogCtrl'),
         ];
-        
+
         $routes[] = [
             "path" => "/blog/add",
             "title" => "Add Blog",
