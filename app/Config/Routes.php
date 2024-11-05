@@ -93,6 +93,13 @@ $routes->group('api', function ($routes) {
         /*✅*/ $routes->get('pages/slug-generator/(:any)',  'Api\PageController::slug_generator/$1');
         /*✅*/ $routes->get('pages',                        'Api\PageController::get_pages');
         /*✅*/ $routes->post('page/add',                    'Api\PageController::create_page');
+        /*✅*/ $routes->get('page/edit/(:num)',             'Api\PageController::edit_page/$1');
+        /*✅*/ $routes->post('page/update/(:num)',          'Api\PageController::update_page/$1');
+        /*✅*/ $routes->get('page/update/(:num)',          'Api\PageController::update_page/$1');
+        /*✅*/ $routes->get('page/delete/(:num)',           'Api\PageController::delete_page/$1');
+        /*✅*/ $routes->get('page/restore/(:num)',          'Api\PageController::restore_page/$1');
+        /*✅*/ $routes->get('page/permanent_delete/(:num)', 'Api\PageController::permanent_delete/$1');
+
 
      // Blogs 
         /*✅*/ $routes->get('blog/slug-suggestions/(:any)', 'Api\BlogController::blog_slug_generator/$1');
