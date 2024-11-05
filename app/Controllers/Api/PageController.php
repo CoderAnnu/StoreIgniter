@@ -188,7 +188,7 @@ class PageController extends BaseController
                 $pagination_map['next_page'] = false;
 
                 // Modify Get Data 
-                if ($page->hasMore()) {
+                if ($pager->hasMore()) {
                     $next_page = $pagination_map['current_page'] + 1;
                     $_GET['page'] = $next_page;
                     $pagination_map['next_page'] = base_url('api/user') . '?' . http_build_query($_GET);
@@ -305,7 +305,7 @@ class PageController extends BaseController
      * @param  mixed $id
      * @return void
      */
-    public function resItore_page($id)
+    public function restore_page($id)
     {
         if (current_user() && current_user()->is('admin')) {
             $page = $this->pageModel->withDeleted()->find($id);
@@ -314,7 +314,7 @@ class PageController extends BaseController
                 $page->restore();
                 return $this->respond([
                     "message" => "Page has been restored",
-                    "Page" => $page->getPageBasicInfo()
+                    "page" => $page->getPageBasicInfo()
                 ]);
             }
         }
