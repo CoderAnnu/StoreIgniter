@@ -326,10 +326,19 @@ class BlogController extends BaseController
             if (!$content) return $this->fail("content field is empty.");
             if (!$img) return $this->fail("Thumbnail image is required.");
 
-            if ($img->getName() !== $findblog->image) {
+            // If no new image is uploaded, ensure the existing image is kept
+            if (!$img && empty($findblog->image)) {
+                return $this->fail("Thumbnail image is required.");
+            }
+
+            // If a new image is provided, validate and move it
+            if ($img) {
                 if ($img->isValid() && !$img->hasMoved()) {
-                    $imagName = $img->getName();
-                    $img->move('uploads', $imagName);
+                    // Only update the image if it has changed
+                    if ($img->getName() !== $findblog->image) {
+                        $imageName = $img->getName();
+                        $img->move('uploads', $imageName);
+                    }
                 }
             }
 
@@ -337,7 +346,7 @@ class BlogController extends BaseController
                 "title" => $title,
                 "slug" => $slug,
                 "status" => $status,
-                "image" => $img->getName(),
+                "image" => $img ? $img->getName() : $findblog->image, // Use the new image or keep the existing one
                 "content" => $content
             ];
 
