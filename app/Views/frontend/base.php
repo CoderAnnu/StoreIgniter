@@ -1442,8 +1442,7 @@
         <div class="footer-bottom py-3">
             <div class="container d-flex flex-wrap justify-content-between flex-md-row flex-column text-center text-md-start">
                 <div class="mb-2 mb-md-0">
-                    <span class="footer-text">©
-2024, Made with <i class="tf-icons mdi mdi-heart text-danger"></i> by
+                    <span class="footer-text">© 2024, Made with <i class="tf-icons mdi mdi-heart text-danger"></i> by
                     </span>
                     <a href="#" target="_blank" class="footer-link fw-medium footer-theme-link">CoderAnnu</a>
                 </div>
