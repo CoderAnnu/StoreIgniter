@@ -92,3 +92,12 @@ define('EVENT_PRIORITY_NORMAL', 100);
  * @deprecated Use \CodeIgniter\Events\Events::PRIORITY_HIGH instead.
  */
 define('EVENT_PRIORITY_HIGH', 10);
+
+
+define('SITE_NAME', 'StoreIgniter');
+
+define('SITE_DESCRIPTION', 'StoreIgniter is a powerful e-commerce platform built with CodeIgniter and AngularJS. It provides a complete solution for creating and managing online stores with ease.');
+
+define('SITE_AUTHOR' , 'Coderannu');
+
+define('SITE_KEYWORDS', 'Storeigniter, coderannu, Storeigniter E-commerce store, Storeigniter platform, create products, new product, strip project, store-igniter');
