@@ -1,6 +1,6 @@
 # StoreIgniter
 
-![StoreIgniter Logo](logo.png)
+![StoreIgniter Logo](/public/logo.png)
 
 StoreIgniter is a powerful e-commerce platform built with CodeIgniter and AngularJS. It provides a complete solution for creating and managing online stores with ease. Whether you're a small business owner or an experienced developer, StoreIgniter empowers you to build robust and scalable e-commerce applications.
 
