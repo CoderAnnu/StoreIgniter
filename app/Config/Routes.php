@@ -33,12 +33,13 @@ $routes->set404Override();
  * --------------------------------------------------------------------
  */
 
+/** ✅ Frontend Pages **/
+$routes->get('/p/(:any)',   'Api\PageController::view_page/$1');
+$routes->get('blog/(:any)', 'Api\BlogController::view_blog/$1');
+$routes->get('blogs', 'Api\BlogController::view_all_blog');
 
 // This is our landing page ✅
 $routes->get('/','Public\LandingPageController::index');
-
-$routes->get('blog/(:any)', 'Api\BlogController::view_blog/$1');
-$routes->get('blogs', 'Api\BlogController::view_all_blog');
 
 
 // App Starting controller point✅
