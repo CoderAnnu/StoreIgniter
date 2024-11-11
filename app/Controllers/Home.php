@@ -24,6 +24,24 @@ class Home extends BaseController
                 "controller" => $view->render('/Dashboard/JsController/DashboardCtrl'),
             ],
 
+            // Documentation page 
+            [
+                "path" => "/documentation",
+                "title" => "Documentation",
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth'],
+                "template" => $view->render('/Documentation/Documentation'),
+                "controller" => $view->render('/Documentation/JsController/DocumentationCtrl'),
+            ],
+
+            // Support page 
+            [
+                "path" => "/support",
+                "title" => "Support",
+                "injectors" => ['$http', '$window', '$scope', '$location', 'Auth'],
+                "template" => $view->render('/Support/Support'),
+                "controller" => $view->render('/Support/JsController/SupportCtrl'),
+            ],
+
             // User Profile 
             [
                 "path" => "/my-profile",
