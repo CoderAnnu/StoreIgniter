@@ -1,7 +1,7 @@
-<?= $this->extend('frontend/base') ?>
+<?= $this->extend('frontend/base'); ?>
 <?= $this->section('content'); ?>
 
-<div id="contact" class="contact-area p-5">
+<div id="contact" class="contact-area" style="margin: 10vh 0 30vh 0rem;">
     <div class="container">
         <div class=" contact-content mb-3">
             <div class="row">
@@ -15,7 +15,7 @@
             </div>
         </div>
         <div>
-            <p> <?= $page->description ?></p>
+            <p> <?= $page->description; ?></p>
         </div>
     </div>
 </div>
