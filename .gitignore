@@ -11,6 +11,7 @@ app/Controllers/Api/AuthAPIController.php
 
 app/Views/Components/SideBar/SideBar.php
 /public/uploads/*
+app/Views/frontend/Landing/LandingPage_OLD.php
 
 # OS X
 .DS_Store
