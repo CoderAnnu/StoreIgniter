@@ -16762,10 +16762,11 @@ html:not(.layout-menu-fixed) .menu-inner-shadow {
 
 .layout-wrapper,
 .layout-container {
-  width: 100%;
+  /* width: 100%;
   display: flex;
   flex: 1 1 auto;
-  align-items: stretch;
+  align-items: stretch; */
+  /* place-content: center; */
 }
 
 .layout-menu-offcanvas .layout-wrapper,
