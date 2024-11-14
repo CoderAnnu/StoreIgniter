@@ -56,6 +56,11 @@
     <title>StoreIgniter E-Commerce PlatForm</title>
 </head>
 
+<style>
+    .content-wrapper {
+        width: 1130px !important;
+    }
+</style>
 
 <body ng-controller="globalCtrl" ng-cloak>
 

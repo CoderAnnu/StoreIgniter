@@ -12,9 +12,9 @@
           <!-- / Navbar -->
 
           <!-- Content wrapper -->
-          <div class="content-wrapper">
+          <div class="container content-wrapper">
             <!--  -->
-            <div class="container-xxl flex-grow-1 container-p-y">
+            <div class="flex-grow-1">
               <h4 class="py-3 mb-4"><span class="text-muted fw-light">StoreIgniter /</span> Support & Enquiry</h4>
             </div>
 

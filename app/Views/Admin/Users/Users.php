@@ -15,7 +15,7 @@
     <top-Bar search-bar="false"></top-Bar>
 
     <!-- Container -->
-    <div class="container">
+    <div class="container content-wrapper">
         <!-- breadcrumb -->
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
             <div class="d-block mb-4 mb-md-0">

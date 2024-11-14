@@ -2,9 +2,9 @@
 
 <main class="content">
     <top-bar></top-bar>
-    <div class="content-wrapper">
+    <div class="container content-wrapper">
         <!-- Content -->
-        <div class="container-xxl flex-grow-1 container-p-y">
+        <div class="flex-grow-1">
             <h4 class="py-3 mb-4">
                 <span class="text-muted fw-light">User / View / </span> Account
             </h4>
