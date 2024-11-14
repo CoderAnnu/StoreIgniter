@@ -47,6 +47,19 @@
         background-size: cover;
         padding-top: 8.125rem;
     }
+
+    /* blog page css start  */
+    @media only screen and (max-width: 768px) {
+        .div-height {
+            height: 250px !important;
+        }
+    }
+
+    .div-height {
+        height: 400px;
+    }
+
+    /* blog page css start  */
 </style>
 
 <body>
@@ -537,7 +550,7 @@
     <script src="<?= base_url('/assets/LandingPage/assets/js/front-page-landing.js') ?>"></script>
     <!-- endbuild -->
     <?= $this->renderSection('footer') ?>
-    
+
 </body>
 
 </html>
