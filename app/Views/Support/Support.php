@@ -6,7 +6,7 @@
         <!-- Sidebar Menu -->
 
         <!-- Layout container -->
-        <div class="layout-page">
+        <div class="layout-page" style="content-visibility: auto!important;">
           <!-- Top BarNavbar -->
           <top-Bar></top-Bar>
           <!-- / Navbar -->
@@ -115,7 +115,7 @@
             </footer>
             <!-- / Footer -->
 
-            <div class="content-backdrop fade"></div>
+            <!-- <div class="content-backdrop fade"></div> -->
           </div>
           <!-- Content wrapper -->
         </div>
@@ -123,6 +123,6 @@
       </div>
 
       <!-- Overlay -->
-      <div class="layout-overlay layout-menu-toggle"></div>
+      <!-- <div class="layout-overlay layout-menu-toggle"></div> -->
     </div>
     <!-- / Layout wrapper -->
