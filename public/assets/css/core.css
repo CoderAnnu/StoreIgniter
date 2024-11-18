@@ -16760,14 +16760,14 @@ html:not(.layout-menu-fixed) .menu-inner-shadow {
   min-height: 100vh;
 }
 
-.layout-wrapper,
+/* .layout-wrapper,
 .layout-container {
   /* width: 100%;
   display: flex;
   flex: 1 1 auto;
   align-items: stretch; */
   /* place-content: center; */
-}
+/* }  */
 
 .layout-menu-offcanvas .layout-wrapper,
 .layout-menu-fixed-offcanvas .layout-wrapper {
