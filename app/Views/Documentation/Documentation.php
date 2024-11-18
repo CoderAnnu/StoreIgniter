@@ -1,16 +1,25 @@
-    <!-- Layout wrapper -->
-    <div class="layout-wrapper layout-content-navbar">
-      <div class="layout-container">
-        <!-- Sidebar Menu -->
-        <side-Bar></side-Bar>
-        <!-- Sidebar Menu -->
+<!-- Layout wrapper -->
+<div class="layout-wrapper layout-content-navbar">
+  <div class="layout-container">
+    <!-- Sidebar Menu -->
+    <side-Bar></side-Bar>
+    <!-- Sidebar Menu -->
 
-        <!-- Layout container -->
-        <div class="layout-page">
-          <!-- Top BarNavbar -->
-          <top-Bar></top-Bar>
-          <!-- / Navbar -->
+    <!-- Layout container -->
+    <div class="layout-page" style="content-visibility: auto!important;">
+      <!-- Top BarNavbar -->
+      <top-Bar></top-Bar>
+      <!-- / Navbar -->
 
+      <!-- Content wrapper -->
+      <div class="container content-wrapper">
+        <!--  -->
+        <div class="flex-grow-1">
+          <h4 class="py-3 mb-4"><span class="text-muted fw-light">StoreIgniter /</span> Support & Enquiry</h4>
+        </div>
+
+        <!-- Content -->
+        <div class="container-xxl flex-grow-1 container-p-y">
           <!-- Styling  -->
           <style>
             body {
@@ -190,10 +199,8 @@
             <footer class="content-footer footer bg-footer-theme">
               <div class="container-xxl">
                 <div class="footer-container d-flex align-items-center justify-content-between py-3 flex-md-row flex-column">
-                  <div class="text-body mb-2 mb-md-0"> ©Storigniter , made with <span class="text-danger">
-                      <i class="tf-icons mdi mdi-heart"></i>
-                    </span> by
-                    <a href="#!" target="_blank" class="footer-link fw-medium">Coderannu</a>
+                  <div class="text-body mb-2 mb-md-0"> ©Storigniter , made with <span class="text-danger"><i class="tf-icons mdi mdi-heart"></i></span> by
+                    <a href="https://github.com/CoderAnnu/StoreIgniter" target="_blank" class="footer-link fw-medium">CoderAnnu</a>
                   </div>
                   <div class="d-none d-lg-inline-block">
                     <a href="#!/documentation" class="footer-link me-3">Documentation</a>
@@ -204,14 +211,14 @@
             </footer>
             <!-- / Footer -->
 
-            <div class="content-backdrop fade"></div>
+            <!-- <div class="content-backdrop fade"></div> -->
           </div>
           <!-- Content wrapper -->
         </div>
         <!-- / Layout page -->
       </div>
-
       <!-- Overlay -->
-      <div class="layout-overlay layout-menu-toggle"></div>
+      <!-- <div class="layout-overlay layout-menu-toggle"></div> -->
     </div>
     <!-- / Layout wrapper -->
+    <!-- End code  -->
