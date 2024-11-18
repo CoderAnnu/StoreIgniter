@@ -49,7 +49,6 @@
               </style>
               </head>
 
-              <body>
                 <div class="container">
                   <h1>Support</h1>
                   <p><strong>Welcome to StoreIgniter Support!</strong><br>
