@@ -182,7 +182,7 @@
                 <div class="mb-3">
                   <img src="<?= base_url('assets/LandingPage/assets/img/elements/logo-1.png'); ?>" alt="client logo" class="client-logo img-fluid">
                 </div>
-                <p>Materio is awesome, and I particularly enjoy knowing that if I get stuck on something.</p>
+                <p>StoreIgniter is awesome, and I particularly enjoy knowing that if I get stuck on something.</p>
                 <div class="text-warning mb-3">
                   <i class="tf-icons mdi mdi-star mdi-24px"></i>
                   <i class="tf-icons mdi mdi-star mdi-24px"></i>
@@ -299,7 +299,7 @@
                 <div class="mb-3">
                   <img src="<?= base_url('assets/LandingPage/assets/img/elements/logo-1.png'); ?>" alt="client logo" class="client-logo img-fluid">
                 </div>
-                <p>Materio is awesome, and I particularly enjoy knowing that if I get stuck on something.</p>
+                <p>StoreIgniter is awesome, and I particularly enjoy knowing that if I get stuck on something.</p>
                 <div class="text-warning mb-3">
                   <i class="tf-icons mdi mdi-star mdi-24px"></i>
                   <i class="tf-icons mdi mdi-star mdi-24px"></i>
@@ -416,7 +416,7 @@
                 <div class="mb-3">
                   <img src="<?= base_url('assets/LandingPage/assets/img/elements/logo-1.png'); ?>" alt="client logo" class="client-logo img-fluid">
                 </div>
-                <p>Materio is awesome, and I particularly enjoy knowing that if I get stuck on something.</p>
+                <p>StoreIgniter is awesome, and I particularly enjoy knowing that if I get stuck on something.</p>
                 <div class="text-warning mb-3">
                   <i class="tf-icons mdi mdi-star mdi-24px"></i>
                   <i class="tf-icons mdi mdi-star mdi-24px"></i>

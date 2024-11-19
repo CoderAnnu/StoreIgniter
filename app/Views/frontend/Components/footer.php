@@ -21,7 +21,7 @@
                                  </svg>
                              </span>
                          </span>
-                         <span class="app-brand-text demo footer-link fw-semibold ms-1">Materio</span>
+                         <span class="app-brand-text demo footer-link fw-semibold ms-1">StoreIgniter</span>
                      </a>
                      <p class="footer-text footer-logo-description mb-4">
                          Most Powerful &amp; Comprehensive 🤩 React NextJS Admin Template with Elegant Material Design &amp; Unique

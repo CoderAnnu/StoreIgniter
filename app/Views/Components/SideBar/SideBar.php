@@ -4,7 +4,7 @@
   <div class="app-brand bg-primary py-3">
     <a href="/" class="app-brand-link">
       <!-- use logo here  -->
-      <span class="app-brand-text menu-text fw-semibold ms-2">Materio</span>
+      <span class="app-brand-text menu-text fw-semibold ms-2">StoreIgniter</span>
     </a>
     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
       <i class="mdi menu-toggle-icon d-xl-block align-middle mdi-20px"></i>
